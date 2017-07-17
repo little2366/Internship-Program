@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    background: #214D90 url(../img/background.jpg);
+    background-size: cover;
+    color: #999999;
+    font-family:"Microsoft Yahei", tahoma, arial, "Hiragino Sans GB", 宋体;
+}
+
+.w1200 {
+    width: 1200px;
+    min-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1200px;
+}
+
+/*sologo*/
+.sologo {
+	margin-top: 50px;
+    text-align: center;
+}
+.sologo h1 {
+    text-align: center;
+    line-height: 1;
+    font-size: 38px;
+    font-weight: 500;
+    color: #fff;
+}
+.scroll-txt {
+	position: relative;
+	margin-top: -5px;
+	height:30px; 
+	color: #ffffff;
+	overflow:hidden;
+	background: url(../img/slogon_bg.png) no-repeat center center;
+}
+.scroll-txt ul {
+	margin:0; 
+	padding:0;
+}
+.scroll-txt .font-inner {
+	position:absolute; 
+	margin: 0 auto;
+	width: 100%;
+	font-size: 16px; 
+}
+.scroll-txt .font-inner li {
+	height:30px; 
+	line-height:30px;
+	list-style: none;
+}
+.scroll-txt .font-inner li span {
+	margin-right: 30px;
+}
+
+
+/*tabitem*/
+.tabitem {
+    background: #fff;
+    height: 658px;
+    margin: 30px auto;
+	border: 1px solid #ffffff;
+}
+.tabbtn {
+	width: 100%;
+	display: flex;
+}
+.tabbtn-item {
+	position: relative;
+	width: 50%;
+    height: 65px;
+    margin-top: -1px;
+    border-top: 2px solid #d6dbe0;
+    background: #d6dbe0;
+    float: left;
+    line-height: 65px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    box-shadow: inset 0 -5px 15px rgba(0,0,0,.3);
+}
+.tabbtn-item span {
+	color: #555555;
+	font-size: 24px;
+    margin-right: 20px;
+}
+.tabbtn-item em {
+	font-size: 14px;
+    color: #666;
+}
+.active {
+	border-top: 2px solid #f60;
+    background: #fff;
+    position: relative;
+    z-index: 99;
+    box-shadow: -8px -10px 24px rgba(0,0,0,.3);
+}
+.active span {
+    color: #f60;
+}
+.con1 {
+	display: block;
+	margin-top: 20px;
+}
+.con2 {
+    display: none; 
+}
+.pub-req {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+}
+.req-item {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: 40px;
+	padding: 5px 0;
+	font-size: 14px;
+	font-weight: 100;
+    line-height: 40px;
+    color: #333;
+}
+.item-title {
+    float: right;
+    width: 25%;
+}
+.item-content {
+	margin-left: 20px;
+	width: 75%;
+}
+.item-title span {
+	float: right;
+}
+.item-title span:before {
+    content: "*";
+    color: #f00;
+    padding-right: 3px;
+}
+.item-content ul {
+	list-style: none;
+	margin-left: -40px;
+}
+.typeCont {
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    line-height: 32px;
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+    padding-left: 40px;
+    background: url(../img/g1.png) no-repeat;
+    background-position: 14px 6px;
+    cursor: pointer;
+}
+.typeContC {
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    line-height: 32px;
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+    padding-left: 40px;
+    background: #3798C0 url(../img/g2.png) no-repeat;
+    background-position: 14px 6px;
+    cursor: pointer;
+    text-shadow: -1px -1px 0px #353535;
+    color: #FFFFFF;
+}
+input,textarea {
+    font-size: 100%;
+}
+input {
+    vertical-align: middle;
+    width:71%;
+    height: 26px;
+    padding-left: 10px;
+}
+
+/*advitem*/
+.advitem {
+	display: flex;
+	flex-wrap: nowrap;
+	height: 93px;
+	margin-bottom: 60px;
+}
+.bg {
+	display: flex;
+    height: 93px;
+    width: 230px;
+    background-color: rgba(59,91,141,0.6);
+    filter: alpha(opacity=60);
+    cursor: pointer;
+    margin-right: 23px;
+    color: #ffffff;
+}
+.no-right {
+	margin-right: 0;
+}
+.bg-left {
+	width: 40%;
+}
+.adv-1 {
+	background: url(../img/icon1.png) no-repeat center;
+}
+.adv-2 {
+	background: url(../img/icon2.png) no-repeat center;
+}
+.adv-3 {
+	background: url(../img/icon3.png) no-repeat center;
+}
+.adv-4 {
+	background: url(../img/icon4.png) no-repeat center;
+}
+.adv-5 {
+	background: url(../img/icon5.png) no-repeat center;
+}
+.bg-right {
+	margin: auto 0;
+}
+.bg-right h1 {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+}
+.bg-right p {
+	font-size: 14px;
+	line-height: 10px;
+}
