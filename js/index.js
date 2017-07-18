@@ -1,3 +1,8 @@
+/*设定全局变量i,表示图片的张数
+  创建一个数组,表示第i个image-holder*/
+var i=0;
+var myImg = new Array();
+
 /*sologo的文字滚动*/
 $(document).ready(function(){
     var index = 0;
@@ -75,8 +80,8 @@ $(document).ready(function(){
 
 /*tabbtn的选择*/
 $(".tabbtn-item").on("click",function(){
-    $(this).addClass("active");
-    $(this).siblings(".tabbtn-item").removeClass("active");
+    $(this).addClass("current");
+    $(this).siblings(".tabbtn-item").removeClass("current");
     var string=$(this).find("span").text();
     if(string == '发布需求'){
        $(".con1").css("display","block");
@@ -97,3 +102,80 @@ $(".typeCont").on("click",function(){
     }
     
 });
+
+/*上传图文件*/
+$("#imgPicker").on("change","input[type='file']",function() {
+ 
+    if (typeof (FileReader) != "undefined") {
+
+        var uploading = $("#uploading");
+        var imgPicker = $("#imgPicker");
+        ++i;
+        var temp = $('<div></div>');          //创建一个div  
+        temp.attr('id', i);                   //给div设置id
+        temp.addClass('image-holder');        //添加css样式
+
+        /*uploading.append(temp);*/
+        temp.insertBefore(imgPicker);
+        temp.empty();
+        
+        var deleteThis = $('<div></div>'); 
+        deleteThis.addClass("delete");
+        deleteThis.appendTo(temp);
+
+        $(".delete").on("click",function(){
+            $(this).parent().remove();
+        });
+
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $("<img />", {
+                "src": e.target.result,
+                "class": "thumb-image"
+            }).appendTo(temp);
+ 
+        }
+        temp.show();
+        reader.readAsDataURL($(this)[0].files[0]);
+    } else {
+        alert("你的浏览器不支持FileReader.");
+    }
+  
+});
+
+/*选择日期*/
+$('#datetimepicker').datetimepicker();
+
+
+/*接单类型点击事件*/
+function jdlxOnclick(jdlxObj){
+    if(jdlxObj == ''){
+        if ($(".jdlx").attr("value") == "jdtypel") {
+            $(".jdlx input").stop().animate({"left": "133px"}, 500),
+            $(".jdlx").attr("value", "jdtyper")
+            $(".jdlx input").attr("value", "不含税")
+            $(".jdtype h3").text("不含税报价：不要求报价供方提供发票。")
+            $("input[name=enquiryType][value=jdtyper]").attr("checked","checked");//选中
+        } else { 
+            $(".jdlx input").stop().animate({"left": "0"}, 400),
+            $(".jdlx").attr("value", "jdtypel")
+            $(".jdlx input").attr("value", "含税")
+            $(".jdtype h3").text("含税报价：要求报价供方提供发票。")
+            $("input[name=enquiryType][value=jdtypel]").attr("checked","checked");//选中
+        }
+    }else{
+        if(jdlxObj == 'jdtypel'){
+            $(".jdlx input").stop().animate({"left": "0"}, 400),
+            $(".jdlx").attr("value", "jdtypel")
+            $(".jdlx input").attr("value", "含税")
+            $(".jdtype h3").text("含税报价：要求报价供方提供发票。")
+            $("input[name=enquiryType][value=jdtypel]").attr("checked","checked");//选中
+        }else if(jdlxObj == 'jdtyper'){
+            $(".jdlx input").stop().animate({"left": "133px"}, 500),
+            $(".jdlx").attr("value", "jdtyper")
+            $(".jdlx input").attr("value", "不含税")
+            $(".jdtype h3").text("不含税报价：不要求报价供方提供发票。")
+            $("input[name=enquiryType][value=jdtyper]").attr("checked","checked");//选中
+        }
+    }
+}

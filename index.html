@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 	<title>云加工</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css">
 </head>
 <body>
 	<!--sologo-->
@@ -24,7 +25,7 @@
 
         <!--tabbtn-->
     	<div class="tabbtn">
-    		<div class="tabbtn-item active">
+    		<div class="tabbtn-item current">
     			<span>发布需求</span>
     			<em>轻松发布 专业服务</em>
     		</div>
@@ -37,24 +38,24 @@
     	<!--con1 发布需求-->
     	<div class="con1">
             <div class="pub-req">
-				<div class="req-item" style="height: 180px;line-height: 180px;">
+				<div class="req-item" style="height: 130px;line-height: 130px">
 					<div class="item-title">
 						<span>项目所需资源</span>
 					</div>
 					<div class="item-content">
 						<ul>
-							<li class="typeCont">钻床</li>
-							<li class="typeCont">钻床</li>
-							<li class="typeCont">钻床</li>
-							<li class="typeCont">钻床</li>
-							<li class="typeCont">钻床</li>
-							<li class="typeCont">钻床</li>
-							<li class="typeCont">钻床</li>
-							<li class="typeCont">钻床</li>
-							<li class="typeCont">钻床</li>
-							<li class="typeCont">钻床</li>
-							<li class="typeCont">钻床</li>
-							<li class="typeCont">钻床</li>
+							<li class="typeCont">3+2高速铣</li>
+							<li class="typeCont">3D打印</li>
+							<li class="typeCont">5轴高速铣</li>
+							<li class="typeCont">5轴联动</li>
+							<li class="typeCont">5轴深孔钻</li>
+							<li class="typeCont">5轴数控铣</li>
+							<li class="typeCont">产品造型</li>
+							<li class="typeCont">车床</li>
+							<li class="typeCont">大型卧铣</li>
+							<li class="typeCont">电火花</li>
+							<li class="typeCont">电炉</li>
+							<li class="typeCont">调质炉</li>
 						</ul>
 					</div>
 				</div>
@@ -63,32 +64,107 @@
 						<span>项目标题或零件名称</span>
 					</div>
 					<div class="item-content">
-						<input type="text" placeholder="请输入需求标题">
+						<input type="text" placeholder="请输入项目标题或零件名称">
 					</div>
 				</div>
-				<div class="req-item" style="height: 100px;line-height: 100px;">
+				<div class="req-item" style="min-height: 120px;line-height: 120px;">
 					<div class="item-title">
-						<span>相关图文档</span>
+						<em>相关图文档</em>
 					</div>
 					<div class="item-content">
-						
+						<div id="uploading" style="min-width: 65%;min-height: 120px;">
+							<div id="imgPicker">
+			                	<input id="imgPicker" type="file"/>
+			                </div>
+						</div>
+						<!--<div class="imgExp">
+							<span>(JPG、GIF或PNG格式的文件，文件大小不能超过2M)</span>
+						</div>-->
 					</div>
 				</div>
 				<div class="req-item">
 					<div class="item-title">
 						<span>要求完成时间</span>
 					</div>
+					<div class="item-content">
+						<input type="text" placeholder="希望完成时间不能早于当前时间" id="datetimepicker"/>
+					</div>
 				</div>
-				<div class="req-item">
+				<div class="req-item" style="height: 140px;line-height: 140px;">
 					<div class="item-title">
 						<span>技术及细节描述</span>
 					</div>
+					<div class="item-content">
+						<textarea class="ipta" placeholder="请输入技术的细节描述，最多不超过200字"></textarea>
+						<textarea class="iptb" placeholder="补充说明"></textarea>
+					</div>
 				</div>
-				<div class="req-item">
+				<div class="req-item" style="height: 120px;line-height: 120px;">
 					<div class="item-title">
 						<span>合作商家要求</span>
 					</div>
+					<div class="item-content">
+						<ul>
+							<li class="typeCont">高度隐私</li>
+							<li class="typeCont">确保交期</li>
+							<li class="typeCont">价格优先</li>
+							<li class="typeCont">平台推荐</li>
+							<li class="typeCont">地域限制</li>
+							<li class="typeCont">经验品质优先</li>
+							<li class="typeCont">5家之内参与</li>
+							<li class="typeCont">快速公布</li>
+							<li class="typeCont">免审核发布</li>
+							<li class="typeCont">资金要求</li>
+						</ul>
+					</div>
 				</div>
+				<div class="req-item">
+					<div class="item-title">
+						<span>付款方式</span>
+					</div>
+					<div class="item-content">
+						<ul>
+							<li class="typeCont">现金支付</li>
+							<li class="typeCont">在线支付</li>
+						</ul>
+					</div>
+				</div>
+				<div class="req-item">
+					<div class="item-title">
+						<span>询价是否含税</span>
+					</div>
+					<div class="item-content">
+						<div class="jdtype">
+							<div class="input_cont4 jdlx" value="jdtypel" onclick="jdlxOnclick('')">
+								<span id="off">含税</span>
+								<span id="on">不含税</span>
+								<input type="button" value="含税">
+							</div>
+							<label style="display:none;"><input type="radio" name="enquiryType" value="jdtypel" checked="checked">含税</label>
+							<label style="display:none;"><input type="radio" name="enquiryType" value="jdtyper">不含税</label>
+							<h3 class="type_h3">含税报价：要求报价供方提供发票。</h3>
+
+						</div>
+					</div>
+				</div>
+				<div class="req-item">
+					<div class="item-title">
+						<span>延期是否缴纳滞纳金</span>
+					</div>
+				</div>
+				<div class="req-item">
+					<div class="item-title">
+						<span>是否自选合作商</span>
+					</div>
+				</div>
+				<div class="req-item">
+					<div class="item-title">
+						<span>报价是否包含质量违约金</span>
+					</div>
+				</div>
+            </div>
+            <div class="pub-submit">
+            	<div class="submitbtn">自动生成合同模板</div>
             </div>
     	</div>
 
@@ -139,6 +215,7 @@
 
 </body>
 <script type="text/javascript" src="lib/jQuery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/jquery.datetimepicker.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
