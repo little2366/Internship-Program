@@ -106,6 +106,7 @@ body {
 }
 .con2 {
     display: none; 
+    margin-top: 20px;
 }
 .pub-req {
 	display: flex;
@@ -150,7 +151,7 @@ body {
 	margin-left: -40px;
 }
 .typeCont {
-    width: 90px;
+    min-width: 90px;
     height: 30px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -159,12 +160,13 @@ body {
     border: 1px solid #C2C2C2;
     border-radius: 5px;
     padding-left: 40px;
+    padding-right: 5px;
     background: url(../img/g1.png) no-repeat;
     background-position: 14px 6px;
     cursor: pointer;
 }
 .typeContC {
-    width: 80px;
+    min-width: 90px;
     height: 30px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -173,6 +175,7 @@ body {
     border: 1px solid #C2C2C2;
     border-radius: 5px;
     padding-left: 40px;
+    padding-right: 5px;
     background: #3798C0 url(../img/g2.png) no-repeat;
     background-position: 14px 6px;
     cursor: pointer;
@@ -184,9 +187,10 @@ input,textarea {
 }
 input {
     vertical-align: middle;
-    width: 89%;
+    width: 92%;
     height: 26px;
     padding-left: 10px;
+    border: 1px solid #C2C2C2;
 }
 .uploading {
 	display: flex;
@@ -243,25 +247,19 @@ input {
 .ipta {
 	height: 100px;
     line-height: 1.5;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #C2C2C2;
     padding: 5px 10px;
-    width: 492px;
-}
-.iptb {
-	height: 30px;
-    line-height: 1.5;
-    border: 1px solid #e5e5e5;
-    padding: 5px 10px;
-    width: 492px;
+    width: 90.6%;
 }
 
-.jdtype{
+.commonType {
+	display: flex;
     float: left;
-    width: 100%;
+    width: 95%;
     margin-top: 20px;	
 }
-.input_cont4{
-	width: 48%;
+.input_cont4 {
+	width: 45%;
 	float: left;
 	height: 32px;
 	border: 1px solid #C2C2C2;
@@ -270,7 +268,7 @@ input {
 	background: #454545;
 	margin-bottom: 20px;
 }
-.input_cont4 input{
+.input_cont4 input {
 	border: 1px solid #6DC9C9;
 	background: #3798C0;
 	height: 30px;
@@ -284,7 +282,7 @@ input {
 	text-shadow: -1px -1px 0px #545454;
 	position: relative;
 }
-.input_cont4 span{
+.input_cont4 span {
 	width: 50%;
 	height: 100%;
 	text-align: center;
@@ -294,21 +292,89 @@ input {
 	color: #545454;
 	text-shadow: -1px -1px 0px #353535;
 }
-.type_h3{
+.h3Contanier {
+	width: 80%;
+	display: flex;
+	margin-left: 30px;
+	margin-top: -15px;
+}
+.type_h3 {
     font-size: 14px;
+    font-weight: 100;
     color: #999999;
-    float: left;
-    margin-left: 10px;
+    line-height: 20px;
+}
+
+.pub-user {
+	margin-top: 30px;
+	margin-left: 16%;
+	margin-right: 16%;
+}
+.sureUser {
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	line-height: 20px;
+}
+.userType img {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.writeMessage { 
+	display: flex;
+    flex-wrap: nowrap;
+    width: 94%;
+    height: 130px;
+}
+.downL {
     width: 50%;
-    line-height: 17px;
+    height: 130px;
+    border-right: 1px solid #C2C2C2;
 }
-.type_h3 a{
-	color: #05ABFA !important;
-	text-decoration: underline;
+.message-title {
+	width: 18%;
 }
+.message-title span {
+	float: right;
+}
+.message-title span:before {
+    content: "*";
+    color: #f00;
+    padding-right: 3px;
+}
+.code-content {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.code {
+	margin-top: -2px;
+}
+.code input {
+	height: 30px;
+}
+.getBtn {
+	margin-left: -35px;
+	margin-top: -2px;
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    background-color: #7e9aa6;
+    font-size: 12px;
+    cursor: pointer;
+}
+.downR {
+    width: 50%;
+    height: 130px;
+}
+
+
 
 .pub-submit {
     display: flex;
+    margin-top: 40px;
     margin-bottom: 30px;
 }
 .submitbtn {
@@ -374,5 +440,6 @@ input {
 }
 .bg-right p {
 	font-size: 14px;
-	line-height: 10px;
+	line-height: 16px;
+	padding-right: 3px;
 }
