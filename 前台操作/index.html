@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
 	<title>云加工</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css">
+	<link rel="stylesheet" type="text/css" href="lib/sweetAlert/sweetalert.css">
 </head>
 <body>
 	<!--sologo-->
@@ -49,11 +50,15 @@
 							<li class="typeCont">5轴高速铣</li>
 							<li class="typeCont">5轴联动</li>
 							<li class="typeCont">5轴深孔钻</li>
+						</ul>
+						<ul>
 							<li class="typeCont">5轴数控铣</li>
 							<li class="typeCont">产品造型</li>
 							<li class="typeCont">车床</li>
 							<li class="typeCont">大型卧铣</li>
 							<li class="typeCont">电火花</li>
+						</ul>
+						<ul>
 							<li class="typeCont">电炉</li>
 							<li class="typeCont">调质炉</li>
 							<li class="typeCont">多工序加工</li>
@@ -114,10 +119,12 @@
 						<em>需求附件</em>
 					</div>
 					<div class="item-content">
-						
+						<div id="attachPicker">
+							上传附件
+						</div>
 					</div>
 				</div>
-				<div class="req-item" style="height: 110px;line-height: 110px; margin-bottom: -20px;">
+				<div class="req-item" style="height: 80px;line-height: 80px">
 					<div class="item-title">
 						<span>合作商家要求</span>
 					</div>
@@ -128,6 +135,8 @@
 							<li class="typeCont">平台推荐</li>
 							<li class="typeCont">地域限制</li>
 							<li class="typeCont">经验品质优先</li>
+						</ul>
+						<ul>
 							<li class="typeCont">投标数控制</li>
 							<li class="typeCont">快速发布</li>
 							<li class="typeCont">最低价自动过滤</li>
@@ -299,11 +308,15 @@
 							<li class="typeCont">5轴高速铣</li>
 							<li class="typeCont">5轴联动</li>
 							<li class="typeCont">5轴深孔钻</li>
+						</ul>
+						<ul>
 							<li class="typeCont">5轴数控铣</li>
 							<li class="typeCont">产品造型</li>
 							<li class="typeCont">车床</li>
 							<li class="typeCont">大型卧铣</li>
 							<li class="typeCont">电火花</li>
+						</ul>
+						<ul>
 							<li class="typeCont">电炉</li>
 							<li class="typeCont">调质炉</li>
 							<li class="typeCont">多工序加工</li>
@@ -312,12 +325,27 @@
 						</ul>
 					</div>
 				</div>
-				<div class="req-item" style="height: 35px;line-height: 35px">
+				<div class="req-item" style="height: 80px;line-height: 80px;margin-bottom: 10px;">
 					<div class="item-title">
 						<span>空闲时段</span>
 					</div>
 					<div class="item-content">
-					    
+					    <ul>
+							<li class="typeCont monthType">1月</li>
+							<li class="typeCont monthType">2月</li>
+							<li class="typeCont monthType">3月</li>
+							<li class="typeCont monthType">4月</li>
+							<li class="typeCont monthType">5月</li>
+							<li class="typeCont monthType">6月</li>
+						</ul>
+						<ul>
+							<li class="typeCont monthType">7月</li>
+							<li class="typeCont monthType">8月</li>
+							<li class="typeCont monthType">9月</li>
+							<li class="typeCont monthType">10月</li>
+							<li class="typeCont monthType">11月</li>
+							<li class="typeCont monthType">12月</li>
+						</ul>
 					</div>
 				</div>
 				<div class="req-item" style="height: 35px;line-height: 35px">
@@ -325,7 +353,7 @@
 						<span>品牌</span>
 					</div>
 					<div class="item-content">
-					    
+					    <input type="text" placeholder="请输入设备的品牌">
 					</div>
 				</div>
 				<div class="req-item" style="height: 35px;line-height: 35px">
@@ -338,26 +366,26 @@
 				</div>
 				<div class="req-item" style="height: 35px;line-height: 35px">
 					<div class="item-title">
-						<span>购置年份</span>
+						<em>购置年份</em>
 					</div>
 					<div class="item-content">
-					    
+					    <input type="text" placeholder="请输入设备的购置年份">
 					</div>
 				</div>
 				<div class="req-item" style="height: 35px;line-height: 35px">
 					<div class="item-title">
-						<span>加工最大行程</span>
+						<em>加工最大行程</em>
 					</div>
 					<div class="item-content">
-					    
+					    <input type="text" placeholder="请输入设备的加工最大行程">
 					</div>
 				</div>
 				<div class="req-item" style="height: 35px;line-height: 35px">
 					<div class="item-title">
-						<span>精度</span>
+						<em>精度</em>
 					</div>
 					<div class="item-content">
-					    
+					    <input type="text" placeholder="请输入设备的加工精度">
 					</div>
 				</div>
 				<div class="req-item" style="height: 35px;line-height: 35px">
@@ -365,10 +393,10 @@
 						<span>加工单价</span>
 					</div>
 					<div class="item-content">
-					    
+					    <input type="text" placeholder="请输入设备的加工单价">
 					</div>
 				</div>
-				<div class="req-item" style="height: 55px;line-height: 55px">
+				<div class="req-item" style="height: 60px;line-height: 60px;margin-top: -16px;">
 					<div class="item-title">
 						<span>付款方式</span>
 					</div>
@@ -382,6 +410,9 @@
 					</div>
 				</div>
     		</div>
+    		<div class="pub-submit">
+            	<div class="submitbtn" id="equipBtn">发布设备</div>
+            </div>
     	</div>
     </div>
 
@@ -426,8 +457,10 @@
 
 </body>
 <script type="text/javascript" src="lib/jQuery/jquery-3.2.1.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>-->
 <script type="text/javascript" src="js/jquery.datetimepicker.js"></script>
 <script type="text/javascript" src="js/gVerify.js"></script>
+<script type="text/javascript" src="lib/sweetAlert/sweetalert.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

@@ -66,6 +66,7 @@ body {
 .tabbtn {
 	width: 100%;
 	display: flex;
+    display: -ms-flexbox;
 }
 .tabbtn-item {
 	position: relative;
@@ -110,12 +111,16 @@ body {
 }
 .pub-req {
 	display: flex;
+    display: -ms-flexbox;
 	flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 	width: 88%;
 }
 .req-item {
 	display: flex;
+    display: -ms-flexbox;
 	flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
 	width: 100%;
 	height: 40px;
 	padding: 5px 0;
@@ -130,7 +135,9 @@ body {
 }
 .item-content {
 	display: flex;
+    display: -ms-flexbox;
 	flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 	margin-left: 20px;
 	width: 75%;
 }
@@ -149,6 +156,8 @@ body {
 .item-content ul {
 	list-style: none;
 	margin-left: -40px;
+    margin-bottom: -35px;
+    white-space: nowrap;
 }
 .typeCont {
     min-width: 90px;
@@ -156,6 +165,7 @@ body {
     margin-right: 10px;
     margin-bottom: 10px;
     float: left;
+    /*display: inline-block;*/
     line-height: 32px;
     border: 1px solid #C2C2C2;
     border-radius: 5px;
@@ -194,6 +204,7 @@ input {
 }
 .uploading {
 	display: flex;
+    display: -ms-flexbox;
 }
 #imgPicker {
     color: #ccc;
@@ -218,6 +229,7 @@ input {
 }
 .image-holder {
 	display: flex;
+    display: -ms-flexbox;
 	position: relative;
 	width: 110px;
 	height: 110px;
@@ -251,9 +263,22 @@ input {
     padding: 5px 10px;
     width: 90.6%;
 }
+#attachPicker {
+    color: #3186dd;;
+    cursor: pointer;
+    border: 1px solid #3186dd;
+    line-height: 35px;
+    width:100px;
+    height:35px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
 
 .commonType {
 	display: flex;
+    display: -ms-flexbox;
     float: left;
     width: 95%;
     margin-top: 20px;	
@@ -294,7 +319,6 @@ input {
 }
 .h3Contanier {
 	width: 80%;
-	display: flex;
 	margin-left: 30px;
 	margin-top: -15px;
 }
@@ -322,7 +346,9 @@ input {
 }
 .writeMessage { 
 	display: flex;
+    display: -ms-flexbox;
     flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
     width: 94%;
     height: 130px;
 }
@@ -344,7 +370,9 @@ input {
 }
 .code-content {
 	display: flex;
+    display: -ms-flexbox;
 	flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
 }
 .code {
 	margin-top: -2px;
@@ -374,6 +402,7 @@ input {
 
 .pub-submit {
     display: flex;
+    display: -ms-flexbox;
     margin-top: 40px;
     margin-bottom: 30px;
 }
@@ -392,15 +421,27 @@ input {
 }
 
 
+/*con2部分*/
+.monthType {
+    min-width: 66px;
+}
+#equipBtn {
+    width: 300px;
+}
+
+
 /*advitem*/
 .advitem {
 	display: flex;
+    display: -ms-flexbox;
 	flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
 	height: 93px;
 	margin-bottom: 60px;
 }
 .bg {
 	display: flex;
+    display: -ms-flexbox;
     height: 93px;
     width: 230px;
     background-color: rgba(59,91,141,0.6);

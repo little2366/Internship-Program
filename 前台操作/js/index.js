@@ -390,3 +390,7 @@ $(function (){
     window.getVerifyCode = getVerifyCode;
 })(window,document);
 
+/*发布设备弹出提示*/
+$('#equipBtn').on("click",function(){
+    swal("设备已成功发布", "You clicked the button!", "success");
+});
