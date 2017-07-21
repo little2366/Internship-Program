@@ -141,15 +141,16 @@ h3{
   color: #0a78ff;
 }
 
-#title{
-  padding-top: 28px;
+#title {
+  padding-top: 25px;
 	color: rgba(0,0,0,0.4);
 	text-shadow: 0 0 1px rgba(0,0,0,0.1);
-	font-weight: 100;
-	font-size: 2em;
+	font-size: 30px;
 	font-family: 'Raleway', Arial;
 }
-
+#title i {
+  font-size: 40px;
+}
 
 .border{
 border-top: 1px solid rgba(0,0,0,0.2);
