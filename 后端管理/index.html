@@ -4,19 +4,63 @@
     <meta charset="utf-8">
 	<title>云加工</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-    <!--head部分-->
-    <div>
-    	
-    </div>
+    <div id="container">
+        <div id="canvas">
+            <!--menu部分-->
+            <div id="nav">
+                <h3 id="title"><i class="fa fa-cloud"></i> 云加工</h3>
+                <ul id="toggle">
+                    <li>
+                        <div class="active border">
+                            <span class="menu-icons fa fa-home"></span>
+                            <a href="#">主页</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="menu-icons fa fa-user"></span>
+                            <a href="#">需求管理</a>
+                            <span class="the-btn fa fa-plus"></span>
+                            </div>
+                        <ul>
+                            <li>
+                                <a href="#">发布需求</a>
+                            </li>
+                            <li>
+                                <a href="#">需求列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="menu-icons  fa fa-briefcase"></span>
+                            <a href="#">设备管理</a>
+                            <span class="the-btn fa fa-plus"></span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">发布设备</a>
+                            </li>
+                            <li>
+                                <a href="#">设备列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--内容部分-->
+            <div class="htmleaf-container">
+                <a href="#" class="toggle-nav" id="bars"><i class="fa fa-bars"></i></a>
+            </div>
 
-    <!--menu部分-->
-    <div>
-    	
+       </div>
     </div>
-
-    
 </body>
-<script type="text/javascript" href="js/index.js"></script>
+<script type="text/javascript" src="lib/jQuery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </html>
