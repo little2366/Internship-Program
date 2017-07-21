@@ -50,13 +50,33 @@ $(document).ready(function() {
 	/*	SIDEBAR NAVIGATION
 	/*----------------------------------*/
 
-	$('.sidebar a[data-toggle="collapse"]').on('click', function() {
+	/*$('.sidebar a[data-toggle="collapse"]').on('click', function() {
 		if($(this).hasClass('collapsed')) {
 			$(this).addClass('active');
 		} else {
 			$(this).removeClass('active');
 		}
+	});*/
+
+	$("#collapsed1").on('click',function(){
+		console.log("111");
+        if($(this).hasClass('collapsed')) {
+			$(this).addClass('active');
+		} else {
+			$(this).removeClass('active');
+		}
 	});
+
+	$("#collapsed2").on('click',function(){
+		console.log("222");
+        if($(this).hasClass('collapsed')) {
+			$(this).addClass('active');
+		} else {
+			$(this).removeClass('active');
+		}
+	});
+
+
 
 	if( $('.sidebar-scroll').length > 0 ) {
 		$('.sidebar-scroll').slimScroll({

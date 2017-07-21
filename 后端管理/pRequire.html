@@ -40,9 +40,6 @@
 						<span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
 					</div>
 				</form>
-				<div class="navbar-btn navbar-btn-right">
-					<a class="btn btn-success update-pro" href="#downloads/klorofil-pro-bootstrap-admin-dashboard-template/?utm_source=klorofil&utm_medium=template&utm_campaign=KlorofilPro" title="Upgrade to Pro" target="_blank"><i class="fa fa-rocket"></i> <span>UPGRADE TO PRO</span></a>
-				</div>
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
@@ -69,7 +66,7 @@
 							<div id="subPages" class="collapse ">
 								<ul class="nav">
 									<li><a href="pRequire.html" class="">发布需求</a></li>
-									<li><a href="page-login.html" class="">需求列表</a></li>
+									<li><a href="lRequire.html" class="">需求列表</a></li>
 								</ul>
 							</div>
 						</li>
@@ -109,66 +106,191 @@
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
-					<!-- OVERVIEW -->
-					<!-- INPUTS -->
 					<div class="panel">
 						<div class="panel-heading">
 							<h3 class="panel-title">发布加工需求</h3>
 						</div>
 						<div class="panel-body">
+
+						    <!--项目所需资源-->
 						    <div class="container" style="margin-left: -15px;width: 88%;">
 						        <div class="row">
-						            <div class="col-md-2">
+						            <div class="col-md-3 col-sm-12">
 						            	<label class="fancy-checkbox item-title">
 											<span>项目所需资源</span>
 										</label>
 						            </div>
-						        	<div class="col-md-2">
+						        	<div class="col-md-3 col-sm-3">
 						            	<label class="fancy-checkbox">
 											<input type="checkbox">
 											<span>3+2高速铣</span>
 										</label>
 						            </div>
-						            <div class="col-md-2">
+						            <div class="col-md-3 col-sm-3">
 						            	<label class="fancy-checkbox">
 											<input type="checkbox">
-											<span>3+2高速铣</span>
+											<span>3D打印</span>
 										</label>
 						            </div>
-						            <div class="col-md-2">
+						            <div class="col-md-3 col-sm-3">
 						            	<label class="fancy-checkbox">
 											<input type="checkbox">
-											<span>3+2高速铣</span>
+											<span>5轴高速铣</span>
 										</label>
 						            </div>
-						            <div class="col-md-2">
+						            <div class="col-md-3 col-sm-0"></div>
+						            <div class="col-md-3 col-sm-3">
 						            	<label class="fancy-checkbox">
 											<input type="checkbox">
-											<span>3+2高速铣</span>
+											<span>5轴联动</span>
 										</label>
 						            </div>
-						            <div class="col-md-2">
+						            <div class="col-md-3 col-sm-3">
 						            	<label class="fancy-checkbox">
 											<input type="checkbox">
-											<span>3+2高速铣</span>
+											<span>5轴深孔钻</span>
 										</label>
 						            </div>
-									<!--<label class="fancy-checkbox">
-										<input type="checkbox">
-										<span>3D打印</span>
-									</label>
-									<label class="fancy-checkbox">
-										<input type="checkbox">
-										<span>5轴高速铣</span>
-									</label>-->
-						        </div>	
+                                    <div class="col-md-3 col-sm-3">
+						            	<label class="fancy-checkbox">
+						            	    <input type="checkbox">
+											<span>5轴数控铣</span>
+										</label>
+						            </div>
+						            <div class="col-md-3 col-sm-0"></div>
+						        	<div class="col-md-3 col-sm-3">
+						            	<label class="fancy-checkbox">
+											<input type="checkbox">
+											<span>产品造型</span>
+										</label>
+						            </div>
+						            <div class="col-md-3 col-sm-3">
+						            	<label class="fancy-checkbox">
+											<input type="checkbox">
+											<span>车床</span>
+										</label>
+						            </div>
+						            <div class="col-md-3 col-sm-3">
+						            	<label class="fancy-checkbox">
+											<input type="checkbox">
+											<span>大型卧铣</span>
+										</label>
+						            </div>
+						            <div class="col-md-3 col-sm-0"></div>
+						            <div class="col-md-3 col-sm-3">
+						            	<label class="fancy-checkbox">
+											<input type="checkbox">
+											<span>电火花</span>
+										</label>
+						            </div>
+                                    <div class="col-md-3 col-sm-3">
+						            	<label class="fancy-checkbox">
+						            	    <input type="checkbox">
+											<span>电炉</span>
+										</label>
+						            </div>
+						        	<div class="col-md-3 col-sm-3">
+						            	<label class="fancy-checkbox">
+											<input type="checkbox">
+											<span>调质炉</span>
+										</label>
+						            </div>
+						            <div class="col-md-3 col-sm-0"></div>
+						            <div class="col-md-3 col-sm-3">
+						            	<label class="fancy-checkbox">
+											<input type="checkbox">
+											<span>多工序加工</span>
+										</label>
+						            </div>
+						            <div class="col-md-3 col-sm-3">
+						            	<label class="fancy-checkbox">
+											<input type="checkbox">
+											<span>二手交易</span>
+										</label>
+						            </div>
+						            <div class="col-md-3 col-sm-3">
+						            	<label class="fancy-checkbox">
+											<input type="checkbox">
+											<span>飞刀</span>
+										</label>
+						            </div>
+						        </div>
 						    </div>
+
+						    <!--项目标题或零件名称-->
+                            <div class="container" style="margin-left: -15px; margin-top: 10px; width: 88%;">
+                            	<div class="row">
+                            		<div class="col-md-3 col-sm-12">
+						            	<label class="fancy-checkbox item-title">
+											<span>项目标题或零件名称</span>
+										</label>
+						            </div>
+						            <div class="col-md-9 col-sm-12">
+						            	<input type="text" class="form-control" placeholder="请输入项目标题或零件名称">
+						            </div>
+                            	</div>
+                            </div>
+
+                            <!--零件规格-->
+                            <div class="container" style="margin-left: -15px; margin-top: 10px; width: 88%;">
+                            	<div class="row">
+                            		<div class="col-md-3 col-sm-12">
+						            	<label class="fancy-checkbox item-title">
+											<span>零件规格</span>
+										</label>
+						            </div>
+						            <div class="col-md-9 col-sm-12">
+						            	<input type="text" class="form-control" placeholder="请输入零件规格">
+						            </div>
+                            	</div>
+                            </div>
+
+                            <!--要求完成时间-->
+                            <div class="container" style="margin-left: -15px; margin-top: 10px; width: 88%;">
+                            	<div class="row">
+                            		<div class="col-md-3 col-sm-12">
+						            	<label class="fancy-checkbox item-title">
+											<span>要求完成时间</span>
+										</label>
+						            </div>
+						            <div class="col-md-9 col-sm-12">
+						            	<input type="text" class="form-control" placeholder="希望完成时间不能早于当期时间">
+						            </div>
+                            	</div>
+                            </div>
+
+                            <!--技术及细节描述-->
+                            <div class="container" style="margin-left: -15px; margin-top: 10px; width: 88%;">
+                            	<div class="row">
+                            		<div class="col-md-3 col-sm-12">
+						            	<label class="fancy-checkbox item-title">
+											<span>技术及细节描述</span>
+										</label>
+						            </div>
+						            <div class="col-md-9 col-sm-12">
+						            	<textarea class="form-control" placeholder="请输入的技术的详细描述，最多不超过200字" rows="5"></textarea>
+						            </div>
+                            	</div>
+                            </div>
+
+                            <!--相关图文档-->
+                            <div class="container" style="margin-left: -15px; margin-top: 10px; width: 88%;">
+                            	<div class="row">
+                            		<div class="col-md-3 col-sm-12">
+						            	<label class="fancy-checkbox item-title">
+											<em>相关图文档</em>
+										</label>
+						            </div>
+						            <div class="col-md-9 col-sm-12">
+						            	<textarea class="form-control" placeholder="请输入的技术的详细描述，最多不超过200字" rows="5"></textarea>
+						            </div>
+                            	</div>
+                            </div>
+                                  
 						</div>
 					</div>
-					<!-- END INPUTS -->
 				</div>
 			</div>
-			<!-- END MAIN CONTENT -->
 		</div>
 		<!-- END MAIN -->
 		<div class="clearfix"></div>
@@ -184,7 +306,7 @@
 	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 	<script src="assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-	<script src="assets/vendor/chartist/js/chartist.min.js"></script>
+	<!--<script src="assets/vendor/chartist/js/chartist.min.js"></script>-->
 	<script src="assets/scripts/klorofil-common.js"></script>
 	<script>
 	$(function() {
@@ -211,7 +333,7 @@
 			lineSmooth: false,
 		};
 
-		new Chartist.Line('#headline-chart', data, options);
+		/*new Chartist.Line('#headline-chart', data, options);*/
 
 
 		// visits trend charts
@@ -254,7 +376,7 @@
 			}
 		};
 
-		new Chartist.Line('#visits-trends-chart', data, options);
+		/*new Chartist.Line('#visits-trends-chart', data, options);*/
 
 
 		// visits chart
@@ -272,7 +394,7 @@
 			},
 		};
 
-		new Chartist.Bar('#visits-chart', data, options);
+		/*new Chartist.Bar('#visits-chart', data, options);*/
 
 
 		// real-time pie chart
@@ -290,13 +412,13 @@
 
 		var updateInterval = 3000; // in milliseconds
 
-		setInterval(function() {
+		/*setInterval(function() {
 			var randomVal;
 			randomVal = getRandomInt(0, 100);
 
 			sysLoad.data('easyPieChart').update(randomVal);
 			sysLoad.find('.percent').text(randomVal);
-		}, updateInterval);
+		}, updateInterval);*/
 
 		function getRandomInt(min, max) {
 			return Math.floor(Math.random() * (max - min + 1)) + min;
