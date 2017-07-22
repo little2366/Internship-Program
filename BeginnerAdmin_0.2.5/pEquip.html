@@ -10,8 +10,8 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="format-detection" content="telephone=no">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" href="plugins/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
 	</head>
 
@@ -24,7 +24,7 @@
 
                 <div class="layui-form-item">
 					<label class="layui-form-label">
-					    <span>项目所需资源</span>
+					    <span>设备资源类型</span>
 					</label>
 					<div class="layui-input-block">
 						<input type="checkbox" title="3+2高速铣">
@@ -45,45 +45,38 @@
 					</div>
 				</div>
 
+				<div class="layui-form-item">
+					<label class="layui-form-label">
+					    <span>空闲时段</span>
+					</label>
+					<div class="layui-input-block layui-month-check">
+						<input type="checkbox" title="1月">
+						<input type="checkbox" title="2月">
+						<input type="checkbox" title="3月">
+						<input type="checkbox" title="4月">
+						<input type="checkbox" title="5月">	
+						<input type="checkbox" title="6月">
+						<input type="checkbox" title="7月">
+						<input type="checkbox" title="8月">
+						<input type="checkbox" title="9月">
+						<input type="checkbox" title="10月">
+						<input type="checkbox" title="11月">
+						<input type="checkbox" title="12月">
+					</div>
+				</div>
+
                 <div class="layui-form-item">
 					<label class="layui-form-label">
-					    <span>项目标题或零件名称</span>
+					    <span>品牌</span>
 					</label>
 					<div class="layui-input-block">
-						<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入项目标题或零件名称" class="layui-input">
+						<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入设备品牌" class="layui-input">
 					</div>
 				</div>
 
 				<div class="layui-form-item">
 					<label class="layui-form-label">
-					    <span>零件规格</span>
-					</label>
-					<div class="layui-input-block">
-						<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入零件规格" class="layui-input">
-					</div>
-				</div>
-
-				<div class="layui-form-item">
-					<label class="layui-form-label">
-					    <span>要求完成时间</span>
-					</label>
-					<div class="layui-input-block">
-						<input type="text" name="date" id="date" lay-verify="date" placeholder="希望完成时间不能早于当前时间" autocomplete="off" class="layui-input" onclick="layui.laydate({elem: this})">
-					</div>
-				</div>
-                
-                <div class="layui-form-item layui-form-text">
-					<label class="layui-form-label">
-					    <span>技术及细节描述</span>
-					</label>
-					<div class="layui-input-block">
-						<textarea placeholder="请输入技术的细节描述，最多不超过200字" class="layui-textarea"></textarea>
-					</div>
-				</div>
-                
-                <div class="layui-form-item">
-					<label class="layui-form-label">
-					    <em>相关图文档</em>
+					    <em>设备照片</em>
 					</label>
 					<div class="layui-input-block">
 						<div class="item-content" style="min-width: 65%; min-height: 120px;">
@@ -98,31 +91,37 @@
 
 				<div class="layui-form-item">
 					<label class="layui-form-label">
-					    <em>需求附件</em>
+					    <span>购置年份</span>
 					</label>
 					<div class="layui-input-block">
-						<div class="item-content">
-							<div id="attachPicker">
-								上传附件
-							</div>
-					    </div>
+						<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入设备的购置年份" class="layui-input">
+					</div>
+				</div>
+
+				<div class="layui-form-item">
+					<label class="layui-form-label">
+					    <span>加工最大行程</span>
+					</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入设备的加工最大行程" class="layui-input">
 					</div>
 				</div>
                 
-                <div class="layui-form-item">
+                <div class="layui-form-item layui-form-text">
 					<label class="layui-form-label">
-					    <span>合作商家要求</span>
+					    <span>精度</span>
 					</label>
 					<div class="layui-input-block">
-						<input type="checkbox" title="高度隐私">
-						<input type="checkbox" title="确保交期">
-						<input type="checkbox" title="投标数控制">
-						<input type="checkbox" title="经验品质优先">
-						<input type="checkbox" title="最低价自动过滤">
-						<input type="checkbox" title="资金与实力要求">
-						<input type="checkbox" title="地域限制">
-						<input type="checkbox" title="快速发布">
-						<input type="checkbox" title="平台推荐">
+						<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入设备的精度" class="layui-input">
+					</div>
+				</div>
+
+				<div class="layui-form-item layui-form-text">
+					<label class="layui-form-label">
+					    <span>加工单价</span>
+					</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入设备的加工单价" class="layui-input">
 					</div>
 				</div>
 
@@ -135,44 +134,6 @@
 						<input type="checkbox" title="协议支付">
 						<input type="checkbox" title="线下自行交易">
 						<input type="checkbox" title="向平台预付50%进行担保">
-					</div>
-				</div>
-                
-				<div class="layui-form-item">
-					<label class="layui-form-label">
-					    <span>询价是否含税</span>
-					</label>
-					<div class="layui-input-block" id="hsCheck">
-						<input type="checkbox" lay-skin="switch" checked>
-						<label id="hsLabel">含税报价：要求报价供方提供发票。</label>
-					</div>
-				</div>
-				<div class="layui-form-item">
-					<label class="layui-form-label">
-					    <span>延期是否缴纳滞纳金</span>
-					</label>
-					<div class="layui-input-block" id="znjCheck">
-						<input type="checkbox"  lay-skin="switch">
-						<label id="znjLabel">不缴纳滞纳金：发单方对接单方逾期申报税款或未按规定期限缴纳税款的行为不将给予的经济制裁。</label>
-					</div>
-				</div>
-                
-                <div class="layui-form-item">
-					<label class="layui-form-label">
-					    <span>是否自选商家</span>
-					</label>
-					<div class="layui-input-block" id="sjCheck">
-						<input type="checkbox" checked="" name="open" lay-skin="switch" lay-filter="switchTest" title="开关">
-						<label id="sjLabel">自选商家：发单方自行选择合适的接单方。</label>
-					</div>
-				</div>
-				<div class="layui-form-item">
-					<label class="layui-form-label">
-					    <span>报价是否包含质量违约金</span>
-					</label>
-					<div class="layui-input-block" id="wyjCheck">
-						<input type="checkbox" name="close" lay-skin="switch" title="开关">
-						<label id="wyjLabel">不含违约金：发单方不会对接单方的违约行为进行扣款处罚。</label>
 					</div>
 				</div>
 
@@ -217,5 +178,5 @@
 			});
 		</script>
 	</body>
-    <script type="text/javascript" src="js/pRequire.js"></script>
+    <script type="text/javascript" src="js/pEquip.js"></script>
 </html>

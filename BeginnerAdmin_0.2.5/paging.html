@@ -313,7 +313,8 @@
 		<script>
 			layui.config({
 				base: 'js/'
-			}).use(['paging', 'code'], function() {
+			});
+			layui.use(['paging', 'code'], function() {
 				layui.code();
 				var $ = layui.jquery,
 					paging = layui.paging();

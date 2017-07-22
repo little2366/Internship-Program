@@ -20,11 +20,11 @@ var navs = [
 	"children": [{
 		"title": "发布设备",
 		"icon": "&#xe641;",
-		"href": "button.html"
+		"href": "pEquip.html"
 	}, {
 		"title": "设备列表",
 		"icon": "&#xe63c;",
-		"href": "form.html"
+		"href": "lEquip.html"
 	}]
 },{
 	"title": "基本元素",

@@ -10,6 +10,7 @@ layui.define(['layer', 'laypage', 'laytpl'], function (exports) {
     "use strict";
     var $ = layui.jquery,
         layer = parent.layui.layer === undefined ? layui.layer : parent.layui.layer,
+        /*layer = parent.layer === undefined ? layui.layer : parent.layer,*/
         laytpl = layui.laytpl;
 
     var Paging = function () {
