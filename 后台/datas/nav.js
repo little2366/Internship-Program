@@ -26,6 +26,37 @@ var navs = [
 		"icon": "&#xe63c;",
 		"href": "lEquip.html"
 	}]
+}];
+
+
+/*var navs = [
+
+ {
+	"title": "需求管理",
+	"icon": "fa-users",
+	"spread": true,
+	"children": [{
+		"title": "发布需求",
+		"icon": "&#xe641;",
+		"href": "pRequire.html"
+	}, {
+		"title": "需求列表",
+		"icon": "&#xe63c;",
+		"href": "lRequire.html"
+	}]
+}, {
+	"title": "设备管理",
+	"icon": "fa-window-restore",
+	"spread": false,
+	"children": [{
+		"title": "发布设备",
+		"icon": "&#xe641;",
+		"href": "pEquip.html"
+	}, {
+		"title": "设备列表",
+		"icon": "&#xe63c;",
+		"href": "lEquip.html"
+	}]
 },{
 	"title": "基本元素",
 	"icon": "fa-cubes",
@@ -118,4 +149,4 @@ var navs = [
 		"icon": "fa-github",
 		"href": "cop.html"
 	}]
-}];
+}];*/

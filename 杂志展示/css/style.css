@@ -1,0 +1,19 @@
+.mag {
+    display: flex;
+    flex-wrap: wrap;
+    top: 100;
+    left: 100;
+    width: 1200px;
+}
+.mag-item {
+    background: url(../img/read-bg.png) no-repeat left top;
+    width: 254px;
+    height: 329px;
+    margin-top: 20px;
+}
+.mag-item img {
+	margin-left: 17px;
+	margin-top: 2px;
+    width: 220px;
+    height: 300px;
+} 
