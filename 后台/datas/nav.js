@@ -26,6 +26,23 @@ var navs = [
 		"icon": "&#xe63c;",
 		"href": "lEquip.html"
 	}]
+}, {
+	"title": "项目管理",
+	"icon": "fa-tasks",
+	"spread": false,
+	"children": [{
+		"title": "物料管理",
+		"icon": "fa-industry",
+		"href": "pEquip.html"
+	}, {
+		"title": "工艺排程",
+		"icon": "&#xe628;",
+		"href": "lEquip.html"
+	}, {
+		"title": "报工管理",
+		"icon": "&#xe63c;",
+		"href": "lEquip.html"
+	}]
 }];
 
 

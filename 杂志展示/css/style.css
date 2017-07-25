@@ -1,9 +1,228 @@
+body {
+    font-family: Arial;
+}
+.container {
+    width: 86%;
+    margin-left: 7%;
+}
+.top {
+    display: flex;
+    display: -ms-flex;
+    flex-wrap: nowrap;
+    margin-left: 80%;
+    margin-bottom: 20px;
+    height: 30px;
+    padding-top: 6px;
+    text-align: center;
+    line-height: 22px;
+    color: #666666;
+    font-size: 14px;
+}
+.hello {
+    width: 28%;
+}
+.signIn {
+    width: 32%;
+    cursor: pointer;
+}
+.signIn:hover, .language:hover {
+    color: #018203;
+}
+.language {
+    width: 30%;
+    cursor: pointer;
+}
+.introduce {
+    display: flex;
+    display: -ms-flex;
+    flex-wrap: nowrap;
+    height: 40px;
+}
+.introduce-img {
+    margin-left: 15px;
+}
+.introduce-search {
+    display: flex;
+    display: -ms-flex;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin-left: 35%;
+    height: 40px;
+    border: 2px solid #018203;
+    border-radius: 6px;
+}
+.search-select {
+    width: 20%;
+    padding-left: 2%;
+}
+.search-select select {
+    height: 40px;
+    width: 100%;
+    margin-left: 2px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+}
+.search-input {
+    width: 58%;
+    height: 40px;
+    margin-left: 2%;
+}
+.search-input input {
+    height: 96%;
+    width: 100%;
+    border: 0;
+    outline: none;
+}
+.search-search {
+    width: 20%;
+    height: 40px;
+    background-color: #018203;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.search-search:hover {
+    opacity: .8;
+}
+.fa-search {
+    margin-right: 8px;
+}
+.menu {
+    display: flex;
+    display: -ms-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: #018203;
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+}
+.menu-item {
+    margin-right: 6px;
+    cursor: pointer;
+}
+.dropMenu {
+    width: 22%;
+}
+.home,.magazine {
+    width: 8%;
+}
+.verified {
+    width: 12%;
+}
+.endMarket {
+    width: 10%;
+}
+.topTen {
+    width: 18%;
+}
+.menuCur, .menuActive {
+    background: rgba(225, 225, 225, .5);
+}
+.sidebar {
+    width: 20%;
+    height: 500px;
+    border: 1px solid #000;
+}
+.content {
+    display: flex;
+    display: -ms-flex;
+    flex-wrap: nowrap;
+}
+.slider, .slider .slider-img {
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+}
+.slider-img-ul {
+    margin-left: -40px;
+}
+.slider-img ul li {
+    list-style: none;
+}
+.slider {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.slider:hover .slider-btn {
+    color: #fff;
+    text-shadow: 0 0 5px #666;
+}
+.slider .slider-img {
+    width: 1200px;
+    position: relative;
+}
+.slider .slider-img .slider-img-ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.slider .slider-img .slider-img-ul li {
+    float: left;
+}
+.slider .slider-img .slider-img-ul li img {
+    width: 1200px;
+    height: 300px;
+}
+.slider .slider-dot ul {
+    position: absolute;
+    list-style: none;
+    left: 540px;
+    bottom: 10px;
+}
+.slider .slider-dot ul li {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    border: 2px solid #fff;
+    float: left;
+    margin-left: 10px;
+}
+.slider .slider-dot ul li.active, .slider .slider-dot ul li:hover {
+    background: #fff;
+}
+.slider .slider-btn {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    top: 50%;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    font-family: '黑体';
+    color: rgba(255, 255, 255, 0);
+}
+.slider .slider-btn:hover {
+    background: rgba(125, 125, 125, .3);
+}
+.slider .slider-btn.slider-btn-left {
+    left: 0;
+    margin-top: -50px;
+}
+.slider .slider-btn.slider-btn-right {
+    right: 0;
+    margin-top: -50px;
+}
 .mag {
     display: flex;
+    display: -ms-flex;
     flex-wrap: wrap;
-    top: 100;
-    left: 100;
-    width: 1200px;
+    margin: 3% 8%;
 }
 .mag-item {
     background: url(../img/read-bg.png) no-repeat left top;
