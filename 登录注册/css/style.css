@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff url(../img/background.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 12px;
+    font-family:"Microsoft Yahei", tahoma, arial, "Hiragino Sans GB", 宋体;
+}
+.container {
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 5%;
+}
+.header img {
+    width: 30%;
+    height: 30%;
+}
+.content {
+    display: flex;
+
+}
+.introduce {
+    width: 60%;
+    margin-left: 7%;
+    margin-top: 20%;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+.introduce .line {
+    margin-top: 4%;
+    margin-left: 14%;
+}
+.signIn {
+    border: 1px solid #fff;
+    /*margin-top: 5%;*/
+}

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+	<title>云加工</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css">
+	<link rel="stylesheet" type="text/css" href="lib/sweetAlert/sweetalert.css">
+</head>
+<body>
+	<!--sologo-->
+	<div class="sologo w1200">
+	    <h1>让加工快速匹配，让机床不再闲置</h1>
+	    <div class="scroll-txt">
+			<ul class="font-inner">
+				<li><span>交易总额（元）</span>￥7,188,624</li>
+		        <li><span>发布需求数（个）</span>16,276</li>
+		        <li><span>注册用户数（位）</span>75,492</li>
+		        <li><span>发布服务数（个）</span>31,135</li>
+			</ul>
+	    </div>
+	</div>
+
+	<!--tabitem-->
+    <div class="tabitem w1200">
+
+        <!--tabbtn-->
+    	<div class="tabbtn">
+    		<div class="tabbtn-item current">
+    			<span>发布加工需求</span>
+    			<em>模具云加工，任务快速接</em>
+    		</div>
+    		<div class="tabbtn-item">
+    			<span>发布设备资源</span>
+    			<em>XXXXXX</em>
+    		</div>
+    	</div>
+
+    	<!--con1 发布加工需求-->
+    	<div class="con1">
+            <div class="pub-req">
+				<div class="req-item" style="height: 130px;line-height: 130px">
+					<div class="item-title">
+						<span>项目所需资源</span>
+					</div>
+					<div class="item-content">
+						<ul>
+							<li class="typeCont">3+2高速铣</li>
+							<li class="typeCont">3D打印</li>
+							<li class="typeCont">5轴高速铣</li>
+							<li class="typeCont">5轴联动</li>
+							<li class="typeCont">5轴深孔钻</li>
+						</ul>
+						<ul>
+							<li class="typeCont">5轴数控铣</li>
+							<li class="typeCont">产品造型</li>
+							<li class="typeCont">车床</li>
+							<li class="typeCont">大型卧铣</li>
+							<li class="typeCont">电火花</li>
+						</ul>
+						<ul>
+							<li class="typeCont">电炉</li>
+							<li class="typeCont">调质炉</li>
+							<li class="typeCont">多工序加工</li>
+							<li class="typeCont">二手交易</li>
+							<li class="typeCont">飞刀</li>
+						</ul>
+					</div>
+				</div>
+				<div class="req-item" style="height: 35px;line-height: 35px;">
+					<div class="item-title">
+						<span>项目标题或零件名称</span>
+					</div>
+					<div class="item-content">
+						<input type="text" placeholder="请输入项目标题或零件名称">
+					</div>
+				</div>
+				<div class="req-item" style="height: 35px;line-height: 35px;">
+					<div class="item-title">
+						<span>零件规格</span>
+					</div>
+					<div class="item-content">
+						<input type="text">
+					</div>
+				</div>
+				<div class="req-item" style="height: 35px;line-height: 35px;">
+					<div class="item-title">
+						<span>要求完成时间</span>
+					</div>
+					<div class="item-content">
+						<input type="text" placeholder="希望完成时间不能早于当前时间" id="datetimepicker"/>
+					</div>
+				</div>
+				<div class="req-item" style="height: 100px;line-height: 100px; margin-bottom: 10px;">
+					<div class="item-title">
+						<span>技术及细节描述</span>
+					</div>
+					<div class="item-content">
+						<textarea class="ipta" placeholder="请输入技术的细节描述，最多不超过200字"></textarea>
+					</div>
+				</div>
+				<div class="req-item" style="height: auto;">
+					<div class="item-title">
+						<em>相关图文档</em>
+					</div>
+					<div class="item-content">
+						<div id="uploading">
+							<div id="imgPicker">
+			                	<input id="imgPicker" type="file" multiple/>
+			                </div>
+			                <div style="clear: both;"></div>
+						</div>
+						<div class="imgExp">
+							<span>(JPG、GIF或PNG格式的文件，文件大小不能超过2M，你的文件不会在公网公布)</span>
+						</div>
+					</div>
+				</div>
+				<div class="req-item" style="height: 35px;line-height: 35px;">
+					<div class="item-title">
+						<em>需求附件</em>
+					</div>
+					<div class="item-content">
+						<div id="attachPicker">
+							上传附件
+						</div>
+					</div>
+				</div>
+				<div class="req-item" style="height: 80px;line-height: 80px">
+					<div class="item-title">
+						<span>合作商家要求</span>
+					</div>
+					<div class="item-content">
+						<ul>
+							<li class="typeCont">高度隐私</li>
+							<li class="typeCont">确保交期</li>
+							<li class="typeCont">平台推荐</li>
+							<li class="typeCont">地域限制</li>
+							<li class="typeCont">经验品质优先</li>
+						</ul>
+						<ul>
+							<li class="typeCont">投标数控制</li>
+							<li class="typeCont">快速发布</li>
+							<li class="typeCont">最低价自动过滤</li>
+							<li class="typeCont">资金与实力要求</li>
+						</ul>
+					</div>
+				</div>
+				<div class="req-item" style="height: 55px;line-height: 55px;">
+					<div class="item-title">
+						<span>付款方式</span>
+					</div>
+					<div class="item-content">
+						<ul>
+							<li class="typeCont payType">线下自行交易</li>
+							<li class="typeCont payType">在线支付</li>
+							<li class="typeCont payType">协议支付</li>
+							<li class="typeCont payType">向平台预付50%进行担保交易</li>
+						</ul>
+					</div>
+				</div>
+				<div class="req-item" style="height: 70px;line-height: 70px; margin-top: -10px;">
+					<div class="item-title">
+						<span>询价是否含税</span>
+					</div>
+					<div class="item-content">
+						<div class="commonType hstype">
+							<div class="input_cont4 hslx" value="hstypel" onclick="hslxOnclick('')">
+								<span id="off">含税</span>
+								<span id="on">不含税</span>
+								<input type="button" value="含税">
+							</div>
+							<div class="h3Contanier">
+								<h3 class="type_h3">含税报价：要求报价供方提供发票。</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="req-item" style="height: 70px;line-height: 70px; margin-top: -20px;">
+					<div class="item-title">
+						<span>延期是否缴纳滞纳金</span>
+					</div>
+					<div class="item-content">
+						<div class="commonType znjtype">
+							<div class="input_cont4 znjlx" value="znjtyper" onclick="znjlxOnclick('')">
+								<span id="off">缴纳滞纳金</span>
+								<span id="on">不缴纳滞纳金</span>
+								<input type="button" value="不缴纳滞纳金" style="left: 124px">
+							</div>
+							<div class="h3Contanier">
+							    <h3 class="type_h3">不缴纳滞纳金：发单方对接单方逾期申报税款或未按规定期限缴纳税款的行为不将给予的经济制裁。</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="req-item" style="height: 70px;line-height: 70px; margin-top: -20px;">
+					<div class="item-title">
+						<span>是否自选合作商</span>
+					</div>
+					<div class="item-content">
+						<div class="commonType sjtype">
+							<div class="input_cont4 sjlx" value="sjtypel" onclick="sjlxOnclick('')">
+								<span id="off">自选商家</span>
+								<span id="on">不自选商家</span>
+								<input type="button" value="自选商家">
+							</div>
+							<div class="h3Contanier">
+							    <h3 class="type_h3">自选商家：发单方自行选择合适的接单方。</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="req-item" style="height: 70px;line-height: 70px; margin-top: -20px;">
+					<div class="item-title">
+						<span>报价是否包含质量违约金</span>
+					</div>
+					<div class="item-content">
+						<div class="commonType wyjtype">
+							<div class="input_cont4 wyjlx" value="wyjtyper" onclick="wyjlxOnclick('')">
+								<span id="off">含违约金</span>
+								<span id="on">不含违约金</span>
+								<input type="button" value="不含违约金" style="left: 124px;">
+							</div>
+							<div class="h3Contanier">
+							    <h3 class="type_h3">不含违约金：发单方不会对接单方的违约行为进行扣款处罚。</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div class="pub-user">
+                <h2>用户信息</h2>
+            	<div class="sureUser">
+                	<span>如果您是注册用户，请选择<strong>微信登录</strong></span>
+                </div>
+                <div class="writeMessage">
+                	<div class="downL">
+                		<div class="req-item" style="height: 35px;line-height: 35px;">
+							<div class="message-title">
+								<span>验证码</span>
+							</div>
+							<div class="item-content code-content">
+								<div class="code">
+									<input type="text" id="code_input" placeholder="请输入右侧4位验证码"/>
+								</div>
+								<!--<button id="my_button">验证</button>-->
+								<div id="v_container" style="width: 95px;height: 35px;"></div>
+							</div>
+						</div>
+						<div class="req-item" style="height: 30px;line-height: 30px;">
+							<div class="message-title">
+								<span>手机号码</span>
+							</div>
+							<div class="item-content">
+								<input type="text" placeholder="请输入11位手机号码" id="j_phone" class="phone">
+							</div>
+						</div>
+						<div class="req-item" style="height: 35px;line-height: 35px;">
+							<div class="item-content code">
+								<input type="text" placeholder="请输入短信验证码" style="margin-left: 68px;width: 170px;">
+							</div>
+							<div class="message-title">
+								<div class="getBtn getverify-code-btn" id="j_getVerifyCode">获取验证码</div>
+							</div>
+						</div>
+                	</div>
+                	<div class="downR">
+                		<div class="req-item" style="height: 35px;line-height: 35px;">
+							<div class="message-title" style="width:30%">
+								<span>您的公司名称</span>
+							</div>
+							<div class="item-content">
+								<input type="text" placeholder="输入的公司名称须与营业执照一致">
+							</div>
+						</div>
+						<div class="req-item" style="height: 35px;line-height: 35px;">
+							<div class="message-title" style="width:30%">
+								<span>您的登录密码</span>
+							</div>
+							<div class="item-content">
+								<input type="password" placeholder="6-20位数字/特殊字符/英文字母组成">
+							</div>
+						</div>
+						<div class="req-item" style="height: 35px;line-height: 35px;">
+							<div class="message-title" style="width:30%"></div>
+							<div class="item-content">
+								<input type="password" placeholder="请再次输入并确认密码">
+							</div>
+						</div>
+                	</div>
+                </div>
+            </div>
+            <div class="pub-submit">
+            	<div class="submitbtn">自动生成合同模板</div>
+            </div>
+    	</div>
+
+    	<!--con2-->
+    	<div class="con2">
+    		<div class="pub-req">
+    			<div class="req-item" style="height: 130px;line-height: 130px">
+					<div class="item-title">
+						<span>设备资源类型</span>
+					</div>
+					<div class="item-content">
+						<ul>
+							<li class="typeCont">3+2高速铣</li>
+							<li class="typeCont">3D打印</li>
+							<li class="typeCont">5轴高速铣</li>
+							<li class="typeCont">5轴联动</li>
+							<li class="typeCont">5轴深孔钻</li>
+						</ul>
+						<ul>
+							<li class="typeCont">5轴数控铣</li>
+							<li class="typeCont">产品造型</li>
+							<li class="typeCont">车床</li>
+							<li class="typeCont">大型卧铣</li>
+							<li class="typeCont">电火花</li>
+						</ul>
+						<ul>
+							<li class="typeCont">电炉</li>
+							<li class="typeCont">调质炉</li>
+							<li class="typeCont">多工序加工</li>
+							<li class="typeCont">二手交易</li>
+							<li class="typeCont">飞刀</li>
+						</ul>
+					</div>
+				</div>
+				<div class="req-item" style="height: 80px;line-height: 80px;margin-bottom: 10px;">
+					<div class="item-title">
+						<span>空闲时段</span>
+					</div>
+					<div class="item-content">
+					    <ul>
+							<li class="typeCont monthType">1月</li>
+							<li class="typeCont monthType">2月</li>
+							<li class="typeCont monthType">3月</li>
+							<li class="typeCont monthType">4月</li>
+							<li class="typeCont monthType">5月</li>
+							<li class="typeCont monthType">6月</li>
+						</ul>
+						<ul>
+							<li class="typeCont monthType">7月</li>
+							<li class="typeCont monthType">8月</li>
+							<li class="typeCont monthType">9月</li>
+							<li class="typeCont monthType">10月</li>
+							<li class="typeCont monthType">11月</li>
+							<li class="typeCont monthType">12月</li>
+						</ul>
+					</div>
+				</div>
+				<div class="req-item" style="height: 35px;line-height: 35px">
+					<div class="item-title">
+						<span>品牌</span>
+					</div>
+					<div class="item-content">
+					    <input type="text" placeholder="请输入设备的品牌">
+					</div>
+				</div>
+				<div class="req-item" style="height: auto;">
+					<div class="item-title">
+						<span>设备照片</span>
+					</div>
+					<div class="item-content">
+						<div id="uploading">
+							<div id="imgPicker">
+			                	<input id="imgPicker" type="file" multiple/>
+			                </div>
+			                <div style="clear: both;"></div>
+						</div>
+						<div class="imgExp">
+							<span>(JPG、GIF或PNG格式的文件，文件大小不能超过2M，你的文件不会在公网公布)</span>
+						</div>
+					</div>
+				</div>
+				<div class="req-item" style="height: 35px;line-height: 35px">
+					<div class="item-title">
+						<em>购置年份</em>
+					</div>
+					<div class="item-content">
+					    <input type="text" placeholder="请输入设备的购置年份">
+					</div>
+				</div>
+				<div class="req-item" style="height: 35px;line-height: 35px">
+					<div class="item-title">
+						<em>加工最大行程</em>
+					</div>
+					<div class="item-content">
+					    <input type="text" placeholder="请输入设备的加工最大行程">
+					</div>
+				</div>
+				<div class="req-item" style="height: 35px;line-height: 35px">
+					<div class="item-title">
+						<em>精度</em>
+					</div>
+					<div class="item-content">
+					    <input type="text" placeholder="请输入设备的加工精度">
+					</div>
+				</div>
+				<div class="req-item" style="height: 35px;line-height: 35px">
+					<div class="item-title">
+						<span>加工单价</span>
+					</div>
+					<div class="item-content">
+					    <input type="text" placeholder="请输入设备的加工单价">
+					</div>
+				</div>
+				<div class="req-item" style="height: 60px;line-height: 60px;margin-top: -16px;">
+					<div class="item-title">
+						<span>付款方式</span>
+					</div>
+					<div class="item-content">
+						<ul>
+							<li class="typeCont payType">线下自行交易</li>
+							<li class="typeCont payType">在线支付</li>
+							<li class="typeCont payType">协议支付</li>
+							<li class="typeCont payType">向平台预付50%进行担保交易</li>
+						</ul>
+					</div>
+				</div>
+    		</div>
+    		<div class="pub-submit">
+            	<div class="submitbtn" id="equipBtn">发布设备</div>
+            </div>
+    	</div>
+    </div>
+
+    <!--advitem-->
+    <div class="advitem w1200">
+    	<div class="bg">
+    	    <div class="bg-left adv-1"></div>
+    		<div class="bg-right">
+    			<h1>资金托管</h1>
+    			<p>加工合格后再付款</p>
+    		</div>
+    	</div>
+    	<div class="bg">
+    		<div class="bg-left adv-2"></div>
+    		<div class="bg-right">
+    			<h1>平台跟踪进度</h1>
+    			<p>保证按时完成</p>
+    		</div>
+    	</div>
+    	<div class="bg">
+    		<div class="bg-left adv-3"></div>
+    		<div class="bg-right">
+    			<h1>把控质量</h1>
+    			<p>质量标准，提前双方同意</p>
+    		</div>
+    	</div>
+    	<div class="bg">
+    		<div class="bg-left adv-4"></div>
+    		<div class="bg-right">
+    			<h1>售后服务</h1>
+    			<p>交易后评估，让优质加工点更多机会</p>
+    		</div>
+    	</div>
+    	<div class="bg no-right">
+    		<div class="bg-left adv-5"></div>
+    		<div class="bg-right">
+    			<h1>提供专家组仲裁</h1>
+    			<p> 杜绝加工争议</p>
+    		</div>
+    	</div>
+    </div>
+
+</body>
+<script type="text/javascript" src="lib/jQuery/jquery-3.2.1.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>-->
+<script type="text/javascript" src="js/jquery.datetimepicker.js"></script>
+<script type="text/javascript" src="js/gVerify.js"></script>
+<script type="text/javascript" src="lib/sweetAlert/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

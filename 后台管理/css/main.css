@@ -1,0 +1,102 @@
+.admin-main{
+	margin: 15px;
+}
+.admin-main .layui-field-title .layui-field-box{
+	padding: 10px 30px;
+}
+.admin-main .layui-field-title .layui-field-box p{
+	padding: 5px 0;
+}
+
+.layui-form-label span:after {
+    content: "*";
+    color: #f00;
+    padding-left: 5px;
+}
+.layui-form-label em {
+	font-style: normal;
+}
+
+
+.item-content {
+	display: flex;
+    display: -ms-flexbox;
+	flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+	width: 75%;
+}
+.uploading {
+	display: flex;
+    display: -ms-flexbox;
+}
+#imgPicker {
+    color: #ccc;
+	cursor: pointer;
+	background: url("../images/uploadImg.png");
+	width:110px;
+	height: 110px;
+	display: inline-block;
+	position: relative;
+	float: left;
+}
+#imgPicker input {
+    position: absolute;
+    font-size: 10px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    width: 110px;
+    height: 110px;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+.image-holder {
+	display: flex;
+    display: -ms-flexbox;
+	position: relative;
+	width: 110px;
+	height: 110px;
+	float: left;
+	border: 1px solid #cccccc;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.image-holder img {
+	/*position: absolute;*/
+    width: 88px;
+    height: 88px;
+    margin: auto;
+}
+.delete {
+    background: url(../images/delete.png) no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 97px;
+}
+.imgExp {
+	float: left;
+}
+
+#attachPicker {
+    color: #3186dd;;
+    cursor: pointer;
+    border: 1px solid #3186dd;
+    line-height: 35px;
+    width:100px;
+    height:35px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.layui-input-block label {
+	margin-left: 30px;
+}
+
+.layui-month-check {
+	width: 70%;
+}
