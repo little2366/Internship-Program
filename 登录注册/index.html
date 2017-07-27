@@ -7,10 +7,10 @@
 </head>
 <body>
     <div class="container">
-    	<div class="header">
+    	<div class="header w1200">
 	    	<img src="img/logo.png">
 	    </div>
-	    <div class="content">
+	    <div class="content w1200">
 	    	<div class="introduce">
 	    	   <div>
 	    	   	  机加工协同平台
@@ -20,11 +20,43 @@
 	    	   </div>
 	        </div>
 	        <div class="signIn">
-	        	
+	            <ul>
+	                <li>
+	                	<div class="tabbtn">
+			        		<div class="tabbtn-item active">
+			        			<span>账号登录</span>
+			        		</div>
+			        		<div class="tabbtn-item">
+			        			<span>扫码登录</span>
+			        		</div>
+			        	</div>
+	                </li>
+	                <li>
+	                	<!--账号登录-->
+			        	<div class="con1">
+			        		<input type="text" placeholder="手机号/邮箱" class="con1-input">
+			        		<input type="text" placeholder="密码" class="con1-input" style="margin-top: 6%;">
+			        		<p><a href="#">忘记密码</a></p>
+			        		<button>登录</button><br><br>
+			        		<lable class="check"><input type="checkbox">下次自动登录</lable>
+			        		<span>新用户注册</span>
+			        		<p>第三方账号登录</p>
+			        		<img class="icon" src="img/icon.png">
+			        	</div>
+		                
+		                <!--扫码登录-->
+			        	<div class="con2">
+			        		<img class="code" src="img/code.png">
+			        		<p>第三方账号登录</p>
+			        		<img class="icon" src="img/icon.png">
+			        	</div>
+	                </li>
+	            </ul>
 	        </div>
 	    </div>
     </div>
 </body>
+<script type="text/javascript" src="lib/jQuery/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
