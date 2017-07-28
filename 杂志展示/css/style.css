@@ -22,10 +22,19 @@ a:hover {
     margin-right: auto;
     min-width: 1200px;
 }
-.container {
-    width: 86%;
-    margin-left: 7%;
-    margin-top: 2%;
+/*desktop*/
+@media screen and (min-width: 1025px) {
+    .container {
+        width: 1200px;
+        margin-left: 7%;
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .container {
+        transform: scale(.85);
+        margin-top: -4.5%;
+    }
 }
 /*.top {
     display: flex;
@@ -152,15 +161,9 @@ a:hover {
 .menuCur, .menuActive {
     background: rgba(225, 225, 225, .5);
 }*/
-.sidebar {
-    width: 20%;
-    height: 500px;
-    border: 1px solid #000;
-}
 .content {
     display: flex;
     display: -ms-flexbox;
-    flex-wrap: nowrap;
 }
 .slider, .slider .slider-img {
     overflow: hidden;
@@ -242,6 +245,15 @@ a:hover {
     right: 0;
     margin-top: -50px;
 }
+.mag-intro {
+    margin: 4% 8%;
+    height: 110px;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: Tahoma;
+    text-align: justify;
+    margin-bottom: -20px;
+}
 .mag {
     display: flex;
     display: -ms-flexbox;
@@ -262,18 +274,40 @@ a:hover {
     height: 300px;
 } 
 .mag-item p {
-    font-size: 18px;
-    font-family: "微软雅黑";
-    font-weight: 900;
+    font-size: 15px;
+    color: #333;
     text-align: center;
+    line-height: 12px;
 }
+
+.img {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    margin: 3% 8%;
+}
+.img-item {
+    width: 254px;
+    height: 329px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.img-item img {
+    margin-left: 17px;
+    margin-top: 2px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgba(121, 121, 121, 1);
+} 
+
+
 .tt0 { background:#EFE8EB; height:35px; line-height:35px;}
 .tt { width:1000px; margin:0 auto;}
 .tt a{float: left; margin:0 10px; padding-left:10px; display:block; color:#666; float:left;}
 .bottom {border-top:1px solid #DFDFDF; padding:20px; clear:both; color:#666; text-align:center;}
 
 /*top-line*/
-.top-line0 { background:#CD3015; height:29px;line-height:29px; border-bottom:1px solid #CC3115; w}
+.top-line0 { background:#CD3015; height:29px;line-height:29px; border-bottom:1px solid #CC3115;}
 .top-line { margin:0 auto; width:1200px; color:#666666; position:relative;color:#FFB5A0;}
 .top-line a { color:#FFB5A0; margin:0 5px;}
 .top-line-r { position:absolute; right:0; top:0; color:#E33300;}
