@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:"Microsoft yahei";
+}
+@media screen and (min-width:750px) {
+    .desktop {
+        display: block;
+    }
+    .other {
+        display: none;
+    }
+    .head{
+        width: 100%;
+        height: 0;
+        background: #ff4200;
+        margin-bottom: -60px;
+    }
+    .top{
+        width: 100%;
+        background: rgba(0,0,0,1);
+        height: 60px;
+        position: absolute;
+    }
+    .fixed{
+        position: fixed;
+        top: 0;
+    }
+    .main{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .logo{
+        width: 103px;
+        height: 28px;
+        margin-top:16px;
+        float: left;
+    }
+    .nav_bar{
+        width: 600px;
+        float: left;
+        height: 60px;
+        margin-left: 150px;
+    }
+    .nav_bar ul li{
+        list-style-type: none;
+        float: left;
+        line-height: 60px;
+        text-align: center;
+        width:80px;
+    }
+    .nav_bar ul li a{
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+    }
+    .nav_bar>ul>li:hover{
+        background: #ffffff;
+    }
+    .nav_bar ul li.l1:hover .hid{
+        display: block;
+    }
+    .hid{
+        width: 100%;
+        height: 60px;
+        background: #00cece;
+        position: absolute;
+        left: 0;
+        display: none;
+    }
+    .hid ul{
+        width: 1210px;
+        margin: 0 auto;
+    }
+    .login{
+        float: right;
+        width: 120px;
+        height: 30px;
+        margin-top:15px; 
+    }
+    .login a{
+        width: 55px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        display: block;
+        float: left;
+        color: #fff;
+        border: 1px solid #666;
+        text-decoration:none;
+    }
+    .login a.a1:hover{
+        background: #5580fb;
+    }
+    .login a.a2{
+        background: #5580fb;
+    }
+    .q1{
+        width: 100%;
+        height: 100vh;  
+        background: lightblue;
+        margin-top:60px; 
+    }
+    .btn {
+        margin-top: 500px;
+        width: 100px;
+        height: 50px;
+    }
+    .q2{
+        display: flex;
+        display: -ms-flexbox;
+        width: 100%;
+        height: 600px;
+        background: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .q2Container {
+        display: flex;
+        display: -ms-flexbox;
+        width: 80%;
+        margin: auto;
+        opacity: 0;
+    }
+    .q2Item {
+        width: 30%;
+        margin-top: 120px;
+        text-align: center;
+    }
+    .q2Item img {
+        width: 60px;
+        height: 60px;
+    }
+    .q2Item .q2Title {
+        margin-top: 20px;
+        font-size: 26px;
+        line-height: 31px;
+    }
+    .q2Item .q2Content {
+        margin-top: 35px;
+        font-size: 16px;
+        line-height: 25px;
+        color: #545454;
+    }
+    .active {
+        opacity: 1;
+        transform: translateY(-50px);
+        transition: transform 2s .5s,opacity 2s .5s;
+    }
+    .q3{
+        width: 100%;
+        height: 900px;
+        background: lightblue;
+    }
+    .foot {
+        width: 100%;
+        height: 200px;
+        background: #353535;
+    }
+}
+@media screen and (max-width:750px) {
+    .desktop {
+        display: none;
+    }
+    .other {
+        display: block;
+    }
+    .top{
+        width: 100%;
+        background: rgba(0,0,0,1);
+        height: 60px;
+        font-size: 25px;
+    }
+    .main{
+        width: 100%;
+        line-height: 60px;
+        margin: 0 auto;
+    }
+    .logo {
+        float: left;
+    }
+    .logo img {
+        transform: scale(.68);
+        margin-top: 10px;
+    }
+    .nav_bar {
+        color: #fff;
+        float: right;
+        margin-right: 20px;
+    }
+}
+
+/*pc*/
+@media screen and (min-width: 1025px) {
+    
+}
+/*ipad*/
+@media screen and (max-width: 1024px) and (min-width: 751px) {
+
+}
+
+/*mobile*/
+@media screen and (max-width: 750px) {
+    /*橫屏*/ 
+    @media screen and (orientation: landscape){
+        .q1{
+            width: 100%;
+            height: 100vh;  
+            background: lightblue;
+        }
+        .btn {
+            margin-top: 60vh;
+            width: 100px;
+            height: 50px;
+        }
+        .q2{
+            display: flex;
+            display: -ms-flexbox;
+            width: 100%;
+            height: 630px;
+            background: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .q2Container {
+            width: 90%;
+            margin: auto;
+            opacity: 1;
+        }
+        .q2Item {
+            width: 100%;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .q2Item img {
+            width: 50px;
+            height: 50px;
+        }
+        .q2Item .q2Title {
+            margin-top: 18px;
+            font-size: 16px;
+            line-height: 31px;
+        }
+        .q2Item .q2Content {
+            font-size: 13px;
+            transform: scale(.9);
+            line-height: 25px;
+            color: #545454;
+        }
+        .q3{
+            width: 100%;
+            height: 900px;
+            background: lightblue;
+        }
+        .foot {
+            width: 100%;
+            height: 200px;
+            background: #353535;
+        }
+    }
+    /*竖屏*/
+    @media screen and (orientation: portrait){
+        .q1{
+            width: 100%;
+            height: 100vh;  
+            background: lightblue;
+        }
+        .btn {
+            margin-top: 300px;
+            width: 100px;
+            height: 50px;
+        }
+        .q2{
+            display: flex;
+            display: -ms-flexbox;
+            width: 100%;
+            height: 800px;
+            background: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .q2Container {
+            width: 80%;
+            margin: auto;
+            opacity: 1;
+        }
+        .q2Item {
+            width: 100%;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .q2Item img {
+            width: 50px;
+            height: 50px;
+        }
+        .q2Item .q2Title {
+            margin-top: 15px;
+            font-size: 18px;
+            line-height: 31px;
+        }
+        .q2Item .q2Content {
+            margin-top: 20px;
+            font-size: 10px;
+            line-height: 25px;
+            color: #545454;
+        }
+        .q3{
+            width: 100%;
+            height: 900px;
+            background: lightblue;
+        }
+        .foot {
+            width: 100%;
+            height: 200px;
+            background: #353535;
+        }
+    }
+}
