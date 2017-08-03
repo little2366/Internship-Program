@@ -5,6 +5,11 @@
 body {
     font-family:"Microsoft yahei";
 }
+.menu {
+    display: none;
+}
+
+/*PC和ipad*/
 @media screen and (min-width:750px) {
     .desktop {
         display: block;
@@ -12,17 +17,19 @@ body {
     .other {
         display: none;
     }
-    .head{
+    .head {
         width: 100%;
         height: 0;
         background: #ff4200;
-        margin-bottom: -60px;
+        margin-bottom: -80px;
     }
     .top{
         width: 100%;
-        background: rgba(0,0,0,1);
-        height: 60px;
+        height: 80px;
         position: absolute;
+        z-index: 10;
+        background: rgba(255,255,255,0.95);
+        border-bottom: 1px solid #ccc;
     }
     .fixed{
         position: fixed;
@@ -39,69 +46,58 @@ body {
         float: left;
     }
     .nav_bar{
-        width: 600px;
+        width: 40vw;
         float: left;
-        height: 60px;
-        margin-left: 150px;
+        height: 80px;
+        margin-left: 200px;
     }
     .nav_bar ul li{
         list-style-type: none;
         float: left;
-        line-height: 60px;
+        line-height: 80px;
         text-align: center;
-        width:80px;
+        width:6vw;
+    }
+    .dActive {
+        color: rgb(32,82,153);
     }
     .nav_bar ul li a{
-        color: #ffffff;
+        color: #222;
         text-decoration: none;
         display: block;
     }
     .nav_bar>ul>li:hover{
         background: #ffffff;
     }
-    .nav_bar ul li.l1:hover .hid{
+    .nav_bar ul li.l1:hover {
         display: block;
-    }
-    .hid{
-        width: 100%;
-        height: 60px;
-        background: #00cece;
-        position: absolute;
-        left: 0;
-        display: none;
-    }
-    .hid ul{
-        width: 1210px;
-        margin: 0 auto;
     }
     .login{
         float: right;
         width: 120px;
         height: 30px;
-        margin-top:15px; 
+        margin-top:20px; 
     }
-    .login a{
-        width: 55px;
-        height: 30px;
+    .login a {
+        width: 80px;
+        height: 33px;
+        border-radius: 3px;
         text-align: center;
-        line-height: 30px;
+        line-height: 33px;
         display: block;
         float: left;
-        color: #fff;
-        border: 1px solid #666;
+        color: #000;
         text-decoration:none;
     }
-    .login a.a1:hover{
-        background: #5580fb;
-    }
     .login a.a2{
-        background: #5580fb;
+        background: rgb(32,82,153);
+        color: #fff;
+        margin-left: 10px;
     }
     .q1{
         width: 100%;
         height: 100vh;  
-        background: lightblue;
-        margin-top:60px; 
+        margin-top:80px; 
     }
     .btn {
         margin-top: 500px;
@@ -109,18 +105,20 @@ body {
         height: 50px;
     }
     .q2{
-        display: flex;
-        display: -ms-flexbox;
         width: 100%;
-        height: 600px;
-        background: #ffffff;
+        height: 300px;
         font-family: Arial, Helvetica, sans-serif;
+    }
+    .q2HeadTitle {
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
     }
     .q2Container {
         display: flex;
         display: -ms-flexbox;
-        width: 80%;
         margin: auto;
+        width: 80%;
         opacity: 0;
     }
     .q2Item {
@@ -137,12 +135,6 @@ body {
         font-size: 26px;
         line-height: 31px;
     }
-    .q2Item .q2Content {
-        margin-top: 35px;
-        font-size: 16px;
-        line-height: 25px;
-        color: #545454;
-    }
     .active {
         opacity: 1;
         transform: translateY(-50px);
@@ -150,25 +142,49 @@ body {
     }
     .q3{
         width: 100%;
-        height: 900px;
-        background: lightblue;
-    }
-    .foot {
-        width: 100%;
-        height: 200px;
-        background: #353535;
+        height: 500px;
     }
 }
-@media screen and (max-width:750px) {
+
+
+/*ipad自己的样式*/
+@media screen and (max-width: 1024px) and (min-width: 751px) {
+    .logo{
+        transform: scale(.88);
+        margin-left: -40px;
+    }
+    .nav_bar {
+        width: 40vw;
+        margin-left: 100px;
+    }
+    .nav_bar ul li{
+        width:6vw;
+    }
+    .q2Container {
+        width: 90%;
+    }
+    .q2 {
+        height: 450px;
+    }
+    .q2Item .q2Title {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 750px) {
+
     .desktop {
         display: none;
     }
     .other {
         display: block;
+        position: relative;
     }
     .top{
         width: 100%;
-        background: rgba(0,0,0,1);
         height: 60px;
         font-size: 25px;
     }
@@ -182,136 +198,120 @@ body {
     }
     .logo img {
         transform: scale(.68);
-        margin-top: 10px;
     }
     .nav_bar {
-        color: #fff;
+        color: rgb(32,82,153);
         float: right;
         margin-right: 20px;
     }
-}
+    .q1{
+        width: 100%;
+        height: 100vh; 
+        position: relative; 
+        border: 1px solid #000;
+    }
+    .btn {
+        width: 100px;
+        height: 50px;
+    }
+    .q2{
+        display: flex;
+        display: -ms-flexbox;
+        width: 100%;
+        background: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .q2Container {
+        margin: auto;
+        opacity: 1;
+    }
+    .q2Item {
+        width: 100%;
+        text-align: center;
+    }
+    .q2Item img {
+        width: 50px;
+        height: 50px;
+    }
+    .q3{
+        width: 100%;
+        height: 900px;
+        border: 1px solid #000;
+    }
+    .html-body-overflow {
+        overflow-y:hidden;
+    }
+    .menu {
+        width: 70vw;
+        height: 95vh;
+        float: right;
+        background-color: #fff;
+        z-index: 1;
+        margin-top: -80px;
+        overflow-y:auto; 
+    }
+    .menu ul {
+        margin-top: 20px;
+    }
+    .menu ul li {
+        width: 100%;
+        list-style: none;
+        font-weight: 500;
+        font-family: 宋体;
+        color: #333333;
+        line-height: 50px;
+        font-size: 23px;
+        border-bottom: 1px solid #dbdee0;
+    }
+    .menu .active {
+        background-color: #b4b7ba;
+        color:#fff;
+    }
+    .fa-angle-right {
+        font-size: 28px;
+        float: right;
+        margin-top: 8px;
+        margin-right: 20px;
+    }
 
-/*pc*/
-@media screen and (min-width: 1025px) {
-    
-}
-/*ipad*/
-@media screen and (max-width: 1024px) and (min-width: 751px) {
-
-}
-
-/*mobile*/
-@media screen and (max-width: 750px) {
     /*橫屏*/ 
     @media screen and (orientation: landscape){
-        .q1{
-            width: 100%;
-            height: 100vh;  
-            background: lightblue;
-        }
         .btn {
             margin-top: 60vh;
-            width: 100px;
-            height: 50px;
         }
         .q2{
-            display: flex;
-            display: -ms-flexbox;
-            width: 100%;
             height: 630px;
-            background: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
         }
         .q2Container {
             width: 90%;
-            margin: auto;
-            opacity: 1;
         }
         .q2Item {
-            width: 100%;
             margin-top: 40px;
-            text-align: center;
-        }
-        .q2Item img {
-            width: 50px;
-            height: 50px;
         }
         .q2Item .q2Title {
             margin-top: 18px;
             font-size: 16px;
             line-height: 31px;
         }
-        .q2Item .q2Content {
-            font-size: 13px;
-            transform: scale(.9);
-            line-height: 25px;
-            color: #545454;
-        }
-        .q3{
-            width: 100%;
-            height: 900px;
-            background: lightblue;
-        }
-        .foot {
-            width: 100%;
-            height: 200px;
-            background: #353535;
-        }
     }
     /*竖屏*/
     @media screen and (orientation: portrait){
-        .q1{
-            width: 100%;
-            height: 100vh;  
-            background: lightblue;
-        }
         .btn {
             margin-top: 300px;
-            width: 100px;
-            height: 50px;
         }
         .q2{
-            display: flex;
-            display: -ms-flexbox;
-            width: 100%;
             height: 800px;
-            background: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
         }
         .q2Container {
             width: 80%;
-            margin: auto;
-            opacity: 1;
         }
         .q2Item {
-            width: 100%;
             margin-top: 50px;
-            text-align: center;
-        }
-        .q2Item img {
-            width: 50px;
-            height: 50px;
         }
         .q2Item .q2Title {
             margin-top: 15px;
             font-size: 18px;
             line-height: 31px;
-        }
-        .q2Item .q2Content {
-            margin-top: 20px;
-            font-size: 10px;
-            line-height: 25px;
-            color: #545454;
-        }
-        .q3{
-            width: 100%;
-            height: 900px;
-            background: lightblue;
-        }
-        .foot {
-            width: 100%;
-            height: 200px;
-            background: #353535;
         }
     }
 }
