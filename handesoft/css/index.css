@@ -59,7 +59,7 @@ body {
         width:6vw;
     }
     .dActive {
-        color: rgb(32,82,153);
+        color: rgb(29,81,152);
     }
     .nav_bar ul li a{
         color: #222;
@@ -90,7 +90,7 @@ body {
         text-decoration:none;
     }
     .login a.a2{
-        background: rgb(32,82,153);
+        background: rgb(29,81,152);
         color: #fff;
         margin-left: 10px;
     }
@@ -98,6 +98,43 @@ body {
         width: 100%;
         height: 100vh;  
         margin-top:80px; 
+    }
+    .q1 img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .q1Title {
+        position: relative;
+        width: 80%;
+        z-index: 5;
+        font-size: 55px;
+        top: 38vh;
+        left: 18vw;
+        /*color: #f0ab00;*/
+    }
+    .q1Button {
+        position: relative;
+        background-color: rgb(29,81,152);
+        width: 110px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 3px;
+        text-align: center;
+        color: #fff;
+        top: 43vh;
+        left: 18vw;
+        cursor: pointer;
+    }
+    .slideDown {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        color: #666;
+        top: 56vh;
+        left: 50vw;
+        font-size: 60px;
+        cursor: pointer;
     }
     .btn {
         margin-top: 500px;
@@ -107,6 +144,7 @@ body {
     .q2{
         width: 100%;
         height: 300px;
+        margin-top: 60px;
         font-family: Arial, Helvetica, sans-serif;
     }
     .q2HeadTitle {
@@ -129,20 +167,260 @@ body {
     .q2Item img {
         width: 60px;
         height: 60px;
+        cursor: pointer;
     }
     .q2Item .q2Title {
         margin-top: 20px;
         font-size: 26px;
         line-height: 31px;
     }
-    .active {
+    .q2Active {
         opacity: 1;
         transform: translateY(-50px);
         transition: transform 2s .5s,opacity 2s .5s;
     }
     .q3{
         width: 100%;
-        height: 500px;
+        height: 300px;
+    }
+    .q3 img {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+    }
+    .q3Title {
+        position: relative;
+        width: 80%;
+        text-align: center;
+        z-index: 5;
+        margin-left: 110px;
+        top: 70px;
+        font-size: 35px;
+    }
+    .q3Button {
+        position: relative;
+        background-color: rgb(29,81,152);
+        width: 80px;
+        height: 35px;
+        font-size: 16px;
+        line-height: 35px;
+        border-radius: 3px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 36vw;
+        margin-top: 15px;
+    }
+    .q4{
+        display: flex;
+        display: -ms-flexbox;
+        width: 100%;
+        height: 480px;
+        margin-top: 50px;
+        opacity: 0;
+    }
+    .q4Active {
+        opacity: 1;
+    }
+    .q4Img {
+        width: 45%;
+        opacity: 0;
+    }
+    .q4Img img {
+        width: 100%;
+        margin-left: 16%;
+    }
+    .q4ImgActive {
+        opacity: 1;
+        transform: translateX(60px);
+        transition: transform 2s .5s,opacity 2s .5s;
+    }
+    .q4HeadTitle {
+        opacity: 0;
+        width: 35%;
+        text-align: left;
+        font-size: 38px;
+        line-height: 66px;
+        margin-top: 80px;
+        margin-left: 200px;
+    }
+    .q4HeadTitleActive {
+        opacity: 1;
+        transform: translateX(-100px);
+        transition: transform 2s .5s,opacity 2s .5s;
+    }
+    .q4Item p {
+        font-size: 18px;
+        color: #fff;
+        text-align: justify;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .q4Button {
+        position: relative;
+        background-color: rgb(29,81,152);
+        width: 130px;
+        height: 35px;
+        font-size: 16px;
+        line-height: 35px;
+        border-radius: 3px;
+        text-align: center;
+        color: #fff;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+    .q5{
+        width: 100%;
+        height: 420px;
+        /*background: url(../img/q5.jpg);*/
+        margin-bottom: 50px;
+        margin-top: -20px;
+    }
+    .q5HeadTitle {
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .q5Container {
+        display: flex;
+        display: -ms-flexbox;
+        margin: auto;
+        margin-top: 30px;
+        width: 66%;
+        opacity: 1;
+    }
+    .q5Item {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        background-color: rgb(29,81,152);
+    }
+    .q5Item p {
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .q5Item img {
+        margin-top: 35px;
+        width: 60px;
+        height: 60px;
+    }
+    /* entire container, keeps perspective */
+    .flip-container {
+        perspective: 1000;
+        transform-style: preserve-3d;
+    }
+    /*  UPDATED! flip the pane when hovered */
+    .flip-container:hover .back {
+        transform: rotateY(0deg);
+    }
+    .flip-container:hover .front {
+        transform: rotateY(180deg);
+    }
+    .flip-container, .front, .back {
+        width: 100%;
+        height: 200px;
+    }
+    /* flip speed goes here */
+    .flipper {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+    /* hide back of pane during swap */
+    .front, .back {
+        backface-visibility: hidden;
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    /*  UPDATED! front pane, placed above back */
+    .front {
+        z-index: 2;
+        transform: rotateY(0deg);
+    }
+    /* back, initially hidden pane */
+    .back {
+        transform: rotateY(-180deg);
+    }
+    .vertical.flip-container {
+        position: relative;
+    }
+
+    .vertical .back {
+        transform: rotateX(180deg);
+    }
+
+    .vertical.flip-container:hover .back {
+        transform: rotateX(0deg);
+    }
+
+    .vertical.flip-container:hover .front {
+        transform: rotateX(180deg);
+    }
+    .q6 {
+        width: 100%;
+        height: 350px;
+    }
+    .q6HeadTitle {
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .q6Container {
+        display: flex;
+        display: -ms-flexbox;
+        margin: auto;
+        margin-top: 30px;
+        width: 66%;
+        opacity: 1;
+    }
+    .q6Item {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        border: 1px solid #DCDCDC;
+    }
+    .q6Item img {
+        width: 200px;
+        height: 150px;
+    }
+    .foot {
+        width: 100%;
+        height: 250px;
+        padding-top: 40px;
+        line-height: 26px;
+        background-color: #353535;
+        color:#999;
+        font-size: 14px;
+    }
+    .footContainer {
+        display: flex;
+        display: -ms-flexbox;
+        width: 100%;
+    }
+    .about ul li, .product ul li, .server ul li, .news ul li {
+        list-style: none;
+    }
+    .about {
+        width: 12%;
+        margin-left: 15%;
+    }
+    .product {
+        width: 20%; 
+    }
+    .server, .news {
+        width: 12%;
+    }
+    .link {
+        margin-left: 15%;
+        margin-top: 30px;
     }
 }
 
@@ -200,7 +478,7 @@ body {
         transform: scale(.68);
     }
     .nav_bar {
-        color: rgb(32,82,153);
+        color: rgb(29,81,152);
         float: right;
         margin-right: 20px;
     }
