@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:"Microsoft yahei";
+}
+.menu {
+    display: none;
+}
+
+/*PC和ipad*/
+@media screen and (min-width:750px) {
+    .q1{
+        width: 100%;
+        height: 500px;  
+        margin-top:80px; 
+    }
+    .q1 img {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+    }
+    .q1Title {
+        position: relative;
+        width: 80%;
+        z-index: 5;
+        font-size: 55px;
+        color:#000;
+        top: 11vw;
+        left: 13vw;
+        text-align: center;
+    }
+    .q1Button {
+        position: relative;
+        background-color: #69c2ee;
+        width: 110px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 3px;
+        text-align: center;
+        color: #fff;
+        top: 25vh;
+        left: 48vw;
+        cursor: pointer;
+    }
+    .q2 {
+        width: 70%;
+        height: 1000px;
+        margin-top: 50px;
+        margin-left: 15%;
+    }
+    .q2Title {
+        font-family: "Microsoft Yahei";
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .q2Content {
+        font-size: 15px;
+        line-height: 25px;
+        color: #545454;
+        margin-top: 20px;
+    }
+    .q2Container {
+        display: flex;
+        display: -ms-flexbox;
+        width: 100%;
+        margin-top: 20px;
+        opacity: 1;
+    }
+    .q2Item {
+        width: 25%;
+        height: 300px;
+    }
+    .q2Item img {
+        width: 100%;
+        height: auto;
+    }
+    .q2Item p {
+        font-size: 22px;
+        line-height: 28px;
+        color: rgb(29,81,152);
+        text-align: center;
+        margin-top: 10px;
+    }
+    .bridgeTitle {
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 60px;
+        color: rgb(29,81,152);
+    }
+}
+
+
+/*ipad自己的样式*/
+@media screen and (max-width: 1024px) and (min-width: 751px) {
+    .logo{
+        transform: scale(.88);
+        margin-left: -40px;
+    }
+    .nav_bar {
+        width: 40vw;
+        margin-left: 100px;
+    }
+    .nav_bar ul li{
+        width:6vw;
+    }
+    .q2Container {
+        width: 90%;
+    }
+    .q2 {
+        height: 450px;
+    }
+    .q2Item .q2Title {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 750px) {
+
+    .desktop {
+        display: none;
+    }
+    .other {
+        display: block;
+        position: relative;
+    }
+    .top{
+        width: 100%;
+        height: 60px;
+        font-size: 25px;
+    }
+    .main{
+        width: 100%;
+        line-height: 60px;
+        margin: 0 auto;
+    }
+    .logo {
+        float: left;
+    }
+    .logo img {
+        transform: scale(.68);
+    }
+    .nav_bar {
+        color: #69c2ee;
+        float: right;
+        margin-right: 20px;
+    }
+    .q1{
+        width: 100%;
+        height: 100vh; 
+        position: relative; 
+        border: 1px solid #000;
+    }
+    .btn {
+        width: 100px;
+        height: 50px;
+    }
+    .q2{
+        display: flex;
+        display: -ms-flexbox;
+        width: 100%;
+        background: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .q2Container {
+        margin: auto;
+        opacity: 1;
+    }
+    .q2Item {
+        width: 100%;
+        text-align: center;
+    }
+    .q2Item img {
+        width: 50px;
+        height: 50px;
+    }
+    .q3{
+        width: 100%;
+        height: 900px;
+        border: 1px solid #000;
+    }
+    .html-body-overflow {
+        overflow-y:hidden;
+    }
+    .menu {
+        width: 70vw;
+        height: 95vh;
+        float: right;
+        background-color: #fff;
+        z-index: 1;
+        margin-top: -80px;
+        overflow-y:auto; 
+    }
+    .menu ul {
+        margin-top: 20px;
+    }
+    .menu ul li {
+        width: 100%;
+        list-style: none;
+        font-weight: 500;
+        font-family: 宋体;
+        color: #333333;
+        line-height: 50px;
+        font-size: 23px;
+        border-bottom: 1px solid #dbdee0;
+    }
+    .menu .active {
+        background-color: #b4b7ba;
+        color:#fff;
+    }
+    .fa-angle-right {
+        font-size: 28px;
+        float: right;
+        margin-top: 8px;
+        margin-right: 20px;
+    }
+
+    /*橫屏*/ 
+    @media screen and (orientation: landscape){
+        .btn {
+            margin-top: 60vh;
+        }
+        .q2{
+            height: 630px;
+        }
+        .q2Container {
+            width: 90%;
+        }
+        .q2Item {
+            margin-top: 40px;
+        }
+        .q2Item .q2Title {
+            margin-top: 18px;
+            font-size: 16px;
+            line-height: 31px;
+        }
+    }
+    /*竖屏*/
+    @media screen and (orientation: portrait){
+        .btn {
+            margin-top: 300px;
+        }
+        .q2{
+            height: 800px;
+        }
+        .q2Container {
+            width: 80%;
+        }
+        .q2Item {
+            margin-top: 50px;
+        }
+        .q2Item .q2Title {
+            margin-top: 15px;
+            font-size: 18px;
+            line-height: 31px;
+        }
+    }
+}

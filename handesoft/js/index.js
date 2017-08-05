@@ -67,27 +67,17 @@ $("body").scroll(function(){
 
 $(function(){
     $(window).scroll(function(){
-    	var q1_height = $(".q1").height();
-        q1_height -= 120;
+    	var q1_height = $(".q1").offset().top;
         var q2_height = $(".q2").height();
-        /*var q2_scroll = q1_height + q2_height;*/
+        var q2_scroll = q1_height + q2_height;
         var this_scrollTop = $(this).scrollTop();
         /*根据滑动条位置动画*/
-        if(this_scrollTop>q1_height ){
+        if(this_scrollTop>q2_scroll ){
             $(".q2Container").addClass("q2Active");
         };
-    });
-});
-
-$(function(){
-    $(window).scroll(function(){
-        var q1_height = $(".q1").offset().top;
-        var q2_height = $(".q2").height(); 
         var q3_height = $(".q3").height();  
         var q4_height = $(".q4").height();  
         var q4_scroll = q1_height + q2_height + q3_height + q4_height;
-        var this_scrollTop = $(this).scrollTop();
-        /*根据滑动条位置动画*/
         if(this_scrollTop > q4_scroll ){
             $(".q4").addClass("q4Active");
             $(".q4Img").addClass("q4ImgActive");

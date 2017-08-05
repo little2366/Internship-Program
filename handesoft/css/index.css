@@ -9,8 +9,10 @@ body {
     display: none;
 }
 
-/*PC和ipad*/
+/* PC和ipad */
 @media screen and (min-width:750px) {
+
+    /* commonHead部分 */
     .desktop {
         display: block;
     }
@@ -35,19 +37,21 @@ body {
         position: fixed;
         top: 0;
     }
-    .main{
+    .main {
+        display: flex;
+        display: -ms-flexbox;
         width: 80%;
         margin: 0 auto;
     }
-    .logo{
-        width: 103px;
+    .logo {
+        width: 20vw;
         height: 28px;
         margin-top:16px;
         float: left;
     }
-    .nav_bar{
+    .nav_bar {
         width: 40vw;
-        float: left;
+        float: right;
         height: 80px;
         margin-left: 200px;
     }
@@ -59,7 +63,7 @@ body {
         width:6vw;
     }
     .dActive {
-        color: rgb(29,81,152);
+        color: #69c2ee;
     }
     .nav_bar ul li a{
         color: #222;
@@ -72,7 +76,7 @@ body {
     .nav_bar ul li.l1:hover {
         display: block;
     }
-    .login{
+    .login {
         float: right;
         width: 120px;
         height: 30px;
@@ -89,8 +93,8 @@ body {
         color: #000;
         text-decoration:none;
     }
-    .login a.a2{
-        background: rgb(29,81,152);
+    .login a.a2 {
+        background: #69c2ee;
         color: #fff;
         margin-left: 10px;
     }
@@ -99,6 +103,9 @@ body {
         height: 100vh;  
         margin-top:80px; 
     }
+
+    /*home的css代码*/
+
     .q1 img {
         position: absolute;
         width: 100%;
@@ -111,11 +118,11 @@ body {
         font-size: 55px;
         top: 38vh;
         left: 18vw;
-        /*color: #f0ab00;*/
+        color: #ffb200;
     }
     .q1Button {
         position: relative;
-        background-color: rgb(29,81,152);
+        background-color: #69c2ee;
         width: 110px;
         height: 35px;
         line-height: 35px;
@@ -126,13 +133,17 @@ body {
         left: 18vw;
         cursor: pointer;
     }
+    .q1Button a {
+        color: #fff;
+        text-decoration: none;
+    }
     .slideDown {
         position: relative;
         width: 100px;
         height: 100px;
         color: #666;
         top: 56vh;
-        left: 50vw;
+        left: 48vw;
         font-size: 60px;
         cursor: pointer;
     }
@@ -181,25 +192,27 @@ body {
     }
     .q3{
         width: 100%;
-        height: 300px;
+        height: 450px;
     }
     .q3 img {
         position: absolute;
         width: 100%;
-        height: 300px;
+        height: 450px;
     }
     .q3Title {
         position: relative;
         width: 80%;
         text-align: center;
+        line-height: 50px;
         z-index: 5;
-        margin-left: 110px;
-        top: 70px;
+        margin-left: 130px;
+        top: 150px;
         font-size: 35px;
+        color: #3e3f3f;
     }
     .q3Button {
         position: relative;
-        background-color: rgb(29,81,152);
+        background-color: #69c2ee;
         width: 80px;
         height: 35px;
         font-size: 16px;
@@ -208,7 +221,7 @@ body {
         text-align: center;
         color: #fff;
         cursor: pointer;
-        margin-left: 36vw;
+        margin-left: 38vw;
         margin-top: 15px;
     }
     .q4{
@@ -258,7 +271,7 @@ body {
     }
     .q4Button {
         position: relative;
-        background-color: rgb(29,81,152);
+        background-color: #69c2ee;
         width: 130px;
         height: 35px;
         font-size: 16px;
@@ -271,10 +284,14 @@ body {
     }
     .q5{
         width: 100%;
-        height: 420px;
-        /*background: url(../img/q5.jpg);*/
+        height: 550px;
         margin-bottom: 50px;
         margin-top: -20px;
+    }
+    .q5 img {
+        position: absolute;
+        width: 100%;
+        height: 550px;
     }
     .q5HeadTitle {
         width: 100%;
@@ -294,7 +311,7 @@ body {
         width: 200px;
         height: 200px;
         text-align: center;
-        background-color: rgb(29,81,152);
+        background-color: #69c2ee;
     }
     .q5Item p {
         font-size: 18px;
@@ -373,10 +390,23 @@ body {
         font-size: 35px;
         line-height: 50px;
     }
+    .q6Content {
+        display: flex;
+        display: -ms-flexbox;
+        width: 100%;
+    }
+    .q6Button {
+        width: 17%;
+        font-size: 56px;
+        text-align: center;
+        color: #333;
+        margin-top: 30px;
+        line-height: 150px;
+        cursor: pointer;
+    }
     .q6Container {
         display: flex;
         display: -ms-flexbox;
-        margin: auto;
         margin-top: 30px;
         width: 66%;
         opacity: 1;
@@ -391,6 +421,8 @@ body {
         width: 200px;
         height: 150px;
     }
+
+    /* commonFoot部分 */
     .foot {
         width: 100%;
         height: 250px;
@@ -478,7 +510,7 @@ body {
         transform: scale(.68);
     }
     .nav_bar {
-        color: rgb(29,81,152);
+        color: #69c2ee;
         float: right;
         margin-right: 20px;
     }
