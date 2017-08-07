@@ -13,22 +13,31 @@ body {
 @media screen and (min-width:750px) {
     .q1 {
         width: 100%;
-        height: 1350px;
+        height: 2600px;
         padding-top: 100px;
     }
     .q1Container {
         width: 70%;
         height: 100%;
         margin-left: 15%;
-        background: url(../img/information/newsbg.jpg) no-repeat;
     }
     .q1Item {
+        display: flex;
+        display: -ms-flexbox;
         width: 100%;
-        height: 150px;
-        margin-left: 9%;
+        height: 300px;
+    }
+    .q1ItemLeft {
+        width: 13%;
+        margin-right: 5%;
+        font-size: 40px;
+        color: #727272;
+    }
+    .q1ItemRight {
+        width: 80%;
     }
     .q1ItemTitle {
-        font-size: 22px;
+        font-size: 25px;
         color: #222;
         line-height: 32px;
         cursor: pointer;
@@ -54,6 +63,18 @@ body {
     .q1ItemContent a {
         color: #666;
         text-decoration: none;
+    }
+    .q1ItemMore {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .q1ItemMore:hover {
+        color: rgb(29,81,152);
+    }
+    .q1Item img {
+        width: 150px;
+        height: 100px;
     }
 }
 
