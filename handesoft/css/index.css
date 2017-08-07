@@ -130,6 +130,21 @@ body {
         height: 82vh;  
         margin-top:80px; 
     }
+
+    #scroll{width:100%; height:180px; background-color:white; position:relative;border-bottom:1px solid gray;}//这里是给整个大的ＤＩＶ设定属性．
+#scroll ul{height:180px; list-style:none;}//ＤＩＶ下的ＵＬ属性．
+#scroll ul li{width:100%; height:180px;margin:0px; padding:0px; display:none;}//ＤＩＶ下的ＵＬ下的ＬＩ属性．注意：display:none;因为要将所有的ｌｉ隐藏了先．当点击的时候在显示出来．
+ .subl{position:absolute; bottom:20px; left:40%; width:80px;height:20px; line-height:20px; text-align:center;font-size:16px;font-weight:bold; cursor:pointer;}//上一张按钮的属性．注意一个绝对定位．
+ .subr{
+position:absolute;
+bottom:20px; right:40%;
+width:80px;height:20px; line-height:20px; text-align:center;font-size:16px;font-weight:bold;cursor:pointer; 
+}//下一张按钮的属性．注意一个绝对定位．
+.subr:hover{ background:yellow;border-radius:10px;}
+.subl:hover{ background:yellow;border-radius:10px;}
+//以上两个hover是鼠标经过的效果．
+
+
     .q1 img {
         position: absolute;
         width: 100%;
@@ -195,8 +210,8 @@ body {
         text-align: center;
     }
     .q2Item img {
-        width: 60px;
-        height: 60px;
+        width: 130px;
+        height: 130px;
         cursor: pointer;
     }
     .q2Item .q2Title {
