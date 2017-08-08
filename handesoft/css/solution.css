@@ -13,8 +13,84 @@ body {
 @media screen and (min-width:750px) {
     
     /* solution的css代码 */
-    
-    
+    .q1{
+        width: 100%;
+        height: 500px;  
+        margin-top:80px; 
+    }
+    .q1 img {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+    }
+    .q1Title {
+        position: relative;
+        width: 80%;
+        z-index: 5;
+        font-size: 35px;
+        top: 30vh;
+        left: 13vw;
+        color: #3e3f3f;
+    }
+    .q2 {
+        width: 100%;
+        height: 800px;
+    }
+    .q2Containers {
+        display: flex;
+        display: -ms-flexbox;
+        width: 76%;
+        height: 150px;
+        margin-left: 15%;
+        margin-bottom: 25px;
+    }
+    .q2Items {
+        width: 45%;
+        height: 150px;
+        margin-top: 0;
+        margin-right: 3%;
+        background-color: #f0f1f0;
+        cursor: pointer;
+    }
+    .q2ItemBox {
+        display: flex;
+        display: -ms-flexbox;
+        width: 100%;
+        height: 150px;
+        border: 1px solid #fff;
+    }
+    .q2ItemImg {
+        display: flex;
+        display: -ms-flexbox;
+        width: 30%;
+        height: 100px;
+    }
+    .q2ItemImg img {
+        margin: auto;
+        padding-top: 40px;
+        width: 70px;
+        height: 70px;
+        padding-left: 10px;
+    }
+    .q2ItemContent {
+        width: 70%;
+        height: 150px;
+        text-align: justify;
+        padding: 15px 15px;
+    }
+    .q2ItemContent p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .q2ItemContent hr {
+        margin-top: 12px;
+        color: #dfdfdf;
+    }
+    .q2ItemContent span {
+        font-size: 15px;
+        line-height: 22px;
+        color: #656565;
+    }
 }
 
 

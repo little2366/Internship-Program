@@ -13,36 +13,23 @@ body {
 @media screen and (min-width:750px) {
     .q1{
         width: 100%;
-        height: 500px;  
+        height: 620px;  
         margin-top:80px; 
     }
     .q1 img {
         position: absolute;
         width: 100%;
-        height: 500px;
+        height: 620px;
     }
     .q1Title {
         position: relative;
-        width: 80%;
+        width: 48%;
         z-index: 5;
-        font-size: 55px;
-        color:#000;
-        top: 11vw;
-        left: 13vw;
+        font-size: 50px;
+        color:#fff;
+        top: 18vw;
+        left: 50vw;
         text-align: center;
-    }
-    .q1Button {
-        position: relative;
-        background-color: #69c2ee;
-        width: 110px;
-        height: 35px;
-        line-height: 35px;
-        border-radius: 3px;
-        text-align: center;
-        color: #fff;
-        top: 25vh;
-        left: 48vw;
-        cursor: pointer;
     }
 
     .q2 {

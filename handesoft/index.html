@@ -22,9 +22,10 @@
 					</div>
 					<div class="nav_bar">
 						<ul>
-							<li><a class="dActive" href="">首页</a></li>
+							<li><a href="" class="dActive">首页</a></li>
 							<li style="width: 8vw" class="l1">
 							    <a href="html/solution.html">解决方案</a>
+							    <!--下拉框-->
 							    <!--div class="hid">
 									<ul>
 										<li><a href="">一级</a></li>
@@ -93,7 +94,7 @@
 
 	    <!--此处为两张图的轮播-->
 
-	    <!--div class="q1Item">
+	    <div class="q1Item">
 	    	<img src="img/home/slide_1.jpg">
 			<p class="q1Title">
 			    <span>您的生产计划，为何总是</span><br>
@@ -106,19 +107,7 @@
 			<div class="slideDown">
 				<i class="fa fa-angle-down" aria-hidden="true"></i>
 			</div>
-	    </div-->
-
-	    <div id="scroll">
-			 <p class="subl">上一张<p/>
-			 <p class="subr">下一张<p/>
-			 <ul>
-			 <li style="background:red;display:block;"></li>
-			　//上面的ｌｉ要设定为显示，因为是第一张图片．
-			 <li style="background:green;"></li>
-			 <li style="background:gray;"></li>
-			 <li style="background:orange;"></li>
-			 </ul>
-		 </div>
+	    </div>
 		
         <!--div class="q1Item">
         	<img src="img/home/slide_2.jpg">
@@ -131,8 +120,6 @@
 				成为赢利企业
 			</div>
         </div-->
-	    
-	    <div class=""></div>
 
 	</div>
 
@@ -142,21 +129,25 @@
 	    	热点
 	    </div>
 		<div class="q2Container">
-			<div class="q2Item" style="margin-right: 8%">
+			<div class="q2Item" style="margin-right: 20px;border-top: 1px solid #ffac13;">
+			    <p class="q2Title">云加工</p><br>
+			    <span>CNC制造云平台</span><br><br>
 			    <img class="q2Img" src="img/home/q2_1.png">
-				<p class="q2Title">云加工</p>
 			</div>
-			<div class="q2Item" style="margin-right: 8%">
+			<div class="q2Item" style="margin-right: 20px;border-top: 1px solid #83c44e;">
+				<p class="q2Title">机联网</p><br>
+				<span>数控设备联网管理系统</span><br><br>
 				<img class="q2Img" src="img/home/q2_2.png">
-				<p class="q2Title">机联网</p>
 			</div>
-			<div class="q2Item" style="margin-right: 8%">
+			<div class="q2Item" style="margin-right: 20px;border-top: 1px solid #2196f3;">
+				<p class="q2Title">自动化</p><br>
+				<span>以机械的动作代替人力操作</span><br><br>
 				<img class="q2Img" src="img/home/q2_3.png">
-				<p class="q2Title">自动化</p>
 			</div>
-			<div class="q2Item">
+			<div class="q2Item" style="border-top: 1px solid #e53935">
+				<p class="q2Title">VR</p><br>
+				<span>虚拟现实技术</span><br><br>
 				<img class="q2Img" src="img/home/q2_4.png">
-				<p class="q2Title">VR</p>
 			</div>
 		</div>
 	</div>
@@ -210,28 +201,36 @@
 	    	<p>我们的客户</p>
 	    	<p style="font-size: 18px;">竭诚为您提供全面和完善的服务</p>
 	    </div>
-	    <div class="q6Content">
-	    	<div class="q6Button">
-		    	<i class="fa fa-angle-left" aria-hidden="true"></i>
-		    </div>
-		    <div class="q6Container">
-		    	<div class="q6Item" style="margin-right: 5%;">
-		    		<img src="img/home/q6_1.png">
-		    	</div>
-		    	<div class="q6Item" style="margin-right: 5%">
-		    		<img src="img/home/q6_2.png">
-		    	</div>
-		    	<div class="q6Item" style="margin-right: 5%">
-		    		<img src="img/home/q6_3.png">
-		    	</div>
-		    	<div class="q6Item">
-		    		<img src="img/home/q6_4.png">
-		    	</div>
-		    </div>
-		    <div class="q6Button">
-		    	<i class="fa fa-angle-right" aria-hidden="true"></i>
-		    </div>
-	    </div>
+
+	    <div id="wrapper">
+			<div id="carousel">
+			    <div style="margin-left: 15%;">
+			    	<i class="fa fa-angle-left" id="prev" class="prev"></i>
+			    </div>
+			    
+			    <div style="width: 110%;margin-left: -15%;">
+			    	<ul>
+						<li><img src="img/home/q6_1.png"></li>
+						<li><img src="img/home/q6_2.png"></li>
+						<li><img src="img/home/q6_3.png"></li>
+						<li><img src="img/home/q6_4.png"></li>
+						<li><img src="img/home/q6_5.png"></li>
+						<li><img src="img/home/q6_6.png"></li>	
+						<li><img src="img/home/q6_7.png"></li>
+						<li><img src="img/home/q6_8.png"></li>
+						<li><img src="img/home/q6_9.png"></li>
+						<li><img src="img/home/q6_10.png"></li>	
+						<li><img src="img/home/q6_11.png"></li>			
+					</ul>
+			    </div>
+				
+				<div style="margin-left: 3%">
+					<i class="fa fa-angle-right" id="next" class="next"></i>
+				</div>
+				
+				<!--div class="clearfix"></div-->
+			</div>
+		</div>
 	    
 	</div>
 
@@ -280,5 +279,6 @@
 
 </body>
 <script type="text/javascript" src="lib/jQuery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </html>

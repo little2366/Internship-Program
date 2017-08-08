@@ -54,17 +54,17 @@ body {
         display: -ms-flexbox;
         opacity: 1;
     }
-    .q2Item {
+    .q2Itemc {
         width: 50%;
         height: 600px;
         margin-top: 0;
         text-align: center;
     }
-    .q2Item img {
+    .q2Itemc img {
         width: 80px;
         height: 80px;
     }
-    .q2Item p {
+    .q2Itemc p {
         width: 80%;
         margin-left: 10%;
         font-size: 24px;

@@ -8,12 +8,12 @@ $(window).scroll(function(){
 	}
 });
 
-$(".nav_bar>ul>li a").mouseenter(function(){
-    $(this).css("color",'rgb(32,82,153)');
+$(".nav_bar>ul>li a").on("click",function(){
+    $(this).addClass("dActive");
 });
-$(".nav_bar>ul>li a").mouseleave(function(){
-    $(this).css("color",'#222');
-});
+
+
+
 
 /*判断是手机端还是其他设备*/
 function detectmob() {  
@@ -43,12 +43,12 @@ $(".slideDown").click(function(){
 });
 
 
-$(".q2Img").mouseenter(function(){
-    $(this).animate({'width':70,"height":70},300);
+/*$(".q2Img").mouseenter(function(){
+    $(this).animate({'width':100,"height":100},300);
 });
 $(".q2Img").mouseleave(function(){
-    $(this).animate({'width':60,"height":60},300);
-});
+    $(this).animate({'width':80,"height":80},300);
+});*/
 
 
 $("body").scroll(function(){
@@ -124,3 +124,10 @@ $(".q1").on("click",function(){
 	}
 });
 
+
+$('#carousel ul').carouFredSel({
+    prev: '#prev',
+    next: '#next',
+    pagination: "#pager",
+    scroll: 1000
+});

@@ -55,20 +55,23 @@ body {
         height: 80px;
         margin-left: 200px;
     }
-    .nav_bar ul li{
+    .nav_bar ul li {
         list-style-type: none;
         float: left;
         line-height: 80px;
         text-align: center;
         width:6vw;
     }
-    .dActive {
-        color: #69c2ee;
-    }
-    .nav_bar ul li a{
+    .nav_bar ul li a {
         color: #222;
         text-decoration: none;
         display: block;
+    }
+    .nav_bar ul li .dActive {
+        color: #69c2ee;
+    }
+    .nav_bar ul li a:hover {
+        color: #69c2ee;
     }
     .nav_bar>ul>li:hover{
         background: #ffffff;
@@ -125,25 +128,11 @@ body {
 
 
     /*home的css代码*/
-    .q1{
+    .q1 {
         width: 100%;
         height: 82vh;  
         margin-top:80px; 
     }
-
-    #scroll{width:100%; height:180px; background-color:white; position:relative;border-bottom:1px solid gray;}//这里是给整个大的ＤＩＶ设定属性．
-#scroll ul{height:180px; list-style:none;}//ＤＩＶ下的ＵＬ属性．
-#scroll ul li{width:100%; height:180px;margin:0px; padding:0px; display:none;}//ＤＩＶ下的ＵＬ下的ＬＩ属性．注意：display:none;因为要将所有的ｌｉ隐藏了先．当点击的时候在显示出来．
- .subl{position:absolute; bottom:20px; left:40%; width:80px;height:20px; line-height:20px; text-align:center;font-size:16px;font-weight:bold; cursor:pointer;}//上一张按钮的属性．注意一个绝对定位．
- .subr{
-position:absolute;
-bottom:20px; right:40%;
-width:80px;height:20px; line-height:20px; text-align:center;font-size:16px;font-weight:bold;cursor:pointer; 
-}//下一张按钮的属性．注意一个绝对定位．
-.subr:hover{ background:yellow;border-radius:10px;}
-.subl:hover{ background:yellow;border-radius:10px;}
-//以上两个hover是鼠标经过的效果．
-
 
     .q1 img {
         position: absolute;
@@ -186,9 +175,9 @@ width:80px;height:20px; line-height:20px; text-align:center;font-size:16px;font-
         font-size: 60px;
         cursor: pointer;
     }
-    .q2{
+    .q2 {
         width: 100%;
-        height: 300px;
+        height: 400px;
         margin-top: 60px;
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -196,6 +185,7 @@ width:80px;height:20px; line-height:20px; text-align:center;font-size:16px;font-
         width: 100%;
         text-align: center;
         font-size: 35px;
+        margin-bottom: -20px;
     }
     .q2Container {
         display: flex;
@@ -205,13 +195,23 @@ width:80px;height:20px; line-height:20px; text-align:center;font-size:16px;font-
         opacity: 0;
     }
     .q2Item {
-        width: 30%;
+        width: 40%;
+        height: 260px;
         margin-top: 120px;
+        padding-top: 30px;
         text-align: center;
     }
+    .q2Item:hover {
+        transition: transform .5s;
+        -webkit-box-shadow:10px 15px 30px #e5e5e5,-10px 0px 30px #e5e5e5;
+        -moz-box-shadow:10px 15px 30px #e5e5e5,-10px 0px 30px #e5e5e5;
+        box-shadow:10px 15px 30px #e5e5e5,-10px 0px 30px #e5e5e5;
+        -webkit-transform:translate3d(0, -2px, 0);
+        transform:translate3d(0, -2px, 0);
+    }
     .q2Item img {
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
         cursor: pointer;
     }
     .q2Item .q2Title {
@@ -316,7 +316,7 @@ width:80px;height:20px; line-height:20px; text-align:center;font-size:16px;font-
         margin-top: 50px;
         cursor: pointer;
     }
-    .q5{
+    .q5 {
         width: 100%;
         height: 550px;
         margin-bottom: 50px;
@@ -332,7 +332,7 @@ width:80px;height:20px; line-height:20px; text-align:center;font-size:16px;font-
         width: 25%;
         height: 230px;
         top: 150px;
-        left: 130px;
+        left: 230px;
         padding: 23px;
         background-color: rgba(255,255,255,.7);
         text-align: justify;
@@ -351,7 +351,7 @@ width:80px;height:20px; line-height:20px; text-align:center;font-size:16px;font-
         text-align: center;
         color: #fff;
         cursor: pointer;
-        margin-left: 10.2vw;
+        margin-left: 17.5vw;
         margin-top: 85px;
     }
     .q6 {
@@ -364,37 +364,64 @@ width:80px;height:20px; line-height:20px; text-align:center;font-size:16px;font-
         font-size: 35px;
         line-height: 50px;
     }
-    .q6Content {
+
+    #wrapper {
+        width: 80%;
+        left: 10%;
+        top: 50%;
+    }
+    #carousel {
         display: flex;
         display: -ms-flexbox;
         width: 100%;
+        position: vrelative;
     }
-    .q6Button {
-        width: 17%;
+    #carousel ul {
+        list-style: none;
+        display: block;
+        margin-left:20%;
+    }
+    #carousel li {
+        font-size: 40px;
+        color: #999;
+        text-align: center;
+        display: block;
+        width: 232px;
+        height: 178px;
+        padding: 0;
+        margin: 6px;
+        float: left;
+        position: relative;
+    }
+
+    #carousel li img {
+        width: 201px;
+        height: 127px;
+        margin-top: 14px;
+    }
+    
+    #carousel li span {
+        text-indent: -999px;
+        display: block;
+        overflow: hidden;
+        width: 201px;
+        height: 127px;
+        position: absolute;
+        z-index: 2;
+        top: 14px;
+        left: 16px;
+    }           
+    .clearfix {
+        float: none;
+        clear: both;
+    }
+    #carousel .fa{
         font-size: 56px;
         text-align: center;
         color: #333;
-        margin-top: 30px;
         line-height: 150px;
-        cursor: pointer;
-    }
-    .q6Container {
-        display: flex;
-        display: -ms-flexbox;
-        margin-top: 30px;
-        width: 66%;
-        opacity: 1;
-    }
-    .q6Item {
-        width: 200px;
-        height: 150px;
-        text-align: center;
-        border: 1px solid #DCDCDC;
-    }
-    .q6Item img {
-        width: 200px;
-        height: 150px;
-    }
+        cursor: pointer;     
+    }              
 
     /* commonFoot部分 */
     .foot {
