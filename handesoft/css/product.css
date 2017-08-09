@@ -46,14 +46,129 @@ body {
         left: 18vw;
         cursor: pointer;
     }
-
+    
     .q2 {
+         width: 70%;
+         height: 420px;
+         margin-left: 15%;
+    }
+    .q2Title {
+        width: 100%;
+        text-align: center;
+        font-size: 42px;
+        font-weight: 900;
+        color: #000;
+    }
+    .q2Containerp {
+        display: flex;
+        display: -ms-flexbox;
+        width: 100%;
+        height: 100px;
+        margin-top: 40px;
+    }
+    .q2Item1 {
+        width: 33%;
+        height: 100px;
+        padding: 15px 15px;
+        border-right: 1px solid #dedede;
+        text-align: center;
+    }
+    .q2Item1 p {
+        font-size: 23px;
+        color: #0070cc;
+        text-align: center;
+        font-family: "微软雅黑"
+        font-weight: bold;
+    }
+    .q2Item1 span {
+        font-size: 16px;
+        line-height: 28px;
+        color: #595959;
+        text-align: center;
+    }
+    .q3 {
+        display: flex;
+        display: -ms-flexbox;
+        width: 100%;
+        height: 480px;
+        background: url(../img/product/q3.jpg);
+    }
+    .q3Containerp {
+        display: flex;
+        display: -ms-flexbox;
+        width: 70%;
+        height: 300px;
+        margin: auto;
+    }
+    .q3Itemp {
+        display: flex;
+        display: -ms-flexbox;
+        width: 19%;
+        margin-right: 2%;
+        height: 300px;
+        border: 1px solid #000;
+    }
+    .q3Imgp {
+        width: 100%;
+        height: 150px;
+        background-color: blue;
+    }
+    .q3Imgp img {
+        width: 100px;
+        height: 50px;
+    }
+    .q3Contentp {
+        width: 100%;
+        height: 100px;
+        font-size: 22px;
+        line-height: 36px;
+        color: #333;
+        background-color: #000;
+    }
+    .q4 {
+        width: 40%;
+        height: 250px;
+        margin-left: 30%;
+        opacity: 1;
+        margin-top: 0;
+    }
+    .q4Containerp {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .q4 p {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .q4ForButton {
+        display: flex;
+        display: -ms-flexbox;
+        width: 80%;
+        margin-left: 10%;
+        height: 60px;
+    }
+    .q4ButtonContainer {
+        display: flex;
+        display: -ms-flexbox;
+        width: 50%;
+        height: 60px;
+    }
+    .q4Button {
+        width: 100px;
+        height: 45px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 45px;
+        color: #fff;
+    }
+    /*.q3 {
         width: 82%;
         height: 700px;
         margin-top: 50px;
         margin-left: 9%;
     }
-    .q2Container {
+    .q3Container {
         display: flex;
         display: -ms-flexbox;
         margin: auto;
@@ -61,30 +176,28 @@ body {
         width: 66%;
         opacity: 1;
     }
-    .q2Item {
+    .q3Item {
         width: 200px;
         height: 200px;
         text-align: center;
         background-color: #69c2ee;
     }
-    .q2Item p {
+    .q3Item p {
         font-size: 18px;
         color: #fff;
         text-align: center;
         margin-top: 20px;
         font-weight: bold;
     }
-    .q2Item img {
+    .q3Item img {
         margin-top: 35px;
         width: 60px;
         height: 60px;
     }
-    /* entire container, keeps perspective */
     .flip-container {
         perspective: 1000;
         transform-style: preserve-3d;
     }
-    /*  UPDATED! flip the pane when hovered */
     .flip-container:hover .back {
         transform: rotateY(0deg);
     }
@@ -95,13 +208,11 @@ body {
         width: 100%;
         height: 200px;
     }
-    /* flip speed goes here */
     .flipper {
         transition: 0.6s;
         transform-style: preserve-3d;
         position: relative;
     }
-    /* hide back of pane during swap */
     .front, .back {
         backface-visibility: hidden;
         transition: 0.6s;
@@ -110,12 +221,10 @@ body {
         top: 0;
         left: 0;
     }
-    /*  UPDATED! front pane, placed above back */
     .front {
         z-index: 2;
         transform: rotateY(0deg);
     }
-    /* back, initially hidden pane */
     .back {
         transform: rotateY(-180deg);
     }
@@ -133,7 +242,7 @@ body {
 
     .vertical.flip-container:hover .front {
         transform: rotateX(180deg);
-    }
+    }*/
 }
 
 
@@ -150,17 +259,17 @@ body {
     .nav_bar ul li{
         width:6vw;
     }
-    .q2Container {
+    /*.q3Container {
         width: 90%;
     }
-    .q2 {
+    .q3 {
         height: 450px;
     }
-    .q2Item .q2Title {
+    .q3Item .q3Title {
         margin-top: 20px;
         font-size: 18px;
         line-height: 22px;
-    }
+    }*/
 }
 
 /*mobile*/
@@ -204,22 +313,22 @@ body {
         width: 100px;
         height: 50px;
     }
-    .q2{
+    /*.q3{
         display: flex;
         display: -ms-flexbox;
         width: 100%;
         background: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .q2Container {
+    .q3Container {
         margin: auto;
         opacity: 1;
     }
-    .q2Item {
+    .q3Item {
         width: 100%;
         text-align: center;
     }
-    .q2Item img {
+    .q3Item img {
         width: 50px;
         height: 50px;
     }
@@ -262,46 +371,46 @@ body {
         float: right;
         margin-top: 8px;
         margin-right: 20px;
-    }
+    }*/
 
     /*橫屏*/ 
     @media screen and (orientation: landscape){
         .btn {
             margin-top: 60vh;
         }
-        .q2{
+        /*.q3{
             height: 630px;
         }
-        .q2Container {
+        .q3Container {
             width: 90%;
         }
-        .q2Item {
+        .q3Item {
             margin-top: 40px;
         }
-        .q2Item .q2Title {
+        .q3Item .q3Title {
             margin-top: 18px;
             font-size: 16px;
             line-height: 31px;
-        }
+        }*/
     }
     /*竖屏*/
     @media screen and (orientation: portrait){
         .btn {
             margin-top: 300px;
         }
-        .q2{
+        /*.q3{
             height: 800px;
         }
-        .q2Container {
+        .q3Container {
             width: 80%;
         }
-        .q2Item {
+        .q3Item {
             margin-top: 50px;
         }
-        .q2Item .q2Title {
+        .q3Item .q3Title {
             margin-top: 15px;
             font-size: 18px;
             line-height: 31px;
-        }
+        }*/
     }
 }

@@ -16,22 +16,22 @@ body {
 
     .q1{
         width: 100%;
-        height: 500px;  
+        height: 82vh;  
         margin-top:80px; 
     }
     .q1 img {
         position: absolute;
         width: 100%;
-        height: 500px;
+        height: 82vh;
     }
     .q1Title {
         position: relative;
         width: 80%;
         z-index: 5;
-        font-size: 55px;
-        top: 26vh;
+        font-size: 66px;
+        top: 28vh;
         left: 13vw;
-        color: #3e3f3f;
+        color: #fff;
     }
     .q1Button {
         position: relative;
