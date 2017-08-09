@@ -25,10 +25,10 @@ body {
         position: relative;
         width: 48%;
         z-index: 5;
-        font-size: 50px;
+        font-size: 46px;
         color:#fff;
         top: 18vw;
-        left: 50vw;
+        left: 49vw;
         text-align: center;
     }
 
@@ -49,33 +49,16 @@ body {
         color: #545454;
         margin-top: 20px;
     }
-    .q2Container {
+    .q2Containera {
         display: flex;
         display: -ms-flexbox;
         width: 100%;
         margin-top: 20px;
         opacity: 1;
     }
-    .q2Item {
-        width: 25%;
-        height: 300px;
-    }
-    .q2Item img {
+    .q2Containera img {
         width: 100%;
-        height: auto;
-    }
-    .q2Item p {
-        font-size: 22px;
-        line-height: 28px;
-        color: rgb(29,81,152);
-        text-align: center;
-        margin-top: 10px;
-    }
-    .bridgeTitle {
-        font-size: 50px;
-        font-weight: bold;
-        line-height: 60px;
-        color: rgb(29,81,152);
+        height: 500px;
     }
 }
 

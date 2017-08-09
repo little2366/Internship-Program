@@ -57,7 +57,7 @@ body {
 
     .q3 {
         width: 100%;
-        height: 600px;
+        height: 650px;
         opacity: 1;
         margin-top: 100px;
     }
@@ -124,7 +124,7 @@ body {
         line-height: 22px;
         color: #656565;
     }
-    .q4 {
+    /*.q4 {
         height: 550px;
         width: 100%;
         opacity: 1;
@@ -175,6 +175,43 @@ body {
     .q4Contents span {
         font-size: 13px;
         line-height: 19px;
+    }*/
+    .q4 {
+        width: 40%;
+        height: 250px;
+        margin-left: 30%;
+        opacity: 1;
+        margin-top: 0;
+    }
+    .q4Containerp {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .q4 p {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .q4ForButton {
+        display: flex;
+        display: -ms-flexbox;
+        width: 80%;
+        margin-left: 10%;
+        height: 60px;
+    }
+    .q4ButtonContainer {
+        display: flex;
+        display: -ms-flexbox;
+        width: 50%;
+        height: 60px;
+    }
+    .q4Button {
+        width: 100px;
+        height: 45px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 45px;
+        color: #fff;
     }
 }
 
