@@ -12,117 +12,55 @@ body {
 /*PC和ipad*/
 @media screen and (min-width:750px) {
     
-    /* case的css代码 */
-
-    .q1{
-        width: 100%;
-        height: 500px;  
-        margin-top:80px; 
+    /* solution的css代码 */
+    .position {
+        height: 10px;
+        padding-top: 115px;
+        margin-top: 80px;
+        margin-bottom: -210px;
     }
-    .q1 img {
-        position: absolute;
-        width: 100%;
-        height: 500px;
-    }
-    .q1Title {
-        position: relative;
-        width: 80%;
-        z-index: 5;
-        font-size: 55px;
-        top: 26vh;
-        left: 13vw;
-        color: #fff;
-    }
-    .q1Button {
-        position: relative;
-        background-color: #69c2ee;
-        width: 110px;
-        height: 35px;
-        line-height: 35px;
-        border-radius: 3px;
-        text-align: center;
-        color: #fff;
-        top: 43vh;
-        left: 18vw;
-        cursor: pointer;
-    }
-    .q2 {
+    .q1s {
         width: 70%;
-        height: 300px;
+        min-height: 1000px; 
+        margin-top: 250px;
         margin-left: 15%;
-        display: flex;
-        display: -ms-flexbox;
-        opacity: 1;
-    }
-    .q2Itemc {
-        width: 50%;
-        height: 600px;
-        margin-top: 0;
-        text-align: center;
-    }
-    .q2Itemc img {
-        width: 80px;
-        height: 80px;
-    }
-    .q2Itemc p {
-        width: 80%;
-        margin-left: 10%;
-        font-size: 24px;
-        line-height: 30px;
-        margin-top: 5px;
+        font-size: 28px;
         text-align: justify;
-    }
-    .q {
-        width: 100%;
-        height: 350px;
-    }
-    .qContainer {
-        display: flex;
-        display: -ms-flexbox;
-        width: 70%;
-        height: 350px;
-        margin-left: 15%;
-    }
-    .qIntroduce {
-        width: 30%;
-        height: 200px;
-        margin-top: 40px;
-        text-align: justify;
-    }
-    .qIntroduce .qMainTitle {
-        width: 100%;
-        font-size: 24px;
-        line-height: 36px;
         color: #000;
+        line-height: 200px;
+        z-index: 5;
     }
-    .qIntroduce .qContent {
+    .q1Titles {
+        font-size: 32px;
+        line-height: 42px;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .q1Contents {
         width: 100%;
-        font-size: 16px;
-        line-height: 22px;
-        color: #545454;
-        margin-top: 10px;
+        min-height: 800px;
     }
-    .qIntroduce p {
-        margin-top: 10px;
-        color: #008fd3;
+    .q1Contents p {
+        font-family: verdana;
         font-size: 14px;
-        line-height: 17px;
+        line-height: 28px;
+        margin-bottom: 15px;
     }
-    .qIntroduce p a {
-        margin-top: 10px;
-        color: #008fd3;
+    .q1Contents p span {
+        color: #ff0000;
+        font-weight: bold;
+    }
+    .q1CTitle {
+        margin-top: 15px;
+        color: #ff0000;
+        font-weight: bold;
+    }
+    .q1Contents ul li {
+        font-family: verdana;
         font-size: 14px;
-        line-height: 17px;
-        text-decoration: none;
-    }
-    .qImg {
-        width: 95%;
-        margin-left: 30px;
-    }
-    .qImg img {
-        width: 95%;
-        margin-left: 30px;
-        height: 300px;
+        line-height: 28px;
+        margin-left: 20px;
     }
 }
 
@@ -140,13 +78,13 @@ body {
     .nav_bar ul li{
         width:6vw;
     }
-    .q2Container {
+    .q3Container {
         width: 90%;
     }
-    .q2 {
+    .q3 {
         height: 450px;
     }
-    .q2Item .q2Title {
+    .q3Item .q3Title {
         margin-top: 20px;
         font-size: 18px;
         line-height: 22px;
@@ -194,22 +132,22 @@ body {
         width: 100px;
         height: 50px;
     }
-    .q2{
+    .q3{
         display: flex;
         display: -ms-flexbox;
         width: 100%;
         background: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .q2Container {
+    .q3Container {
         margin: auto;
         opacity: 1;
     }
-    .q2Item {
+    .q3Item {
         width: 100%;
         text-align: center;
     }
-    .q2Item img {
+    .q3Item img {
         width: 50px;
         height: 50px;
     }
@@ -259,16 +197,16 @@ body {
         .btn {
             margin-top: 60vh;
         }
-        .q2{
+        .q3{
             height: 630px;
         }
-        .q2Container {
+        .q3Container {
             width: 90%;
         }
-        .q2Item {
+        .q3Item {
             margin-top: 40px;
         }
-        .q2Item .q2Title {
+        .q3Item .q3Title {
             margin-top: 18px;
             font-size: 16px;
             line-height: 31px;
@@ -279,16 +217,16 @@ body {
         .btn {
             margin-top: 300px;
         }
-        .q2{
+        .q3{
             height: 800px;
         }
-        .q2Container {
+        .q3Container {
             width: 80%;
         }
-        .q2Item {
+        .q3Item {
             margin-top: 50px;
         }
-        .q2Item .q2Title {
+        .q3Item .q3Title {
             margin-top: 15px;
             font-size: 18px;
             line-height: 31px;
