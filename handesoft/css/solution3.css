@@ -8,228 +8,54 @@ body {
 .menu {
     display: none;
 }
-
-/*PC和ipad*/
-@media screen and (min-width:750px) {
     
-    /* solution的css代码 */
-    .position {
-        height: 10px;
-        padding-top: 115px;
-        margin-top: 80px;
-        margin-bottom: -210px;
-    }
-    .q1s {
-        width: 70%;
-        min-height: 1000px; 
-        margin-top: 250px;
-        margin-left: 15%;
-        font-size: 28px;
-        text-align: justify;
-        color: #000;
-        line-height: 200px;
-        z-index: 5;
-    }
-    .q1Titles {
-        font-size: 32px;
-        line-height: 42px;
-        color: #333;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .q1Contents {
-        width: 100%;
-        min-height: 800px;
-    }
-    .q1Contents p {
-        font-family: verdana;
-        font-size: 14px;
-        line-height: 28px;
-        margin-bottom: 15px;
-    }
-    .q1Contents p span {
-        color: #ff0000;
-        font-weight: bold;
-    }
-    .q1CTitle {
-        margin-top: 15px;
-        color: #ff0000;
-        font-weight: bold;
-    }
-    .q1Contents ul li {
-        font-family: verdana;
-        font-size: 14px;
-        line-height: 28px;
-        margin-left: 20px;
-    }
+/* solution的css代码 */
+.position {
+    height: 10px;
+    padding-top: 115px;
+    margin-top: 80px;
+    margin-bottom: -210px;
 }
-
-
-/*ipad自己的样式*/
-@media screen and (max-width: 1024px) and (min-width: 751px) {
-    .logo{
-        transform: scale(.88);
-        margin-left: -40px;
-    }
-    .nav_bar {
-        width: 40vw;
-        margin-left: 100px;
-    }
-    .nav_bar ul li{
-        width:6vw;
-    }
-    .q3Container {
-        width: 90%;
-    }
-    .q3 {
-        height: 450px;
-    }
-    .q3Item .q3Title {
-        margin-top: 20px;
-        font-size: 18px;
-        line-height: 22px;
-    }
+.q1s {
+    width: 70%;
+    min-height: 1000px; 
+    margin-top: 250px;
+    margin-left: 15%;
+    font-size: 28px;
+    text-align: justify;
+    color: #000;
+    line-height: 200px;
+    z-index: 5;
 }
-
-/*mobile*/
-@media screen and (max-width: 750px) {
-
-    .desktop {
-        display: none;
-    }
-    .other {
-        display: block;
-        position: relative;
-    }
-    .top{
-        width: 100%;
-        height: 60px;
-        font-size: 25px;
-    }
-    .main{
-        width: 100%;
-        line-height: 60px;
-        margin: 0 auto;
-    }
-    .logo {
-        float: left;
-    }
-    .logo img {
-        transform: scale(.68);
-    }
-    .nav_bar {
-        color: #69c2ee;
-        float: right;
-        margin-right: 20px;
-    }
-    .q1{
-        width: 100%;
-        height: 100vh; 
-        position: relative; 
-        border: 1px solid #000;
-    }
-    .btn {
-        width: 100px;
-        height: 50px;
-    }
-    .q3{
-        display: flex;
-        display: -ms-flexbox;
-        width: 100%;
-        background: #ffffff;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .q3Container {
-        margin: auto;
-        opacity: 1;
-    }
-    .q3Item {
-        width: 100%;
-        text-align: center;
-    }
-    .q3Item img {
-        width: 50px;
-        height: 50px;
-    }
-    .q3{
-        width: 100%;
-        height: 900px;
-        border: 1px solid #000;
-    }
-    .html-body-overflow {
-        overflow-y:hidden;
-    }
-    .menu {
-        width: 70vw;
-        height: 95vh;
-        float: right;
-        background-color: #fff;
-        z-index: 1;
-        margin-top: -80px;
-        overflow-y:auto; 
-    }
-    .menu ul {
-        margin-top: 20px;
-    }
-    .menu ul li {
-        width: 100%;
-        list-style: none;
-        font-weight: 500;
-        font-family: 宋体;
-        color: #333333;
-        line-height: 50px;
-        font-size: 23px;
-        border-bottom: 1px solid #dbdee0;
-    }
-    .menu .active {
-        background-color: #b4b7ba;
-        color:#fff;
-    }
-    .fa-angle-right {
-        font-size: 28px;
-        float: right;
-        margin-top: 8px;
-        margin-right: 20px;
-    }
-
-    /*橫屏*/ 
-    @media screen and (orientation: landscape){
-        .btn {
-            margin-top: 60vh;
-        }
-        .q3{
-            height: 630px;
-        }
-        .q3Container {
-            width: 90%;
-        }
-        .q3Item {
-            margin-top: 40px;
-        }
-        .q3Item .q3Title {
-            margin-top: 18px;
-            font-size: 16px;
-            line-height: 31px;
-        }
-    }
-    /*竖屏*/
-    @media screen and (orientation: portrait){
-        .btn {
-            margin-top: 300px;
-        }
-        .q3{
-            height: 800px;
-        }
-        .q3Container {
-            width: 80%;
-        }
-        .q3Item {
-            margin-top: 50px;
-        }
-        .q3Item .q3Title {
-            margin-top: 15px;
-            font-size: 18px;
-            line-height: 31px;
-        }
-    }
+.q1Titles {
+    font-size: 32px;
+    line-height: 42px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.q1Contents {
+    width: 100%;
+    min-height: 800px;
+}
+.q1Contents p {
+    font-family: verdana;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+.q1Contents p span {
+    color: #ff0000;
+    font-weight: bold;
+}
+.q1CTitle {
+    margin-top: 15px;
+    color: #ff0000;
+    font-weight: bold;
+}
+.q1Contents ul li {
+    font-family: verdana;
+    font-size: 14px;
+    line-height: 28px;
+    margin-left: 20px;
 }

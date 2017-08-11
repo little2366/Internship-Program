@@ -13,24 +13,8 @@ $(".nav_bar>ul>li a").on("click",function(){
 });
 
 
-
-
-/*判断是手机端还是其他设备*/
-function detectmob() {  
-    if( navigator.userAgent.match(/Android/i)  
-    || navigator.userAgent.match(/webOS/i)  
-    || navigator.userAgent.match(/iPhone/i)   
-    || navigator.userAgent.match(/BlackBerry/i)  
-    || navigator.userAgent.match(/Windows Phone/i)  
-    ){  
-        return true;  
-    }  
-    else {  
-        return false;  
-    }  
-} 
-
-$(".slideDown").click(function(){
+/*此处为下滑按钮的js代码*/
+/*$(".slideDown").click(function(){
     var t = $(window).scrollTop();
     var q1_height = $(".q1").height(); 
     if(!detectmob()){
@@ -40,14 +24,6 @@ $(".slideDown").click(function(){
        q1_height += 60;
     }
     $('body').animate({'scrollTop':t+q1_height},600);
-});
-
-
-/*$(".q2Img").mouseenter(function(){
-    $(this).animate({'width':100,"height":100},300);
-});
-$(".q2Img").mouseleave(function(){
-    $(this).animate({'width':80,"height":80},300);
 });*/
 
 
@@ -84,44 +60,6 @@ $(function(){
             $(".q4HeadTitle").addClass("q4HeadTitleActive");
         };
     });
-});
-
-
-
-$(".fa-bars").on("click",function(){
-    var display =$('.menu').css('display');
-
-	if(display == 'none'){
-	    $(".menu").css("display","block");
-	    $(".menu").removeClass("html-body-overflow");
-	    $(".other,.q1").animate({left: '-=70vw'}, 600);  
-        $(document.body).addClass("html-body-overflow");
-
-	}
-	else{
-	    $(".other,.q1").animate({left: '+=70vw'}, 600,function() {
-	    	$(".menu").css("display","none");
-	    }); 
-	    $(document.body).removeClass("html-body-overflow");
-	}
-    
-});
-
-$(".menu li").on("click",function(){
-    $(this).addClass("active");
-    $(this).siblings().removeClass("active");
-});
-
-$(".q1").on("click",function(){
-	var display =$('.menu').css('display');
-
-    if(display == 'block'){
-	    
-	    $(".other,.q1").animate({left: '+=70vw'}, 600,function() {
-	    	$(".menu").css("display","none");
-	    });  
-	    $(document.body).removeClass("html-body-overflow");
-	}
 });
 
 

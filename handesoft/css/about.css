@@ -9,271 +9,103 @@ body {
     display: none;
 }
 
-/*PC和ipad*/
-@media screen and (min-width:750px) {
-    
-    /* about的css代码 */
-
-    .q1{
-        width: 100%;
-        height: 82vh;  
-        margin-top:80px; 
-    }
-    .q1 img {
-        position: absolute;
-        width: 100%;
-        height: 82vh;
-    }
-    .q1Title {
-        position: relative;
-        width: 80%;
-        z-index: 5;
-        font-size: 66px;
-        top: 28vh;
-        left: 13vw;
-        color: #fff;
-    }
-    .q1Button {
-        position: relative;
-        background-color: #69c2ee;
-        width: 110px;
-        height: 35px;
-        line-height: 35px;
-        border-radius: 3px;
-        text-align: center;
-        color: #fff;
-        top: 43vh;
-        left: 18vw;
-        cursor: pointer;
-    }
-    .q2 {
-        width: 82%;
-        height: 700px;
-        margin-top: 50px;
-        margin-left: 9%;
-    }
-    .q2 p {
-        width: 60%;
-        margin-left: 20%;
-        text-align: left;
-        font-size: 22px;
-        font-family: "微软雅黑";
-        font-size: 16px;
-        line-height: 35px;
-        color: #333;
-    }
-    .blog p {
-        font-size: 16px;
-        color: #000;
-    }
-    .blog .line {
-        width: 61%;
-        height: 2px;
-        margin-left: 20%;
-        background-color: #69c2ee;
-    }
-    .blog input {
-        width: 60%;
-        height: 40px;
-        margin-left: 20%;
-        margin-top: 20px;
-        border: 1px solid #e7e7eb;
-        padding-left: 20px;
-        font-size: 16px;
-        line-height: 40px;
-    }
-    .blog textarea {
-        width: 60%;
-        height: 150px;
-        margin-left: 20%;
-        margin-top: 20px;
-        border: 1px solid #e7e7eb;
-        padding-left: 20px;
-        font-size: 16px;
-        line-height: 40px;
-        font-family: "Microsoft yahei"
-    }
-    .submit {
-        color: #fff;
-        background-color: #69c2ee;
-        line-height: 30px;
-        font-size: 15px;
-        text-align: center;
-        width: 60px;
-        height: 30px;
-        border: none;
-        margin-left: 20%;
-        margin-top: 15px;
-        cursor: pointer;
-    }
+.q1{
+    width: 100%;
+    height: 650px;  
+    margin-top:80px; 
 }
-
-
-/*ipad自己的样式*/
-@media screen and (max-width: 1024px) and (min-width: 751px) {
-    .logo{
-        transform: scale(.88);
-        margin-left: -40px;
-    }
-    .nav_bar {
-        width: 40vw;
-        margin-left: 100px;
-    }
-    .nav_bar ul li{
-        width:6vw;
-    }
-    .q2Container {
-        width: 90%;
-    }
-    .q2 {
-        height: 450px;
-    }
-    .q2Item .q2Title {
-        margin-top: 20px;
-        font-size: 18px;
-        line-height: 22px;
-    }
+.q1 img {
+    position: absolute;
+    width: 100%;
+    height: 650px;
 }
-
-/*mobile*/
-@media screen and (max-width: 750px) {
-
-    .desktop {
-        display: none;
-    }
-    .other {
-        display: block;
-        position: relative;
-    }
-    .top{
-        width: 100%;
-        height: 60px;
-        font-size: 25px;
-    }
-    .main{
-        width: 100%;
-        line-height: 60px;
-        margin: 0 auto;
-    }
-    .logo {
-        float: left;
-    }
-    .logo img {
-        transform: scale(.68);
-    }
-    .nav_bar {
-        color: #69c2ee;
-        float: right;
-        margin-right: 20px;
-    }
-    .q1{
-        width: 100%;
-        height: 100vh; 
-        position: relative; 
-        border: 1px solid #000;
-    }
-    .btn {
-        width: 100px;
-        height: 50px;
-    }
-    .q2{
-        display: flex;
-        display: -ms-flexbox;
-        width: 100%;
-        background: #ffffff;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .q2Container {
-        margin: auto;
-        opacity: 1;
-    }
-    .q2Item {
-        width: 100%;
-        text-align: center;
-    }
-    .q2Item img {
-        width: 50px;
-        height: 50px;
-    }
-    .q3{
-        width: 100%;
-        height: 900px;
-        border: 1px solid #000;
-    }
-    .html-body-overflow {
-        overflow-y:hidden;
-    }
-    .menu {
-        width: 70vw;
-        height: 95vh;
-        float: right;
-        background-color: #fff;
-        z-index: 1;
-        margin-top: -80px;
-        overflow-y:auto; 
-    }
-    .menu ul {
-        margin-top: 20px;
-    }
-    .menu ul li {
-        width: 100%;
-        list-style: none;
-        font-weight: 500;
-        font-family: 宋体;
-        color: #333333;
-        line-height: 50px;
-        font-size: 23px;
-        border-bottom: 1px solid #dbdee0;
-    }
-    .menu .active {
-        background-color: #b4b7ba;
-        color:#fff;
-    }
-    .fa-angle-right {
-        font-size: 28px;
-        float: right;
-        margin-top: 8px;
-        margin-right: 20px;
-    }
-
-    /*橫屏*/ 
-    @media screen and (orientation: landscape){
-        .btn {
-            margin-top: 60vh;
-        }
-        .q2{
-            height: 630px;
-        }
-        .q2Container {
-            width: 90%;
-        }
-        .q2Item {
-            margin-top: 40px;
-        }
-        .q2Item .q2Title {
-            margin-top: 18px;
-            font-size: 16px;
-            line-height: 31px;
-        }
-    }
-    /*竖屏*/
-    @media screen and (orientation: portrait){
-        .btn {
-            margin-top: 300px;
-        }
-        .q2{
-            height: 800px;
-        }
-        .q2Container {
-            width: 80%;
-        }
-        .q2Item {
-            margin-top: 50px;
-        }
-        .q2Item .q2Title {
-            margin-top: 15px;
-            font-size: 18px;
-            line-height: 31px;
-        }
-    }
+.q1Title {
+    position: relative;
+    width: 80%;
+    z-index: 5;
+    font-size: 66px;
+    top: 280px;
+    left: 13vw;
+    color: #fff;
+}
+.q1Button {
+    position: relative;
+    background-color: #69c2ee;
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    top: 43vh;
+    left: 18vw;
+    cursor: pointer;
+}
+.q2 {
+    width: 82%;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 9%;
+}
+.q2 p {
+    width: 60%;
+    margin-left: 20%;
+    text-align: left;
+    font-size: 22px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    line-height: 35px;
+    color: #333;
+}
+.blog p {
+    font-size: 16px;
+    color: #000;
+}
+.blog .line {
+    width: 61%;
+    height: 2px;
+    margin-left: 20%;
+    background-color: #69c2ee;
+}
+.blog input {
+    width: 60%;
+    height: 40px;
+    margin-left: 20%;
+    margin-top: 20px;
+    border: 1px solid #e7e7eb;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 40px;
+}
+.blog textarea {
+    width: 60%;
+    height: 150px;
+    margin-left: 20%;
+    margin-top: 20px;
+    border: 1px solid #e7e7eb;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 40px;
+    font-family: "Microsoft yahei"
+}
+.submit {
+    color: #fff;
+    background-color: #69c2ee;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    border: none;
+    margin-left: 20%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.q3 {
+    width: 100%;
+    height: 100px;
+}
+.q3 img {
+    width: 100%;
+    height: auto;
 }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>资讯 | MES和ERP生产计划管理大不同</title>
+	<link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/commonInformation.css">
+</head>
+<style>
+	.q1ImgContainer {
+		height: 250px;
+		width: auto;
+	}
+	.q1ItemContent {
+		height: 1500px;
+	}
+	.q1Container {
+		height: 1800px;
+	}
+	.q1 {
+		height: 1800px;
+	}
+</style>
+<body>
+    
+    <!--commomHead-->
+    <div class="commomHead">
+
+    	<div class="desktop">
+	    	<div class="head"></div>
+			<div class="top">
+				<div class="main">
+					<div class="logo">
+						<img src="../img/home/logo.png" alt="">
+					</div>
+					<div class="nav_bar">
+						<ul>
+							<li><a href="../index.html">首页</a></li>
+							<li style="width: 8vw"><a href="../html/solution.html">解决方案</a></li>
+							<li><a href="../html/product.html">产品</a></li>
+							<li><a href="../html/case.html">案例</a></li>
+							<li><a href="../html/information.html" class="dActive">资讯</a></li>
+							<li><a href="../html/about.html">关于</a></li>
+						</ul>
+					</div>
+					<div class="login">
+						<a href="" class="a2">立即使用</a>
+					</div>
+				</div>
+			</div>
+	    </div>
+    </div>
+
+    
+
+    <!--Part 1-->
+	<div class="q1">
+
+	    <!--Position-->
+		<div class="position" style="margin-bottom: 40px;">
+			<span>当前位置：<a href="../index.html">首页</a> > </span>
+			<span><a href="../html/information.html">资讯</a> > </span>
+		</div>
+
+		<div class="q1Container">
+			<div class="q1Item">
+			    <div class="q1ItemTitle">
+			    	<p>MES和ERP生产计划管理大不同</p>
+			    	<span>2016.08.29</span>
+			    </div>
+				<div class="q1ItemContent">
+				    
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ERP中的生产计划管理，相对来说，仅是基于订单和MRP运算后的生产计划和物料需求计划，而对于生产车间来说，详细的基于设备资源的排产计划是非常重要的。我们知道，一般的情况下，企业的生产计划是由上层管理系统ERP来完成，而车间排产计划则是由MES的计划管理系统来完成的。</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MES和ERP生产计划管理大不同主要表现在以下几点:</p><br><br>
+
+					<p class="pForTitle">一、生产计划管理的对象、内容和作用不同</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.MES生产计划和ERP生产计划的对象和内容不同：MES的生产计划管理和ERP的生产计划管理共同构成了企业整个生产过程的生产计划管理。为了更好的实现生产，必须将MES生产计划管理和ERP生产计划管理有效的结合在一起，使MES与ERP一起构成计划、控制、反馈、调整的完整闭环系统，通过接口进行计划、命令的传递和实绩的接收，使生产计划、控制指令、实绩信息在整个ERP、MES、过程控制系统/基础自动化的体系中透明、及时、顺畅的交互传递。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.MES生产计划是ERP生产计划的基础和保证：MES生产计划接收上层管理系统ERP传递下来的生产计划。能够保证即时将车间生产的实绩信息传递给ERP，以使ERP可以了解计划执行情况，进行倒冲，排产。将ERP制定的生产计划以生产物料和生产设备为对象，进行打散，重新排产。</p>
+
+                    <p class="pForTitle" style="margin-top: 30px;">二、生产计划管理数据组成和传递方式</p>
+                    <p>根据上面我们提出的生产计划管理的设计功能可知，生产计划管理的数据主要包括四个方面：ERP传递的生产计划数据；传递给ERP的生产实绩数据；传递给设备以及生产者的生产信息；从设备或者生产者得到的生产信息。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.MES生产计划是ERP生产计划的基础和保证：为了保证车间生产的需要，ERP需要每天传递给MES一周以后的生产计划数据，也就是顺位计划文件。在传递的顺位计划文件中应该包含有全部生产车间所涉及到的生产信息。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.MES传递给ERP的生产计划执行数据：为了使MES生产计划和ERP生产计划形成闭环，MES生产管理系统需要将计划执行的实绩信息传递给ERP。以保证ERP可以实现：生产计划跟踪，跟踪其生产状态;物料倒冲、成品入库；生产查询、统计以多个纬度、角度进行统计；对于不同的车间，传递的信息内容以及数量有着很大的差异，如，针对焊装、涂装、总装和发动机装配车间生产工艺的不同，应该分别设计MES生产计划管理传递给ERP的数据内容。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.MES传递给ERP实际生产信息的方式：MES系统采集到的生产实绩信息储存在MES系统的数据库中，ERP系统直接从MES系统数据库中获取，ERP系统需要随时关注MES系统数据库指定表格中数据的变化，并及时的将生产信息传递给ERP系统，以实现ERP生产计划管理功能。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.MES传递给设备和生产者计划信息：为了执行生产计划，对生产设备和生产者指导生产，MES需要依据不同车间传递信息的种类和内容的不同，设计出不同的数据传递方式。</p>
+
+                    <div class="q1ImgContainer">
+				    	<img src="../img/information/q1_4.png" style="height: 250px;width: auto;"><br>
+				    </div>
+
+                    <p class="pForTitle" style="margin-top: 30px;">三、故障处理</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MES生产计划管理作为沟通上下层生产过程的桥梁，由于其不仅包含和下层生产设备的通讯，而且还包括了与上层管理系统ERP的通讯。正常工作状态下，MES从ERP获取生产计划并作相应调整后向下传递，指导生产。但是为了保证在ERP系统出现故障的情况下不影响车间生产活动的正常进行，需要设计一定的故障处理程序，在ERP无法传递生产顺位计划的时候继续指导生产设备和生产者进行生产。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在生产计划管理中设计了人工下达生产计划功能，应用此种功能，生产管理者可以自行手工下达生产计划。此种功能在ERP系统尚未使用的情况下，以及ERP系统出现故障的情况下，能起到和ERP产生的生产顺位计划相同的作用。</p><br><br>
+                    
+                    <p>MES和ERP如此多的不同，由此可见，模具企业的车间管控选对制造执行系统是多么的重要，只有专业以模具生产过程的管理为核心，实现模具企业从接单到交货全流程信息化管理，才能真正帮助模具企业早日实现智能制造，由此可见，选对模具管理软件、模具ERP是何其重要？</p>
+
+				</div>
+				<div class="q1ItemLead">
+					<ul>
+						<li><a href="../html/information5.html">上一篇：V16 软件更新明细</a></li>
+						<li><a href="../html/information3.html">下一篇："互联网＋制造"让生产变得更“聪明”</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+
+	<!--commonFoot -->
+	<div class="foot">
+	    <div class="footContainer">
+	    	<div class="about">
+				<ul>
+					<li style="margin-bottom: 25px;font-size: 20px">关于汉德</li>
+					<li>软件产品</li>
+					<li>管理思想</li>
+					<li>实施落地</li>
+				</ul>
+			</div>
+			<div class="product">
+				<ul>
+					<li style="margin-bottom: 25px;font-size: 20px">软件产品</li>
+					<li>模具执行官  汽车模具行业专业版</li>
+					<li>模具执行官  成本管控系列</li>
+					<li>模具执行官  进度管控系列</li>
+					<li>模具钢 销售管控系列</li>
+					<li>小型加工企业 生产管理软件</li>
+				</ul>
+			</div>
+			<div class="server">
+				<ul>
+					<li style="margin-bottom: 25px;font-size: 20px">服务与支持</li>
+					<li>FAQs</li>
+					<li>联系我们</li>
+					<li>用户微信群</li>
+					<li>付款方式</li>
+				</ul>
+			</div>
+			<div class="news">
+				<ul>
+					<li style="margin-bottom: 25px;font-size: 20px">资讯动态</li>
+					<li>行业新闻</li>
+					<li>升级补丁</li>
+				</ul>
+			</div>
+	    </div>
+		<div class="link">
+			友情链接：模具ERP、模具MES、模具管理软件、模具管理系统、模具执行官、黄岩模具网、国际模具网、itianwang
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="../lib/jQuery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+</html>

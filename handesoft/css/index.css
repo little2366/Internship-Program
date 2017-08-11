@@ -9,710 +9,536 @@ body {
     display: none;
 }
 
-/* PC和ipad */
-@media screen and (min-width:750px) {
-
-    /* commonHead部分 */
-    .desktop {
-        display: block;
-    }
-    .other {
-        display: none;
-    }
-    .head {
-        width: 100%;
-        height: 0;
-        background: #ff4200;
-        margin-bottom: -80px;
-    }
-    .top{
-        width: 100%;
-        height: 80px;
-        position: absolute;
-        z-index: 10;
-        background: rgba(255,255,255,0.95);
-        border-bottom: 1px solid #ccc;
-    }
-    .fixed{
-        position: fixed;
-        top: 0;
-    }
-    .main {
-        display: flex;
-        display: -ms-flexbox;
-        width: 80%;
-        margin: 0 auto;
-    }
-    .logo {
-        width: 20vw;
-        height: 28px;
-        margin-top:16px;
-        float: left;
-    }
-    .nav_bar {
-        width: 40vw;
-        float: right;
-        height: 80px;
-        margin-left: 200px;
-    }
-    .nav_bar ul li {
-        list-style-type: none;
-        float: left;
-        line-height: 80px;
-        text-align: center;
-        width:6vw;
-    }
-    .nav_bar ul li a {
-        color: #222;
-        text-decoration: none;
-        display: block;
-    }
-    .nav_bar ul li .dActive {
-        color: #69c2ee;
-    }
-    .nav_bar ul li a:hover {
-        color: #69c2ee;
-    }
-    .nav_bar>ul>li:hover{
-        background: #ffffff;
-    }
-    .nav_bar ul li.l1:hover .hid{
-        display: block;
-    }
-    .hid {
-        width: 100%;
-        height: 60px;
-        background: #00cece;
-        position: absolute;
-        left: 0;
-        display: none;
-        z-index: 10;
-    }
-    .hid ul{
-        width: 1210px;
-        margin: 0 auto;
-    }
-    .login {
-        float: right;
-        width: 120px;
-        height: 30px;
-        margin-top:20px; 
-    }
-    .login a {
-        width: 80px;
-        height: 33px;
-        border-radius: 3px;
-        text-align: center;
-        line-height: 33px;
-        display: block;
-        float: left;
-        color: #000;
-        text-decoration:none;
-    }
-    .login a.a2 {
-        background: #69c2ee;
-        color: #fff;
-        margin-left: 10px;
-    }
-    .position {
-        width: 70%;
-        margin-left: 15%;
-        font-size: 15px;
-        color: #666;
-        margin-top: 30px;
-    }
-    .position a {
-        color: #666;
-        text-decoration: none;
-    }
-
-
-    /*home的css代码*/
-    .q1 {
-        width: 100%;
-        height: 82vh;  
-        margin-top:80px; 
-    }
-    .flexslider {
-        margin: 0px auto 20px;
-        position: relative;
-        width: 100%;
-        height: 82%;
-        overflow: hidden;
-        zoom: 1;
-    }
-    
-    .flexslider .slides li {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .flex-direction-nav a {
-        width: 70px;
-        height: 70px;
-        line-height: 99em;
-        overflow: hidden;
-        margin: -35px 0 0;
-        display: block;
-        background: url(../img/home/ad_ctr.png) no-repeat;
-        position: absolute;
-        top: 50%;
-        z-index: 10;
-        cursor: pointer;
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-transition: all .3s ease;
-        border-radius: 35px;
-    }
-    
-    .flex-direction-nav .flex-next {
-        background-position: 0 -70px;
-        right: 0;
-    }
-    
-    .flex-direction-nav .flex-prev {
-        left: 0;
-    }
-    
-    .flexslider:hover .flex-next {
-        opacity: 0.8;
-        filter: alpha(opacity=25);
-    }
-    
-    .flexslider:hover .flex-prev {
-        opacity: 0.8;
-        filter: alpha(opacity=25);
-    }
-    
-    .flexslider:hover .flex-next:hover,
-    .flexslider:hover .flex-prev:hover {
-        opacity: 1;
-        filter: alpha(opacity=50);
-    }
-    
-    .flex-control-nav {
-        width: 100%;
-        position: absolute;
-        bottom: 10px;
-        text-align: center;
-    }
-    
-    .flex-control-nav li {
-        margin: 0 2px;
-        display: inline-block;
-        zoom: 1;
-        *display: inline;
-    }
-    
-    .flex-control-paging li a {
-        background: url(../img/home/dot.png) no-repeat 0 -16px;
-        display: block;
-        height: 16px;
-        overflow: hidden;
-        text-indent: -99em;
-        width: 16px;
-        cursor: pointer;
-    }
-    
-    .flex-control-paging li a.flex-active,
-    .flex-control-paging li.active a {
-        background-position: 0 0;
-    }
-    
-    .flexslider .slides a img {
-        width: 100%;
-        height: 482px;
-        display: block;
-    }
-    .q1 img {
-        position: absolute;
-        width: 100%;
-        height: 82%;
-    }
-    .q1Title {
-        position: relative;
-        width: 80%;
-        z-index: 5;
-        font-size: 55px;
-        top: 30vh;
-        left: 10vw;
-        color: #ffb200;
-    }
-    .q1Button {
-        position: relative;
-        background-color: #69c2ee;
-        width: 110px;
-        height: 35px;
-        line-height: 35px;
-        border-radius: 3px;
-        text-align: center;
-        color: #fff;
-        top: 33vh;
-        left: 10vw;
-        cursor: pointer;
-    }
-    .q1Button a {
-        color: #fff;
-        text-decoration: none;
-    }
-    .slideDown {
-        position: relative;
-        width: 100px;
-        height: 100px;
-        color: #666;
-        top: 38vh;
-        left: 48vw;
-        font-size: 60px;
-        cursor: pointer;
-    }
-    .q2 {
-        width: 100%;
-        height: 400px;
-        margin-top: 60px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .q2HeadTitle {
-        width: 100%;
-        text-align: center;
-        font-size: 35px;
-        margin-bottom: -20px;
-    }
-    .q2Container {
-        display: flex;
-        display: -ms-flexbox;
-        width: 80%;
-        margin-left: 10%;
-        opacity: 0;
-    }
-    .q2Item {
-        width: 23%;
-        height: 260px;
-        margin-top: 120px;
-        padding-top: 30px;
-        text-align: center;
-    }
-    .q2Item:hover {
-        transition: transform .5s;
-        -webkit-box-shadow:10px 15px 30px #e5e5e5,-10px 0px 30px #e5e5e5;
-        -moz-box-shadow:10px 15px 30px #e5e5e5,-10px 0px 30px #e5e5e5;
-        box-shadow:10px 15px 30px #e5e5e5,-10px 0px 30px #e5e5e5;
-        -webkit-transform:translate3d(0, -2px, 0);
-        transform:translate3d(0, -2px, 0);
-    }
-    .q2Item img {
-        width: 110px;
-        height: 110px;
-        cursor: pointer;
-    }
-    .q2Item .q2Title {
-        margin-top: 20px;
-        font-size: 26px;
-        line-height: 31px;
-    }
-    .q2Active {
-        opacity: 1;
-        transform: translateY(-50px);
-        transition: transform 2s .5s,opacity 2s .5s;
-    }
-    .q3{
-        width: 100%;
-        height: 450px;
-    }
-    .q3 img {
-        position: absolute;
-        width: 100%;
-        height: 450px;
-    }
-    .q3Title {
-        position: relative;
-        width: 80%;
-        text-align: center;
-        line-height: 50px;
-        z-index: 5;
-        margin-left: 130px;
-        top: 150px;
-        font-size: 35px;
-        color: #3e3f3f;
-    }
-    .q3Button {
-        position: relative;
-        background-color: #69c2ee;
-        width: 80px;
-        height: 35px;
-        font-size: 16px;
-        line-height: 35px;
-        border-radius: 3px;
-        text-align: center;
-        color: #fff;
-        cursor: pointer;
-        margin-left: 38vw;
-        margin-top: 15px;
-    }
-    .q4{
-        display: flex;
-        display: -ms-flexbox;
-        width: 100%;
-        height: 520px;
-        margin-top: 50px;
-        opacity: 0;
-    }
-    .q4Active {
-        opacity: 1;
-    }
-    .q4Img {
-        width: 45%;
-        opacity: 0;
-    }
-    .q4Img img {
-        width: 100%;
-        margin-left: 16%;
-    }
-    .q4ImgActive {
-        opacity: 1;
-        transform: translateX(60px);
-        transition: transform 2s .5s,opacity 2s .5s;
-    }
-    .q4HeadTitle {
-        opacity: 0;
-        width: 35%;
-        text-align: left;
-        font-size: 38px;
-        line-height: 66px;
-        margin-top: 80px;
-        margin-left: 200px;
-    }
-    .q4HeadTitleActive {
-        opacity: 1;
-        transform: translateX(-100px);
-        transition: transform 2s .5s,opacity 2s .5s;
-    }
-    .q4Item p {
-        font-size: 18px;
-        color: #fff;
-        text-align: justify;
-        margin-top: 20px;
-        font-weight: bold;
-    }
-    .q4Button {
-        position: relative;
-        background-color: #69c2ee;
-        width: 130px;
-        height: 35px;
-        font-size: 16px;
-        line-height: 35px;
-        border-radius: 3px;
-        text-align: center;
-        color: #fff;
-        margin-top: 50px;
-        cursor: pointer;
-    }
-    .q5 {
-        width: 100%;
-        height: 550px;
-        margin-bottom: 50px;
-        margin-top: -20px;
-    }
-    .q5 img {
-        position: absolute;
-        width: 100%;
-        height: 550px;
-    }
-    .q5Title {
-        position: relative;
-        width: 25%;
-        height: 230px;
-        top: 150px;
-        left: 230px;
-        padding: 23px;
-        background-color: rgba(255,255,255,.7);
-        text-align: justify;
-        font-size: 35px;
-        color: #000;
-        line-height: 50px;
-    }
-    .q5Button {
-        position: relative;
-        background-color: #69c2ee;
-        width: 80px;
-        height: 35px;
-        font-size: 16px;
-        line-height: 35px;
-        border-radius: 3px;
-        text-align: center;
-        color: #fff;
-        cursor: pointer;
-        margin-left: 17.5vw;
-        margin-top: 85px;
-    }
-    .q6 {
-        width: 100%;
-        height: 350px;
-    }
-    .q6HeadTitle {
-        width: 100%;
-        text-align: center;
-        font-size: 35px;
-        line-height: 50px;
-    }
-
-    #wrapper {
-        width: 80%;
-        left: 10%;
-        top: 50%;
-    }
-    #carousel {
-        display: flex;
-        display: -ms-flexbox;
-        width: 100%;
-        position: vrelative;
-    }
-    #carousel ul {
-        list-style: none;
-        display: block;
-        margin-left:20%;
-    }
-    #carousel li {
-        font-size: 40px;
-        color: #999;
-        text-align: center;
-        display: block;
-        width: 232px;
-        height: 178px;
-        padding: 0;
-        margin: 6px;
-        float: left;
-        position: relative;
-    }
-
-    #carousel li img {
-        width: 201px;
-        height: 127px;
-        margin-top: 14px;
-    }
-    
-    #carousel li span {
-        text-indent: -999px;
-        display: block;
-        overflow: hidden;
-        width: 201px;
-        height: 127px;
-        position: absolute;
-        z-index: 2;
-        top: 14px;
-        left: 16px;
-    }           
-    .clearfix {
-        float: none;
-        clear: both;
-    }
-    #carousel .fa{
-        font-size: 56px;
-        text-align: center;
-        color: #333;
-        line-height: 150px;
-        cursor: pointer;     
-    }              
-
-    /* commonFoot部分 */
-    .foot {
-        width: 100%;
-        height: 250px;
-        padding-top: 40px;
-        line-height: 26px;
-        background-color: #353535;
-        color:#999;
-        font-size: 14px;
-    }
-    .footContainer {
-        display: flex;
-        display: -ms-flexbox;
-        width: 100%;
-    }
-    .about ul li, .product ul li, .server ul li, .news ul li {
-        list-style: none;
-    }
-    .about {
-        width: 12%;
-        margin-left: 15%;
-    }
-    .product {
-        width: 20%; 
-    }
-    .server, .news {
-        width: 12%;
-    }
-    .link {
-        margin-left: 15%;
-        margin-top: 30px;
-    }
+/* commonHead部分 */
+.desktop {
+    display: block;
+}
+.head {
+    width: 100%;
+    height: 0;
+    background: #ff4200;
+    margin-bottom: -80px;
+}
+.top {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: 10;
+    background: rgba(255,255,255,0.95);
+    border-bottom: 1px solid #ccc;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+}
+.main {
+    display: flex;
+    display: -ms-flexbox;
+    width: 80%;
+    margin: 0 auto;
+}
+.logo {
+    width: 200px;
+    height: 28px;
+    margin-top:16px;
+    float: left;
+}
+.nav_bar {
+    width: 40vw;
+    float: right;
+    height: 80px;
+    margin-left: 280px;
+}
+.nav_bar ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 80px;
+    text-align: center;
+    width:6vw;
+}
+.nav_bar ul li a {
+    color: #222;
+    text-decoration: none;
+    display: block;
+}
+.nav_bar ul li .dActive {
+    color: #69c2ee;
+}
+.nav_bar ul li a:hover {
+    color: #69c2ee;
+}
+.nav_bar>ul>li:hover{
+    background: #ffffff;
+}
+.nav_bar ul li.l1:hover .hid{
+    display: block;
+}
+.hid {
+    width: 100%;
+    height: 60px;
+    background: #00cece;
+    position: absolute;
+    left: 0;
+    display: none;
+    z-index: 10;
+}
+.hid ul{
+    width: 1210px;
+    margin: 0 auto;
+}
+.login {
+    width: 80px;
+    height: 30px;
+    margin-top:20px; 
+}
+.login a {
+    width: 80px;
+    height: 33px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 33px;
+    display: block;
+    float: left;
+    color: #000;
+    text-decoration:none;
+}
+.login a.a2 {
+    background: #69c2ee;
+    color: #fff;
+    margin-left: 10px;
+}
+.position {
+    width: 70%;
+    margin-left: 15%;
+    font-size: 15px;
+    color: #666;
+    margin-top: 30px;
+}
+.position a {
+    color: #666;
+    text-decoration: none;
 }
 
 
-/*ipad自己的样式*/
-@media screen and (max-width: 1024px) and (min-width: 751px) {
-    .logo{
-        transform: scale(.88);
-        margin-left: -40px;
-    }
-    .nav_bar {
-        width: 40vw;
-        margin-left: 100px;
-    }
-    .nav_bar ul li{
-        width:6vw;
-    }
-    .q2Container {
-        width: 90%;
-    }
-    .q2 {
-        height: 450px;
-    }
-    .q2Item .q2Title {
-        margin-top: 20px;
-        font-size: 18px;
-        line-height: 22px;
-    }
+/*home的css代码*/
+.q1 {
+    width: 100%;
+    height: 650px;  
+    margin-top:80px; 
+}
+.flexslider {
+    margin: 0px auto 20px;
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    zoom: 1;
 }
 
-/*mobile*/
-@media screen and (max-width: 750px) {
+.flexslider .slides li {
+    width: 100%;
+    height: 650px;
+    list-style: none;
+}
+.flexslider .slides li img {
+    height: 650px;
+}
 
-    .desktop {
-        display: none;
-    }
-    .other {
-        display: block;
-        position: relative;
-    }
-    .top{
-        width: 100%;
-        height: 60px;
-        font-size: 25px;
-    }
-    .main{
-        width: 100%;
-        line-height: 60px;
-        margin: 0 auto;
-    }
-    .logo {
-        float: left;
-    }
-    .logo img {
-        transform: scale(.68);
-    }
-    .nav_bar {
-        color: #69c2ee;
-        float: right;
-        margin-right: 20px;
-    }
-    .q1{
-        width: 100%;
-        height: 100vh; 
-        position: relative; 
-        border: 1px solid #000;
-    }
-    .btn {
-        width: 100px;
-        height: 50px;
-    }
-    .q2{
-        display: flex;
-        display: -ms-flexbox;
-        width: 100%;
-        background: #ffffff;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .q2Container {
-        margin: auto;
-        opacity: 1;
-    }
-    .q2Item {
-        width: 100%;
-        text-align: center;
-    }
-    .q2Item img {
-        width: 50px;
-        height: 50px;
-    }
-    .q3{
-        width: 100%;
-        height: 900px;
-        border: 1px solid #000;
-    }
-    .html-body-overflow {
-        overflow-y:hidden;
-    }
-    .menu {
-        width: 70vw;
-        height: 95vh;
-        float: right;
-        background-color: #fff;
-        z-index: 1;
-        margin-top: -80px;
-        overflow-y:auto; 
-    }
-    .menu ul {
-        margin-top: 20px;
-    }
-    .menu ul li {
-        width: 100%;
-        list-style: none;
-        font-weight: 500;
-        font-family: 宋体;
-        color: #333333;
-        line-height: 50px;
-        font-size: 23px;
-        border-bottom: 1px solid #dbdee0;
-    }
-    .menu .active {
-        background-color: #b4b7ba;
-        color:#fff;
-    }
-    .fa-angle-right {
-        font-size: 28px;
-        float: right;
-        margin-top: 8px;
-        margin-right: 20px;
-    }
+.flex-direction-nav a {
+    width: 70px;
+    height: 70px;
+    line-height: 99em;
+    overflow: hidden;
+    margin: -35px 0 0;
+    display: block;
+    background: url(../img/home/ad_ctr.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all .3s ease;
+    border-radius: 35px;
+}
 
-    /*橫屏*/ 
-    @media screen and (orientation: landscape){
-        .btn {
-            margin-top: 60vh;
-        }
-        .q2{
-            height: 630px;
-        }
-        .q2Container {
-            width: 90%;
-        }
-        .q2Item {
-            margin-top: 40px;
-        }
-        .q2Item .q2Title {
-            margin-top: 18px;
-            font-size: 16px;
-            line-height: 31px;
-        }
-    }
-    /*竖屏*/
-    @media screen and (orientation: portrait){
-        .btn {
-            margin-top: 300px;
-        }
-        .q2{
-            height: 800px;
-        }
-        .q2Container {
-            width: 80%;
-        }
-        .q2Item {
-            margin-top: 50px;
-        }
-        .q2Item .q2Title {
-            margin-top: 15px;
-            font-size: 18px;
-            line-height: 31px;
-        }
-    }
+.flex-direction-nav .flex-next {
+    background-position: 0 -70px;
+    right: 0;
+}
+
+.flex-direction-nav .flex-prev {
+    left: 0;
+}
+
+.flexslider:hover .flex-next {
+    opacity: 0.8;
+    filter: alpha(opacity=25);
+}
+
+.flexslider:hover .flex-prev {
+    opacity: 0.8;
+    filter: alpha(opacity=25);
+}
+
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+    opacity: 1;
+    filter: alpha(opacity=50);
+}
+
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+.flex-control-nav li {
+    margin: 0 2px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.flex-control-paging li a {
+    background: url(../img/home/dot.png) no-repeat 0 -16px;
+    display: block;
+    height: 16px;
+    overflow: hidden;
+    text-indent: -99em;
+    width: 16px;
+    cursor: pointer;
+}
+
+.flex-control-paging li a.flex-active,
+.flex-control-paging li.active a {
+    background-position: 0 0;
+}
+
+.flexslider .slides a img {
+    width: 100%;
+    height: 650px;
+    display: block;
+}
+.q1 img {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+}
+.q1Title {
+    position: relative;
+    width: 80%;
+    z-index: 5;
+    font-size: 55px;
+    top: 250px;
+    left: 120px;
+    color: #ffb200;
+}
+.q1Button {
+    position: relative;
+    background-color: #69c2ee;
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    top: 280px;
+    left: 120px;
+    cursor: pointer;
+}
+.q1Button a {
+    color: #fff;
+    text-decoration: none;
+}
+.slideDown {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    color: #666;
+    top: 38vh;
+    left: 48vw;
+    font-size: 60px;
+    cursor: pointer;
+}
+.q2 {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.q2HeadTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: -20px;
+}
+.q2Container {
+    display: flex;
+    display: -ms-flexbox;
+    width: 80%;
+    margin-left: 10%;
+    opacity: 0;
+}
+.q2Item {
+    width: 23%;
+    height: 260px;
+    margin-top: 120px;
+    padding-top: 30px;
+    text-align: center;
+}
+.q2Item:hover {
+    transition: transform .5s;
+    -webkit-box-shadow:10px 15px 30px #e5e5e5,-10px 0px 30px #e5e5e5;
+    -moz-box-shadow:10px 15px 30px #e5e5e5,-10px 0px 30px #e5e5e5;
+    box-shadow:10px 15px 30px #e5e5e5,-10px 0px 30px #e5e5e5;
+    -webkit-transform:translate3d(0, -2px, 0);
+    transform:translate3d(0, -2px, 0);
+}
+.q2Item img {
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+.q2Item .q2Title {
+    margin-top: 20px;
+    font-size: 26px;
+    line-height: 31px;
+}
+.q2Active {
+    opacity: 1;
+    transform: translateY(-50px);
+    transition: transform 2s .5s,opacity 2s .5s;
+}
+.q3{
+    width: 100%;
+    height: 450px;
+}
+.q3 img {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+}
+.q3Title {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    line-height: 50px;
+    z-index: 5;
+    margin-left: 130px;
+    top: 150px;
+    font-size: 35px;
+    color: #3e3f3f;
+}
+.q3Button {
+    position: relative;
+    background-color: #69c2ee;
+    width: 80px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 38vw;
+    margin-top: 15px;
+}
+.q4{
+    display: flex;
+    display: -ms-flexbox;
+    width: 100%;
+    height: 520px;
+    margin-top: 50px;
+    opacity: 0;
+}
+.q4Active {
+    opacity: 1;
+}
+.q4Img {
+    width: 45%;
+    opacity: 0;
+}
+.q4Img img {
+    width: 100%;
+    margin-left: 16%;
+}
+.q4ImgActive {
+    opacity: 1;
+    transform: translateX(60px);
+    transition: transform 2s .5s,opacity 2s .5s;
+}
+.q4HeadTitle {
+    opacity: 0;
+    width: 35%;
+    text-align: left;
+    font-size: 38px;
+    line-height: 66px;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+.q4HeadTitleActive {
+    opacity: 1;
+    transform: translateX(-100px);
+    transition: transform 2s .5s,opacity 2s .5s;
+}
+.q4Item p {
+    font-size: 18px;
+    color: #fff;
+    text-align: justify;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.q4Button {
+    position: relative;
+    background-color: #69c2ee;
+    width: 130px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.q5 {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 50px;
+    margin-top: -20px;
+}
+.q5 img {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+}
+.q5Title {
+    position: relative;
+    width: 25%;
+    height: 230px;
+    top: 150px;
+    left: 230px;
+    padding: 23px;
+    background-color: rgba(255,255,255,.7);
+    text-align: justify;
+    font-size: 35px;
+    color: #000;
+    line-height: 50px;
+}
+.q5Button {
+    position: relative;
+    background-color: #69c2ee;
+    width: 80px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 17.5vw;
+    margin-top: 85px;
+}
+.q6 {
+    width: 100%;
+    height: 350px;
+}
+.q6HeadTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+#wrapper {
+    width: 80%;
+    left: 10%;
+    top: 50%;
+}
+#carousel {
+    display: flex;
+    display: -ms-flexbox;
+    width: 100%;
+    position: vrelative;
+}
+#carousel ul {
+    list-style: none;
+    display: block;
+    margin-left:20%;
+}
+#carousel li {
+    font-size: 40px;
+    color: #999;
+    text-align: center;
+    display: block;
+    width: 232px;
+    height: 178px;
+    padding: 0;
+    margin: 6px;
+    float: left;
+    position: relative;
+}
+
+#carousel li img {
+    width: 201px;
+    height: 127px;
+    margin-top: 14px;
+}
+
+#carousel li span {
+    text-indent: -999px;
+    display: block;
+    overflow: hidden;
+    width: 201px;
+    height: 127px;
+    position: absolute;
+    z-index: 2;
+    top: 14px;
+    left: 16px;
+}           
+.clearfix {
+    float: none;
+    clear: both;
+}
+#carousel .fa{
+    font-size: 56px;
+    text-align: center;
+    color: #333;
+    line-height: 150px;
+    cursor: pointer;     
+}              
+
+/* commonFoot部分 */
+.foot {
+    width: 100%;
+    height: 280px;
+    padding-top: 40px;
+    line-height: 26px;
+    background-color: #353535;
+    color:#999;
+    font-size: 14px;
+}
+.footContainer {
+    display: flex;
+    display: -ms-flexbox;
+    width: 100%;
+}
+.about ul li, .product ul li, .server ul li, .news ul li {
+    list-style: none;
+}
+.about {
+    width: 12%;
+    margin-left: 15%;
+}
+.product {
+    width: 20%; 
+}
+.server, .news {
+    width: 12%;
+}
+.link {
+    margin-left: 15%;
+    margin-top: 30px;
 }

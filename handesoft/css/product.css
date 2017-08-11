@@ -9,415 +9,177 @@ body {
     display: none;
 }
 
-/*PC和ipad*/
-@media screen and (min-width:750px) {
     
-    /* about的css代码 */
+/* product的css代码 */
 
-    .q1{
-        width: 100%;
-        height: 500px;  
-        margin-top:80px; 
-    }
-    .q1 img {
-        position: absolute;
-        width: 100%;
-        height: 500px;
-    }
-    .q1Title {
-        position: relative;
-        width: 80%;
-        z-index: 5;
-        font-size: 55px;
-        top: 26vh;
-        left: 13vw;
-        color: #3e3f3f;
-    }
-    .q1Button {
-        position: relative;
-        background-color: #69c2ee;
-        width: 110px;
-        height: 35px;
-        line-height: 35px;
-        border-radius: 3px;
-        text-align: center;
-        color: #fff;
-        top: 43vh;
-        left: 18vw;
-        cursor: pointer;
-    }
-    
-    .q2 {
-         width: 70%;
-         height: 420px;
-         margin-left: 15%;
-    }
-    .q2Title {
-        width: 100%;
-        text-align: center;
-        font-size: 42px;
-        font-weight: 900;
-        color: #000;
-    }
-    .q2Containerp {
-        display: flex;
-        display: -ms-flexbox;
-        width: 100%;
-        height: 100px;
-        margin-top: 40px;
-    }
-    .q2Item1 {
-        width: 33%;
-        height: 100px;
-        padding: 15px 15px;
-        border-right: 1px solid #dedede;
-        text-align: center;
-    }
-    .q2Item1 p {
-        font-size: 23px;
-        color: #0070cc;
-        text-align: center;
-        font-family: "微软雅黑"
-        font-weight: bold;
-    }
-    .q2Item1 span {
-        font-size: 16px;
-        line-height: 28px;
-        color: #595959;
-        text-align: center;
-    }
-    .q3 {
-        display: flex;
-        display: -ms-flexbox;
-        width: 100%;
-        height: 450px;
-        background: url(../img/product/q3.jpg);
-    }
-    .q3Containerp {
-        display: flex;
-        display: -ms-flexbox;
-        width: 70%;
-        height: 250px;
-        margin: auto;
-    }
-    .q3Itemp {
-        width: 19%;
-        margin-right: 2%;
-        height: 250px;
-    }
-    .q3Itemp a {
-        text-decoration: none;
-        display: block;
-    }
-    .q3Imgp {
-        width: 100%;
-        height: 150px;
-    }
-    .q3Imgp img {
-        width: 100px;
-        height: 100px;
-        margin-left: 2.5%;
-        cursor: pointer;
-    }
-    .q3Contentp {
-        width: 100%;
-        height: 100px;
-        font-size: 25px;
-        line-height: 36px;
-        color: #333;
-        text-align: center;
-    }
-    .q3Contentp span {
-        font-size: 16px;
-        line-height: 22px;
-        color: #666;
-    }
-    .q4 {
-        width: 40%;
-        height: 250px;
-        margin-left: 30%;
-        opacity: 1;
-        margin-top: 0;
-    }
-    .q4Containerp {
-        width: 100%;
-        margin: auto;
-        text-align: center;
-    }
-    .q4 p {
-        font-size: 30px;
-        line-height: 60px;
-    }
-    .q4ForButton {
-        display: flex;
-        display: -ms-flexbox;
-        width: 80%;
-        margin-left: 10%;
-        height: 60px;
-    }
-    .q4ButtonContainer {
-        display: flex;
-        display: -ms-flexbox;
-        width: 50%;
-        height: 60px;
-    }
-    .q4Button {
-        width: 100px;
-        height: 45px;
-        margin: auto;
-        font-size: 18px;
-        line-height: 45px;
-        color: #fff;
-    }
-    /*.q3 {
-        width: 82%;
-        height: 700px;
-        margin-top: 50px;
-        margin-left: 9%;
-    }
-    .q3Container {
-        display: flex;
-        display: -ms-flexbox;
-        margin: auto;
-        margin-top: 30px;
-        width: 66%;
-        opacity: 1;
-    }
-    .q3Item {
-        width: 200px;
-        height: 200px;
-        text-align: center;
-        background-color: #69c2ee;
-    }
-    .q3Item p {
-        font-size: 18px;
-        color: #fff;
-        text-align: center;
-        margin-top: 20px;
-        font-weight: bold;
-    }
-    .q3Item img {
-        margin-top: 35px;
-        width: 60px;
-        height: 60px;
-    }
-    .flip-container {
-        perspective: 1000;
-        transform-style: preserve-3d;
-    }
-    .flip-container:hover .back {
-        transform: rotateY(0deg);
-    }
-    .flip-container:hover .front {
-        transform: rotateY(180deg);
-    }
-    .flip-container, .front, .back {
-        width: 100%;
-        height: 200px;
-    }
-    .flipper {
-        transition: 0.6s;
-        transform-style: preserve-3d;
-        position: relative;
-    }
-    .front, .back {
-        backface-visibility: hidden;
-        transition: 0.6s;
-        transform-style: preserve-3d;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .front {
-        z-index: 2;
-        transform: rotateY(0deg);
-    }
-    .back {
-        transform: rotateY(-180deg);
-    }
-    .vertical.flip-container {
-        position: relative;
-    }
-
-    .vertical .back {
-        transform: rotateX(180deg);
-    }
-
-    .vertical.flip-container:hover .back {
-        transform: rotateX(0deg);
-    }
-
-    .vertical.flip-container:hover .front {
-        transform: rotateX(180deg);
-    }*/
+.q1{
+    width: 100%;
+    height: 500px;  
+    margin-top:80px; 
+}
+.q1 img {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+}
+.q1Title {
+    position: relative;
+    width: 80%;
+    z-index: 5;
+    font-size: 55px;
+    top: 200px;
+    left: 120px;
+    color: #3e3f3f;
+}
+.q1Button {
+    position: relative;
+    background-color: #69c2ee;
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    top: 43vh;
+    left: 18vw;
+    cursor: pointer;
 }
 
-
-/*ipad自己的样式*/
-@media screen and (max-width: 1024px) and (min-width: 751px) {
-    .logo{
-        transform: scale(.88);
-        margin-left: -40px;
-    }
-    .nav_bar {
-        width: 40vw;
-        margin-left: 100px;
-    }
-    .nav_bar ul li{
-        width:6vw;
-    }
-    /*.q3Container {
-        width: 90%;
-    }
-    .q3 {
-        height: 450px;
-    }
-    .q3Item .q3Title {
-        margin-top: 20px;
-        font-size: 18px;
-        line-height: 22px;
-    }*/
+.q2 {
+     width: 70%;
+     height: 420px;
+     margin-left: 15%;
 }
-
-/*mobile*/
-@media screen and (max-width: 750px) {
-
-    .desktop {
-        display: none;
-    }
-    .other {
-        display: block;
-        position: relative;
-    }
-    .top{
-        width: 100%;
-        height: 60px;
-        font-size: 25px;
-    }
-    .main{
-        width: 100%;
-        line-height: 60px;
-        margin: 0 auto;
-    }
-    .logo {
-        float: left;
-    }
-    .logo img {
-        transform: scale(.68);
-    }
-    .nav_bar {
-        color: #69c2ee;
-        float: right;
-        margin-right: 20px;
-    }
-    .q1{
-        width: 100%;
-        height: 100vh; 
-        position: relative; 
-        border: 1px solid #000;
-    }
-    .btn {
-        width: 100px;
-        height: 50px;
-    }
-    /*.q3{
-        display: flex;
-        display: -ms-flexbox;
-        width: 100%;
-        background: #ffffff;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .q3Container {
-        margin: auto;
-        opacity: 1;
-    }
-    .q3Item {
-        width: 100%;
-        text-align: center;
-    }
-    .q3Item img {
-        width: 50px;
-        height: 50px;
-    }
-    .q3{
-        width: 100%;
-        height: 900px;
-        border: 1px solid #000;
-    }
-    .html-body-overflow {
-        overflow-y:hidden;
-    }
-    .menu {
-        width: 70vw;
-        height: 95vh;
-        float: right;
-        background-color: #fff;
-        z-index: 1;
-        margin-top: -80px;
-        overflow-y:auto; 
-    }
-    .menu ul {
-        margin-top: 20px;
-    }
-    .menu ul li {
-        width: 100%;
-        list-style: none;
-        font-weight: 500;
-        font-family: 宋体;
-        color: #333333;
-        line-height: 50px;
-        font-size: 23px;
-        border-bottom: 1px solid #dbdee0;
-    }
-    .menu .active {
-        background-color: #b4b7ba;
-        color:#fff;
-    }
-    .fa-angle-right {
-        font-size: 28px;
-        float: right;
-        margin-top: 8px;
-        margin-right: 20px;
-    }*/
-
-    /*橫屏*/ 
-    @media screen and (orientation: landscape){
-        .btn {
-            margin-top: 60vh;
-        }
-        /*.q3{
-            height: 630px;
-        }
-        .q3Container {
-            width: 90%;
-        }
-        .q3Item {
-            margin-top: 40px;
-        }
-        .q3Item .q3Title {
-            margin-top: 18px;
-            font-size: 16px;
-            line-height: 31px;
-        }*/
-    }
-    /*竖屏*/
-    @media screen and (orientation: portrait){
-        .btn {
-            margin-top: 300px;
-        }
-        /*.q3{
-            height: 800px;
-        }
-        .q3Container {
-            width: 80%;
-        }
-        .q3Item {
-            margin-top: 50px;
-        }
-        .q3Item .q3Title {
-            margin-top: 15px;
-            font-size: 18px;
-            line-height: 31px;
-        }*/
-    }
+.q2Title {
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+    color: #000;
+}
+.q2Containerp {
+    display: flex;
+    display: -ms-flexbox;
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+}
+.q2Item1 {
+    width: 33%;
+    height: 100px;
+    padding: 15px 15px;
+    border-right: 1px solid #dedede;
+    text-align: center;
+}
+.q2Item1 p {
+    font-size: 23px;
+    color: #0070cc;
+    text-align: center;
+    font-family: "微软雅黑"
+    font-weight: bold;
+}
+.q2Item1 span {
+    font-size: 16px;
+    line-height: 28px;
+    color: #595959;
+    text-align: center;
+}
+.q3 {
+    display: flex;
+    display: -ms-flexbox;
+    width: 100%;
+    height: 450px;
+    background: url(../img/product/q3.jpg);
+}
+.q3Containerp {
+    display: flex;
+    display: -ms-flexbox;
+    width: 70%;
+    height: 250px;
+    margin: auto;
+}
+.q3Itemp {
+    width: 19%;
+    margin-right: 2%;
+    height: 250px;
+    text-align: center;
+}
+.q3Itemp a {
+    text-decoration: none;
+    display: block;
+}
+.q3Imgp {
+    display: flex;
+    display: -ms-flexbox;
+    width: 100%;
+    height: 150px;
+}
+.q3ImgContainerp {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.q3ImgContainerp img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: 0.6s;
+    -webkit-transition: -webkit-transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+    -moz-transition: -moz-transform 0.6s ease-out;
+}
+.q3ImgContainerp img:hover {
+    transform: rotate3d(0,1,0,180deg);
+    -webkit-transform: rotate3d(0,1,0,180deg);
+    -moz-transform: rotate3d(0,1,0,180deg);
+}
+.q3Contentp {
+    width: 100%;
+    height: 100px;
+    font-size: 25px;
+    line-height: 36px;
+    color: #333;
+    text-align: center;
+}
+.q3Contentp span {
+    font-size: 16px;
+    line-height: 22px;
+    color: #666;
+}
+.q4 {
+    width: 40%;
+    height: 250px;
+    margin-left: 30%;
+    opacity: 1;
+    margin-top: 0;
+}
+.q4Containerp {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.q4 p {
+    font-size: 30px;
+    line-height: 60px;
+}
+.q4ForButton {
+    display: flex;
+    display: -ms-flexbox;
+    width: 80%;
+    margin-left: 10%;
+    height: 60px;
+}
+.q4ButtonContainer {
+    display: flex;
+    display: -ms-flexbox;
+    width: 50%;
+    height: 60px;
+}
+.q4Button {
+    width: 100px;
+    height: 45px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 45px;
+    color: #fff;
 }
