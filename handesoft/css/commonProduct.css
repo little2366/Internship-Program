@@ -31,3 +31,46 @@ body {
     line-height: 24px;
     color: #7f7f7f;
 }
+.q2 {
+    display: flex;
+    display: -ms-flex;
+    width: 70%;
+    height: 800px;
+    margin-left: 15%;
+}
+.q2Left {
+    display: flex;
+    display: -ms-flex;
+    width: 30%;
+    height: 665px;
+}
+.q2LCatalog {
+    width: 20%;
+    height: 665px;
+}
+.q2LCItem {
+    width: 100%;
+    height: 60px;
+    background-color: #4e4e4e;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+.q2LTitle {
+    width: 80%;
+    height: 665px;
+    background-color: #fff;
+}
+#q2LTitle2,#q2LTitle3,#q2LTitle4,#q2LTitle5,#q2LTitle6,#q2LTitle7,#q2LTitle8,#q2LTitle9,#q2LTitle10{
+    display: none;
+} 
+.itemActive {
+    background-color: lightblue;
+}
+.q2Right {
+    width: 70%;
+    height: 800px;
+    background-color: lightgreen;
+}
