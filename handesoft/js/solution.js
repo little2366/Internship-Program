@@ -7,52 +7,27 @@ $(".q3Items").mouseleave(function(){
 });
 
 
-/*修改图片*/
-$("#q3Item1").mouseenter(function(){
-    document.getElementById("q3Img1").src="../img/solution/q3_9.png";
-});
-$("#q3Item1").mouseleave(function(){
-    document.getElementById("q3Img1").src="../img/solution/q3_1.png";
-});
-$("#q3Item2").mouseenter(function(){
-    document.getElementById("q3Img2").src="../img/solution/q3_10.png";
-});
-$("#q3Item2").mouseleave(function(){
-    document.getElementById("q3Img2").src="../img/solution/q3_2.png";
-});
-$("#q3Item3").mouseenter(function(){
-    document.getElementById("q3Img3").src="../img/solution/q3_11.png";
-});
-$("#q3Item3").mouseleave(function(){
-    document.getElementById("q3Img3").src="../img/solution/q3_3.png";
-});
-$("#q3Item4").mouseenter(function(){
-    document.getElementById("q3Img4").src="../img/solution/q3_12.png";
-});
-$("#q3Item4").mouseleave(function(){
-    document.getElementById("q3Img4").src="../img/solution/q3_4.png";
-});
-$("#q3Item5").mouseenter(function(){
-    document.getElementById("q3Img5").src="../img/solution/q3_13.png";
-});
-$("#q3Item5").mouseleave(function(){
-    document.getElementById("q3Img5").src="../img/solution/q3_5.png";
-});
-$("#q3Item6").mouseenter(function(){
-    document.getElementById("q3Img6").src="../img/solution/q3_14.png";
-});
-$("#q3Item6").mouseleave(function(){
-    document.getElementById("q3Img6").src="../img/solution/q3_6.png";
-});
-$("#q3Item7").mouseenter(function(){
-    document.getElementById("q3Img7").src="../img/solution/q3_15.png";
-});
-$("#q3Item7").mouseleave(function(){
-    document.getElementById("q3Img7").src="../img/solution/q3_7.png";
-});
-$("#q3Item8").mouseenter(function(){
-    document.getElementById("q3Img8").src="../img/solution/q3_16.png";
-});
-$("#q3Item8").mouseleave(function(){
-    document.getElementById("q3Img8").src="../img/solution/q3_8.png";
-});
+/*鼠标经过时修改图片*/
+window.onload=function(){
+    var img_src_before = [],
+        img_src_after = [];
+
+    for(var i = 1;i <= 12; ++i){
+        
+        img_src_before[i] = "../img/solution/q3_" + i + ".png";
+        img_src_after[i] = "../img/solution/q_" + i + ".png";
+    }
+   
+    $('.q3Items').mouseenter(function(){
+        var i = $(this).attr("id");
+        var id = '#' + i;
+        $(id).find('img').attr('src',img_src_after[i]); 
+    });
+    
+    /*恢复为原来的图片*/
+    $('.q3Items').mouseleave(function(){
+        var i = $(this).attr("id");
+        var id = '#' + i;
+        $(id).find('img').attr('src',img_src_before[i]);  
+    });
+}
