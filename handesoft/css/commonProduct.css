@@ -41,11 +41,11 @@ body {
 .q2Left {
     display: flex;
     display: -ms-flex;
-    width: 30%;
+    width: 100%;
     height: 665px;
 }
 .q2LCatalog {
-    width: 20%;
+    width: 6%;
     height: 665px;
 }
 .q2LCItem {
@@ -59,18 +59,32 @@ body {
     color: #fff;
 }
 .q2LTitle {
-    width: 80%;
+    display: flex;
+    display: -ms-flexbox;
+    width: 94%;
     height: 665px;
-    background-color: #fff;
+    background-color: lightblue;
 }
-#q2LTitle2,#q2LTitle3,#q2LTitle4,#q2LTitle5,#q2LTitle6,#q2LTitle7,#q2LTitle8,#q2LTitle9,#q2LTitle10{
+.q2LTContainer {
+    width: 90%;
+    margin: auto;
+    height: 220px;
+    background-color: #fff;
+    
+}
+.q2LTContainer p {
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+}
+.q2LTContainer ul li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 32px;
+}
+#q2LTitle2, #q2LTitle3, #q2LTitle4, #q2LTitle5, #q2LTitle6, #q2LTitle7, #q2LTitle8, #q2LTitle9, #q2LTitle10{
     display: none;
 } 
 .itemActive {
     background-color: lightblue;
-}
-.q2Right {
-    width: 70%;
-    height: 800px;
-    background-color: lightgreen;
 }
