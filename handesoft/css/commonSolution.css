@@ -5,11 +5,7 @@
 body {
     font-family:"Microsoft yahei";
 }
-.menu {
-    display: none;
-}
 
-    
 /* solution的css代码 */
 .position {
     height: 10px;

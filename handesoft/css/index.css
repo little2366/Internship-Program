@@ -5,9 +5,6 @@
 body {
     font-family:"Microsoft yahei";
 }
-.menu {
-    display: none;
-}
 
 /* commonHead部分 */
 .desktop {
@@ -312,6 +309,10 @@ body {
     font-size: 26px;
     line-height: 31px;
 }
+.q2Item .q2Title a {
+    text-decoration: none;
+    color: #000;
+}
 .q2Active {
     opacity: 1;
     transform: translateY(-50px);
@@ -504,7 +505,7 @@ body {
 
 #wrapper {
     width: 80%;
-    left: 10%;
+    margin-left: 10%;
     top: 50%;
 }
 #carousel {
@@ -516,7 +517,6 @@ body {
 #carousel ul {
     list-style: none;
     display: block;
-    margin-left:20%;
 }
 #carousel li {
     font-size: 40px;
@@ -561,12 +561,9 @@ body {
 }   
 @media screen and (max-width:1024px) {
     #wrapper {
-        width: 70%;
-        padding-left: 10%;
+        width: 90%;
+        margin-left: 5%;
         top: 50%;
-    }
-    .carouselContainer {
-        margin-left: -20%;
     }
 }           
 
